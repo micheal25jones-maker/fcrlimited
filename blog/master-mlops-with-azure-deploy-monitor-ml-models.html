@@ -1,0 +1,1934 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- OneTrust Cookies Consent Notice start for fintego.com -->
+        <script refer async type="text/javascript">
+            function OptanonWrapper() { }
+        </script>
+        <!-- OneTrust Cookies Consent Notice end for fintego.com -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script refer async>
+            document.addEventListener('DOMContentLoaded', e => {
+                window.dataLayer = window.dataLayer || []
+                if (document.getElementById('page-industries')) {
+                    const industriesList = Array.from(document.getElementById('page-industries').classList)
+                    industriesList.forEach(industry => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": industry});
+                    })
+                }
+                if (document.getElementById('page-services')) {
+                    const servicesList = Array.from(document.getElementById('page-services').classList)
+                    servicesList.forEach(service => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": service});
+                    })
+                }
+            })
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+        <script refer async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/theme/fintego/static/images/favicon/favicon.svg" />
+        <script refer src="https://code.jquery.com/jquery-3.7.1.min.js"crossorigin="anonymous"></script>
+        <link rel="manifest" href="/theme/fintego/static/images/favicon/site.webmanifest">
+        <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[[{"@type":"ListItem","position":1,"item":"https:\/\/www.fintego.com\/","name":"Home"},{"@type":"ListItem","position":2,"item":"https:\/\/www.fintego.com\/blog","name":"Blog"},{"@type":"ListItem","position":3,"name":"Machine learning with Microsoft Azure Monitoring machine learning models in production "}]]}</script>
+        <title>
+        Master Azure MLOps: Efficient model management 
+        </title>
+        <script refer async type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041441-10041537.js"></script>
+        <link rel="stylesheet" href="/theme/fintego/assets/app.min.41025cec95a71e1b0698.css">
+        <link rel="preload" href="/theme/fintego/assets/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+                <script refer src="//offer.fintego.com/js/forms2/js/forms2.min.js"></script>
+    <meta property="og:locale" content="en" />
+        <meta property="og:title" content="Master Azure MLOps: Efficient model management " />
+        <meta property="og:description" content="Unlock the potential of MLOps on Microsoft Azure and learn to seamlessly upload, deploy and monitor machine learning models in a production environment. " />
+        <meta name="description" content="Unlock the potential of MLOps on Microsoft Azure and learn to seamlessly upload, deploy and monitor machine learning models in a production environment. " />
+                    <meta property="og:url" content="/blog/master-mlops-with-azure-deploy-monitor-ml-models" />
+                    <meta property="og:image:width" content="960">
+        <meta property="og:image:height" content="960">
+        <meta property="og:image" content="/files/blog/2023/10/1696584797_433541-FS-GEMS-blog-5-Machine-Learning-with-Microsoft-Azure-KV4-jpg-1.jpg" />
+        <meta name="twitter:image" content="/files/blog/2023/10/1696584797_433541-FS-GEMS-blog-5-Machine-Learning-with-Microsoft-Azure-KV4-jpg-1.jpg" />
+        <meta name="twitter:description" content="Unlock the potential of MLOps on Microsoft Azure and learn to seamlessly upload, deploy and monitor machine learning models in a production environment. " />
+        <meta name="twitter:title" content="Master Azure MLOps: Efficient model management " />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@luxoft" />
+        <script id="imageMarkUpData" type="application/ld+json"></script>
+                            <link rel="canonical" href="/blog/master-mlops-with-azure-deploy-monitor-ml-models">
+<meta name="generator" content="Bolt">
+</head>
+    <body class="  bd-white
+">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+<header class="header ">
+    <div class="container--wide">
+        <div class="header__nav">
+            <div class="switch" id="menu-switcher">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="text">
+                    <span>Menu</span>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/">
+                    <img src="/theme/fintego/assets/images/logo/fintego-new-white.svg"
+                         class="img img--white"
+                         alt="Luxoft | A leading IT company for cutting-edge software engineering and digital transformation services"
+                         style="width:110px" />
+                </a>
+            </div>
+            <div class="lux-menu">
+                <nav class="lux-menu__nav">
+                    <div class="lux-menu__line"></div>
+                    <ul>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Industries</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Industries
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/automotive">Automotive</a></li>
+                                    <li><a href="/industries/banking">Banking</a></li>
+                                    <li>
+                                        <a href="/industries/capital-markets">Capital Markets</a>
+                                    </li>
+                                    <li><a href="/industries/consumer-goods">Consumer Goods</a></li>
+                                    <li>
+                                        <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/healthcare">
+                                            Healthcare and Life Sciences
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/insurance">Insurance</a></li>
+                                    <li>
+                                        <a href="/industries/manufacturing">Manufacturing</a>
+                                    </li>
+                                    <li><a href="/industries/media">Media</a></li>
+                                    <li>
+                                        <a href="/industries/technology-networking">
+                                            Networking and Technology
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/oil">Oil and Gas</a></li>
+                                    <li>
+                                        <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/telecommunications">
+                                            Telecommunications
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/travel-and-hospitality">Travel and Hospitality</a></li>
+                                    <li>
+                                        <a href="/industries/transportation-and-logistics">
+                                            Transportation and Logistics
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Services</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/cloud-solutions">Cloud Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/data-to-insights">Data Analytics</a>
+                                    </li>
+                                    <li><a href="/services/design">Design</a></li>
+                                    <li>
+                                        <a href="/services/engineering-services">Engineering</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/front-end-development">Front-end Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/innovation-strategy">
+                                            Innovation Strategy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/intelligent-automation">
+                                            Intelligent Automation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/legacy-modernization">
+                                            Legacy Modernization
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/beyond">Luxoft Beyond</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/machine-learning">Machine Learning</a>
+                                    </li>
+                                    <li><a href="/services/qa-automation">QA Automation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="/case-studies">Case studies</a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Insights</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Insights
+                                        </a>
+                                    </li>
+                                    <li><a href="/insights">Insights and Resource Hub</a></li>
+                                    <li><a href="/insights/automotive">Automotive Insights</a></li>
+                                    <li><a href="/insights/financial-services">Financial Services Insights</a></li>
+                                    <li><a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a></li>
+                                    <li><a href="/insights/technology-and-engineering">Technology and Engineering Insights</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="https://career.fintego.com/">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">About us</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>About us
+                                        </a>
+                                    </li>
+                                    <li><a href="/about-us">About Luxoft</a></li>
+                                    <li><a href="/esg">Environmental, Social and Governance</a></li>
+                                    <li><a href="/event">Events</a></li>
+                                    <li><a href="/global-presence">Global Presence</a></li>
+                                    <li><a href="/pr">Newsroom</a></li>
+                                    <li><a href="/partners">Partnerships</a></li>
+                                    <li><a href="/ukraine-updates">Ukraine updates</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                                                <li class="firstLvl"><a href="/contact-form">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__new-menu">
+            <ul>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Industries</a>
+                    <div class="header__new-menu--sub-menu industry-expertise">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/automotive">Automotive</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/healthcare">
+                                    Healthcare and Life Sciences
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/oil">Oil and Gas</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/banking">Banking</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/insurance">Insurance</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/capital-markets">Capital Markets</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/manufacturing">Manufacturing</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/telecommunications">Telecommunications</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/consumer-goods">Consumer Goods</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/media">Media</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/technology-networking">
+                                    Networking and Technology
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/transportation-and-logistics">
+                                    Transportation and Logistics
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <div class="header__new-menu--sub-menu our-services">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/cloud-solutions">Cloud Solutions</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/engineering-services">Engineering</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/intelligent-automation">
+                                    Intelligent Automation
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/machine-learning">Machine Learning</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/data-to-insights">Data Analytics</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/front-end-development">Front-end Development</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/legacy-modernization">
+                                    Legacy Modernization
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/qa-automation">QA Automation</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/design">Design</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/innovation-strategy">
+                                    Innovation Strategy
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/beyond">Luxoft Beyond</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/case-studies" class="element">Case studies</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Insights</a>
+                    <div class="header__new-menu--sub-menu insights-menu">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/insights">Insights and Resource Hub</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/automotive">Automotive Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/financial-services">Financial Services Insights</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/technology-and-engineering">Technology and Engineering Insights</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://career.fintego.com/" class="element">Careers</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">About us</a>
+                    <div class="header__new-menu--sub-menu about-us">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/about-us">About Luxoft</a>
+                            </div>
+                            <div class="single">
+                                <a href="/esg">Environmental, Social and Governance</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/event">Events</a>
+                            </div>
+                            <div class="single">
+                                <a href="/pr">Newsroom</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/global-presence">Global Presence</a>
+                            </div>
+                            <div class="single">
+                                <a href="/partners">Partnerships</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/ukraine-updates">Ukraine updates</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="contact" href="/contact-form" aria-label="Contact us">
+                        <div class="contact--image"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+                <div class="header__contact">
+            <ul>
+                <li>
+                    <a href="#" class="search-btn" id="search-btn">
+                        <img src="/theme/fintego/assets/images/icons/search.svg"
+                             alt="search icon" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__contact--square" id="header--square"></div>
+    <div class="header__search-open">
+        <div class="header__search-open__panel">
+            <div class="header__search-open__top">
+                <div class="close" id="close-search">
+                    &times;
+                </div>
+            </div>
+            <div class="header__search-open__form">
+                <form id="global-search" method="GET" action="/search">
+                    <input id="input-search" type="text" name="q" placeholder="Search..." />
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+      <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","headline":"Machine learning with Microsoft Azure Monitoring machine learning models in production ","description":"Unlock the potential of MLOps on Microsoft Azure and learn to seamlessly upload, deploy and monitor machine learning models in a production environment. ","name":"Blog","url":"https:\/\/www.fintego.com\/blog\/master-mlops-with-azure-deploy-monitor-ml-models","inLanguage":"en","articleBody":"<p>{​{light_breadcrumbs(record)}​}<\/p>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<section class=\"blog-in-brief\">\r\n<p class=\"blog-in-brief__heading text-20 unscaled\">\r\n    In brief\r\n<\/p>\r\n<ul class=\"text-18 default-ul unscaled\"><li><b><\/b><b><\/b><b><\/b><span data-contrast=\"auto\"><\/span><span data-contrast=\"none\">This article describes the basics of machine learning operations (MLOps) and using these practices while handling machine learning (ML) models on the Azure cloud <\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559740\":276}\"=\"\"><\/span><\/li>\r\n    <li><b><\/b><b><\/b><span data-contrast=\"none\">Small fragments of the code are provided to share knowledge on uploading models onto the Azure workplace environment and deploying them in a cluster<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559740\":276}\"=\"\"><\/span><\/li><li><b><\/b><b><\/b><span data-contrast=\"none\">An example of the lane detection use case is used to describe the relevant workflow developed as a set of steps<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559740\":276}\"=\"\"><\/span><\/li>\r\n<\/ul>\r\n<\/section>\r\n<p>\r\n    &nbsp;&nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    Abstract   \r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div><p><span data-contrast=\"none\">This article outlines the architecture of the MLOps provided by Microsoft Azure and the separation of roles and responsibilities between a DevOps engineer and a data scientist. An example of a lane detection use case is provided to describe the relevant workflow developed as a set of steps.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n\r\n\r\n<\/div>\r\n<div>\r\n    \r\n<p>&nbsp;&nbsp;<\/p>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n    Introduction \r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div><div><p><span data-contrast=\"none\">In one of our projects, we worked with evaluating different versions of trained machine learning (ML) models and monitoring their performance in real time (production-like environment) using some of the most popular visualization tools. In our end-to-end workflow, we utilized the practices of MLflow on an Azure cloud environment. We share an overview of the working knowledge in this article split across two parts. About the basics of MLOps and using these practices while handling ML models on the Azure cloud. Small fragments of the code are provided to share knowledge on uploading models onto the Azure workplace environment and deploying them in a cluster.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">Once the models are put into production, monitoring the performance against new incoming data, and taking care of any drift in performance is equally important. In real time, looking into the generated scores onscreen and log files to make efficient decisions is quite tedious. However, some tools helped us monitor the health of our cluster and containerized applications with logs, metrics, and triggers on custom-built dashboards. These topics are studied using two popular open-source tools, Kibana and Grafana, and this subject forms part two of this article.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div><\/div>\r\n\r\n\r\n\r\n\r\n<\/div>\r\n<p>&nbsp;&nbsp;<\/p>\r\n<h2 class=\"text-24 unscaled\">Use case: Lane detection   <\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><div><p><span data-contrast=\"none\">The requirement in our project was to have a lane detection model on which we could research the principles of MLOps. A lane detection algorithm tries to identify the yellow and white lane markings on the road, thereby assisting the driver in steering, and in providing autonomous driving. For this task, firstly, we explored various open-source datasets such as Caltech, BDD100K, CULane, TuSimple Lane, KITTI. Of all the datasets explored, BDD100K has one of the largest driving datasets with annotations. It has image frames captured in variable weather conditions and is useful for a wide range of computer vision problems.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">As our project’s main goal wasn’t to develop a lane detection model as such, we started to look for open-source models that we could use in our research. From the models explored on the BDDK dataset, the <\/span><a href=\"https:\/\/github.com\/datvuthanh\/HybridNets\" target=\"_blank\">Hybridnets model<\/a><span data-contrast=\"none\"> developed by Dat Vu and others, was most suitable for our task in terms of performance. The Hybridnets model has multiple objectives such as traffic object detection, drivable area segmentation and lane line detection. The model output was modified to serve only lane line identification.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">Some of the metrics that were custom calculated were Intersection over Union (IoU) score, Accuracy, Precision, Recall and Inference time. The scores of these metrics were taken into consideration to evaluate the performance of the model.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div><\/div>\r\n<div><p>&nbsp;&nbsp;<\/p><\/div>\r\n<h2 class=\"text-24 unscaled\">MLOps    <\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><p><span data-contrast=\"none\">MLOps is a set of practices that aim to get the development of ML models faster into production. A MLOps cycle consists of various stages belonging to machine learning activities followed by operations from software engineering. For example, a MLOps cycle could include data preparation, feature engineering, model training and evaluation on the machine learning part while the packaging of model, deployment, and monitoring on the operations part. Therefore, it is usual to see data scientists and DevOps engineers working together in collaborative projects.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The advantage of using MLOps principles is that it facilitates continuous Integration (CI) of the development code, continuous delivery (CD) into production as well as continuous testing (CT). Unlike the stages in DevOps which involve only CI and CD, the CT stage is equally important in the MLOps lifecycle because the performance of the model also deteriorates over time.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Understanding-MLOps-vs-DevOps-IK.jpg\" id=\"23lwxbxoj956\" data-image=\"23lwxbxoj956\"><\/figure><p>&nbsp;<\/p><p>Understanding MLOps vs DevOps&nbsp;<span data-contrast=\"auto\"> <\/span><a href=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1b\/ML_Ops_Venn_Diagram.svg\/330px-ML_Ops_Venn_Diagram.svg.png\" target=\"_blank\"><span data-contrast=\"none\">[Image Source]<\/span><\/a><\/p><\/div>\r\n<p>&nbsp;<\/p>\r\n<h2 class=\"text-24 unscaled\">MLOps on Azure    <\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><p><span data-contrast=\"none\">The figure below depicts the architecture of the MLOps framework provided by Microsoft. It includes all three stages of continuous integration (CI), continuous delivery (CD) and continuous training (CT). These pipelines include the activities carried out by DevOps engineers and data scientists. For example, in a project the DevOps engineer could provision the workspace for machine learning tasks and help in model deployment and monitoring postproduction. Data scientists would carry out the tasks of feature engineering, model training and evaluation, etc.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Architecture-of-the-MLOps-framework-in-Azure-IK-1.jpg\" id=\"fite0udp53xb\" data-image=\"fite0udp53xb\"><\/figure><p>&nbsp;<\/p><\/div>\r\n<div><div><p><span data-contrast=\"auto\">Architecture of the MLOps framework in Azure [Image by Microsoft in <\/span><a href=\"https:\/\/learn.microsoft.com\/en-us\/azure\/architecture\/reference-architectures\/ai\/mlops-python\" target=\"_blank\"><span data-contrast=\"none\">Source<\/span><\/a><span data-contrast=\"auto\">]<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">To get started with ML on Azure, the first step would be to create a workspace. Azure machine learning workspace acts as a common umbrella where data and computing clusters can be accessed, models can be trained, metrics logged and much more. As per our project’s requirements, we worked on Azure workplace to infer performance from different versions (trained on different dimensions of data) of a pretrained model by running experiments. The model was deployed to Azure Kubernetes cluster (AKS). Below is the set of steps that detail the use of the principles of MLOps for efficient model deployment and evaluation.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><ol class=\"text-18 unscaled\"><li data-leveltext=\"%1.\" data-font=\"Calibri\" data-listid=\"1\" data-list-defn-props=\"{\" 335552541\":0,\"335559684\":-1,\"335559685\":720,\"335559991\":360,\"469769242\":[65533,0],\"469777803\":\"left\",\"469777804\":\"%1.\",\"469777815\":\"multilevel\"}\"=\"\" data-aria-posinset=\"1\" data-aria-level=\"1\"><span data-contrast=\"none\">Register data and model with AzureML workplace<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559685\":1170,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/li><\/ol><\/div>\r\n<div><p><span data-contrast=\"none\">The data in AzureML can be accessed from external cloud sources such as a data lake. In our experiments, the data and model were accessed locally with Azure command line interface (CLI). The Azure CLI along with Azure Python SDK helps in connecting the local artifacts with resources on the Azure cloud. A workspace on Azure is associated with a subscription ID, resource name and workspace name. These details are present in a config file that is made available immediately after workspace resource creation. The config file is then used by Azure CLI to establish a connection.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><pre>from azureml.core.model import Model \r\n \r\nmodel1 = Model.register(workspace = ws,    # Workspace credentials loaded from a config file \r\n                       model_path = model_dir + \"\/\" + \"lane_detection.onnx\", # Local model path \r\n                       model_name = \"Lane_detection_model_1\", \r\n                       tags = {\"Model1\": \"V1\"}, \r\n                       description = \"First model version\") <\/pre><p><span data-contrast=\"none\">Azure provides support for models of various formats to be registered such as Sklearn, Pytorch, Tensorflow, etc. ONNX is an intermediary representation of ML model formats which are favorable while working in a cloud environment <\/span><span data-contrast=\"none\">—<\/span><span data-contrast=\"none\"> the advantage being low response time and interoperability between different programming languages and frameworks. Official packages for converting Pytorch\/Tensorflow models to ONNX are available and can be created with a few lines of code. On AzureML workspace, the registered data and models (code to register above) can be viewed on their respective tabs on the left panel. The figure below gives a view of the registered models on the AzureML workspace. When models are retrained and registered again, the version number auto-increments.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Overview-of-deployed-models.jpg\" id=\"v2y6yte6lwln\" data-image=\"v2y6yte6lwln\"><\/figure><p>&nbsp;<\/p><div><p><span data-contrast=\"auto\">Overview of deployed models<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p class=\"text-18 unscaled\"><span data-contrast=\"none\">2. Package model and dependencies<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">Once a model is registered with the workspace, it can be packaged into a container for deployment. The model would then be exposed as a REST API endpoint and can interact with Json requests. The packaging of a model needs a model dependencies file and an entry script. The entry script, also known as scoring script, contains two functions init() and run(). The init method contains the code to initialize the model from the Azure directory where it was registered, while the run method could accept Json requests, make calls for pre-processing, models prediction, and does postprocessing such as metric calculation and sends back the response. Below are the code fragments for creating an inference configuration with the packaged dependencies and scoring file.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><div><pre>from azureml.core.conda_dependencies import CondaDependencies  \r\n \r\nmyenv = CondaDependencies.create(pip_packages=[\"numpy\",\"opencv-python-headless\", \r\n        \"onnxruntime\",\"azureml-core\", \"azureml-defaults\"]) \r\n \r\nwith open(\"myenv.yml\",\"w\") as f: \r\n    f.write(myenv.serialize_to_string()) \r\n\r\nfrom azureml.core.model import InferenceConfig \r\nfrom azureml.core.environment import Environment \r\n \r\n \r\nmyenv = Environment.from_conda_specification(name=\"myenv\", file_path=\"myenv.yml\") \r\ninference_config1 = InferenceConfig(entry_script=\"score1.py\", environment=myenv) <\/pre><\/div>\r\n<div><div><p><span data-contrast=\"none\">3. Deploy the model<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The contained model can be deployed either on an Azure container instance (ACI) or an Azure Kubernetes instance (AKS). The Azure ACI instance is ideal for small scale and lightweight container deployment for test or automation jobs. There’s no need to create a dedicated virtual machine cluster, and this also saves costs for resource utilization.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">However, when a dedicated environment is needed to deploy large containers, handle networking, autoscaling and manage their services, the AKS service should be the appropriate choice. The number of worker nodes where the service should be deployed would have to be specified and AKS service would take care of the orchestration. Here the charges incurred would be per worker node that is added to the cluster. The code fragment below shows how a service endpoint can be created using the registered model and inference configuration from the previous step.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><pre>from azureml.core.webservice import AksWebservice, Webservice \r\nfrom azureml.core.model import Model \r\nfrom azureml.core.compute import AksCompute \r\naks_target = AksCompute(ws,\"Lane-detection\") \r\ndeployment_config = AksWebservice.deploy_configuration(cpu_cores = 1, memory_gb = 1) \r\nservice1 = Model.deploy(ws, \"lane-detection-service-1\", [model1],  \r\n                        inference_config1, deployment_config, aks_target) \r\nservice1.wait_for_deployment(show_output = True) <\/pre><div><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Overview-of-containerized-services-deployed-in-an-Azure-Kubernetes-instance.jpg\" id=\"m6spuqlptgtu\" data-image=\"m6spuqlptgtu\"><\/figure><p>&nbsp;<\/p><p><b>Overview of containerized services deployed in an Azure Kubernetes instance<span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/b><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">When using either of the two services <\/span><span data-contrast=\"none\">—<\/span><span data-contrast=\"none\"> ACI or AKS <\/span><span data-contrast=\"none\">—<\/span><span data-contrast=\"none\"> the interaction is with a REST endpoint. It’s advisable to delete these services when they are not in use to avoid incurring additional charges.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">4. Make requests and log metrics<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The performance of the model can be inferred by sending requests to the deployed service endpoint. In the workspace, under the Jobs tab, the results of the experiments can be traced. The experiments carried out during the training phase would also be recorded in this section. A set of runs are grouped under a common experiment. An example of a run could be validating a model for a set of hyperparameters.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The tracking of metrics, logs, artifacts and hyperparameters is necessary during the model training as well as the validation phase. Tools such as MLflow help in managing the end-to-end lifecycle of the experiments.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><pre>import time \r\nexp_name = \"Lane_detection_prod\"  \r\nmlflow.set_experiment(exp_name) \r\ni=1 \r\nrun_name = 'First Model Run' \r\nwith mlflow.start_run(run_name=run_name): \r\n    for name in image_file_names: \r\n        print(\"Processing image:\",i,\"of\",len(image_file_names)) \r\n        test_image=cv2.imread(image_path+'\\\\'+name+'.jpg') \r\n        ground_truth_image=cv2.imread(labels_path+'\\\\'+name+'.png',cv2.IMREAD_GRAYSCALE) \r\n        test_data=json.dumps({'image':test_image.tolist(), \r\n                              'output':ground_truth_image.tolist()}) \r\n        response=service1.run(test_data) \r\n        seg_map=response['segmentation_map'] \r\n        seg_map=np.array(seg_map) \r\n        seg_map[seg_map==1]=0 \r\n        segmented_image=draw_seg_image(seg_map,test_image) \r\n        Iou=response['Iou'] \r\n        accuracy=response['Accuracy'] \r\n        precision=response['Precision'] \r\n        recall=response['Recall'] \r\n        inference_time=response['Inference_time'] \r\n        mlflow.log_metric(\"Iou\",Iou) \r\n        mlflow.log_metric(key=\"Accuracy\", value=accuracy) \r\n        mlflow.log_metric(key=\"Precison\", value=precision) \r\n        mlflow.log_metric(key=\"Recall\", value=recall) \r\n        mlflow.log_metric(key=\"Inference_time\", value=inference_time) \r\n        image_name=\"Output_image_\"+str(i)+\".png\" \r\n        print(image_name) \r\n        mlflow.log_image(segmented_image,image_name) \r\n        i+=1 \r\nmlflow.end_run() <\/pre><div><p><span data-contrast=\"none\">The run function in our scoring script receives a Json request containing the test image and its ground truth. With the available ground truth and the predicted segmentation map, some metrics are computed. In the code fragment above for creating a run, you notice the image being encoded into a Json request and sent to the deployed service as a parameter call. The computed segmentation map and metrics are received back in response. These are logged under a run ID using MLflow. It is also possible to log artifacts such as files\/images under the same run ID along with metrics.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The image below showcases an example of logged metrics and outputs under a single run.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Logging-metrics-in-a-single-run.jpg\" id=\"5jv97019eata\" data-image=\"5jv97019eata\"><\/figure><p>&nbsp;<\/p><div><p><b>Logging metrics in a single run<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">On the Jobs panel, it is possible to create and download charts to infer performance between the runs using the metrics logged with MLflow.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Overview-of-all-runs-in-an-experiment.jpg\" id=\"f8lucd68j30j\" data-image=\"f8lucd68j30j\"><\/figure><p>&nbsp;<\/p><p><b>Overview of all runs in an experiment<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div><\/div><\/div><\/div><\/div><p>&nbsp;<\/p><\/div><\/div><\/div>\r\n<h2 class=\"text-24 unscaled\">Monitoring application health    <\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><p><span data-contrast=\"none\">As mentioned in the introduction of this article we had two primary targets, the second of which was how to monitor the health of the project as it ran. This section delves into that very subject in more detail.&nbsp;<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">We deployed models into an Azure Kubernetes cluster and were able to extrapolate the performance of our models on the Jobs dashboard. The health of our Kubernetes cluster can be monitored on the Azure monitor available on the Azure portal in terms of CPU, memory loads, etc. However, the functionalities are suitable for small-scaled applications. As closely inferring our deployments in the cluster is important, we can take advantage of open-source tools available for this purpose. The two most popular tools for monitoring logs and metrics are Kibana and Grafana. With these tools, it is possible to have some ready-to-use metrics along with custom-calculated ones on a nice interactive dashboard.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">In our project we used these tools to monitor the logs and metrics of our three differently trained models. The subsections below describe the functionalities of each of them.&nbsp;<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<p>&nbsp;<\/p>\r\n<h2 class=\"text-24 unscaled\">Grafana    <\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><div><p><span data-contrast=\"none\">Grafana is a web-based visualization tool that helps monitor metrics on a custom-built dashboard. Grafana supports various data sources to receive data, such as PostgreSQL, Influx dB, Prometheus, etc. A developer working on these tools might need the knowledge of writing queries in a language supported by these data sources. For metric visualization, Grafana supports commonly used chart types such as bar, line, heatmap, pie, etc.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">In our lane detection project, we used Prometheus and PostgreSQL data sources in two different combinations. Prometheus is a software application that scrapes metrics at regular intervals from each of the worker nodes in the Kubernetes cluster. It works based on a HTTP pull model and then stores data in its local time-series database. To setup a combination of Grafana and Prometheus, we created a namespace in the cluster and used helm charts to install Grafana and Prometheus. Grafana could then be interacted in our local browser by port-forwarding the Prometheus-Grafana service. Use the link in the references for installation.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">With the help of this setup, we could monitor the health of our Kubernetes cluster. All our deployments, pods and services running inside the cluster could be visualized. These include resource metrics such as CPU utilization, memory, and disk utilization, etc., as well as system metrics in the form of Request throughput, Error rate, Request latency, etc. The figure below illustrates this. These metrics are computed by Prometheus and can be picked from “Dashboards -&gt; Kubernetes -&gt; Compute Resources”.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-System-metrics-on-Grafana.jpg\" id=\"8eaqw2rwpi2s\" data-image=\"8eaqw2rwpi2s\"><\/figure><p>&nbsp;<\/p><div><p><b>System metrics on Grafana<span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/b><\/p><\/div>\r\n\r\n<div><p><span data-contrast=\"none\">The performance of our lane detection model couldn’t be captured by Prometheus as it had no clue about our Python application running inside the pods. To make it possible with Prometheus, our metrics had to be manually sent to the Prometheus server. This requires instrumentation to the code with the help of the Prometheus-client to implement understandable Prometheus metric types. For this task we used an alternative approach by designing a custom metric exporter for Azure and using a PostgreSQL database. Our metric exporter service uses a service principle to connect with Azure ML-workspace and extract the MLflow metrics that were previously created. The exporter service pings the Azure resource within a small time interval and sends the data to a PostgreSQL database. The exporter and database services were wrapped in two different docker containers and the architecture used is illustrated below.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Architecture-overview-for-visualizing-custom-metrics-on-Grafana.jpg\" id=\"3mu1bz127a5p\" data-image=\"3mu1bz127a5p\"><\/figure><p>&nbsp;<\/p><div><p><b>Architecture overview for visualizing custom metrics on Grafana<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n\r\n<div><p><span data-contrast=\"none\">We had the docker containers running locally, but for a production like environment, we can have these containers running on the cluster, i.e., an Azure Kubernetes cluster. On setting up the PostgreSQL as data source on Grafana, we were then able to visualize the same metrics on Azure ML workspace but here on Grafana with more interactions.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Visualizing-custom-machine-learning-metrics-on-Grafana.jpg\" id=\"6njlq82f3i15\" data-image=\"6njlq82f3i15\"><\/figure><p>&nbsp;<\/p><p><b><span data-contrast=\"auto\">Visualizing custom machine learning metrics on Grafana<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/b><\/p><\/div><\/div><\/div><\/div>\r\n<p><b>&nbsp; &nbsp;<\/b><\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    Kibana \r\n<\/h2>\r\n<p>&nbsp;<\/p>\r\n<p><span data-contrast=\"none\">Kibana is a visualization tool for monitoring logs and metrics. It is a part of the ELK stack (Elastic-Logstash-Kibana) owned by Elastic NV. To install Kibana on a Kubernetes cluster, the entire ELK stack has to be set up. The Elastic search database, unlike Grafana, is the only data source that Kibana supports. On the other hand, Elastic search can also be used as a data source for Grafana. Therefore, for Kibana, all logs must be first shipped to an Elasticsearch database before creating any visualization. When the data gets stored in Elastic search, it can be searched, indexed and queried. The language used by Kibana for querying is called Kibana Query Language (KQL). The ELK stack architecture is illustrated below.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p>\r\n<p>&nbsp;<\/p>\r\n<figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Architecture-of-ELK-stack-IK.jpg\" id=\"uwm893alhokm\" data-image=\"uwm893alhokm\"><\/figure>\r\n<p>&nbsp;<\/p>\r\n<div><p><b>Architecture of ELK stack (Source: <\/b><a href=\"https:\/\/www.guru99.com\/elk-stack-tutorial.html\" target=\"_blank\"><b>guru99<\/b><\/a><b>)<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><b><\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">Filebeat, represented by beats in the architecture above, collects the logs from all the nodes in the cluster and is responsible for sending it to Elasticsearch. These logs can be modified, altered, or parsed by using Logstash which is responsible for transforming and editing in the form of pipeline operations. In our project we used Logstash to make Elasticsearch understand and store our custom metric type and value.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">Once the metrics were calculated, we first ingested the metric type and value to logs in the run function of the scoring script. Later we used grok patterns (see references for more) to map the metric type and metric scores present in the logs into new fields for elastic search. The grok filter was added to our <\/span><i>values.yaml<\/i><span data-contrast=\"none\"> file of Logstash (code snippet below). The transformed output was received by Elasticsearch.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><pre>logstashPipeline: \r\n  logstash.conf: | \r\n    input { \r\n      beats { \r\n        port =&gt; 5044 \r\n      } \r\n    } \r\n    filter { \r\n      grok { \r\n        match =&gt; { \"message\" =&gt; \"%{WORD:metrictype} : %{NUMBER:metricscores:float} } \r\n      } \r\n    } \r\n    output { elasticsearch { hosts =&gt; \"http:\/\/elasticsearch-master:9200\" } } <\/pre><\/div>\r\n<p><span data-contrast=\"none\">With this setup, Kibana dashboards could now be created for live visualization of metrics and other logs. To get started with Kibana, first create an index management by reaching “Stack Management -&gt; Index Patterns -&gt; Create index” page and specify the source as “logstash-*”\/ “filebeat-*”. The live streaming logs can now be observed in “Analytics -&gt; Discover” page. To create a dashboard, follow the illustration below.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p>\r\n<p>&nbsp;<\/p>\r\n<figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Step-1-Reach-the-Create-dashboard-link-using-the-Analytics-panel-on-the-left.jpg\" id=\"nggb0vz8r1gf\" data-image=\"nggb0vz8r1gf\"><\/figure>\r\n<p>&nbsp;<\/p>\r\n<p><b>Step 1 <\/b><span data-contrast=\"none\">—<\/span><b> Reach the Create dashboard link using the Analytics panel on the left<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p>\r\n<p>&nbsp;<\/p>\r\n<figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Step-2-Selecting-different-elements-of-a-chart.jpg\" id=\"t0hy55rlroeq\" data-image=\"t0hy55rlroeq\"><\/figure>\r\n<p>&nbsp;<\/p>\r\n<div><p><b>Step 2 <\/b><span data-contrast=\"none\">— <\/span><b>Selecting different elements of a chart<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><b><\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">The “metric type” and “metric score” fields created with Logstash were now reachable from the filters panel shown in Step 2. Our metrics dashboard developed in Kibana is as shown below. The MLflow metrics that were seen on the Azure dashboard could now be observed on Kibana. A dashboard of logs created using the filters and chart elements is also illustrated below.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Dashboard-of-metric-comparison-of-different-deployed-models.jpg\" id=\"wc9pqfvvjphq\" data-image=\"wc9pqfvvjphq\"><\/figure><p>&nbsp;<\/p><p><b>Dashboard of metric comparison of different deployed models<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><p>&nbsp;<\/p><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/10\/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production\/02\/Fig-Dashboard-of-streaming-performance-logs-in-Kibana.jpg\" id=\"4nid9ti3p069\" data-image=\"4nid9ti3p069\"><\/figure><p>&nbsp;<\/p><div><p><b>Dashboard of streaming performance logs in Kibana<\/b><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<div><p><span data-contrast=\"none\">In a nutshell, both Kibana and Grafana are powerful tools for visualization. Grafana is more suitable for visualizing metrics while Kibana is for the logs, although both tools can be used for both purposes. The creation of alerts and user management is also supported in both. As Kibana has Elasticsearch as its only data source, the choice can be shifted over to Grafana if the data source is of importance. With respect to cluster deployments, in our experience it was easier while working on Kibana than Grafana. Kibana also offers a wide range of chart types with simple edits and query functionalities.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div><\/div>\r\n<p>&nbsp;<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n Conclusion     \r\n<\/h2>\r\n<p>&nbsp;<\/p>\r\n<div><div><p><span data-contrast=\"none\">This article outlined the architecture of the MLOps provided by Microsoft Azure and the separation of roles and responsibilities between a DevOps engineer and a data scientist. Utilizing the use case of lane detection, the workflow for registering models with Azure cloud and deploying them to a cluster after containerization was described as a set of steps. We introduced two popular open-source tools for the monitoring of machine learning deployments. The architecture of these frameworks was outlined. Based on the project requirements and database technology, the choice of tools can be made.<\/span><span data-ccp-props=\"{\" 201341983\":0,\"335559739\":120,\"335559740\":276}\"=\"\">&nbsp;<\/span><\/p><\/div>\r\n<\/div>\r\n<p>&nbsp;&nbsp;<\/p>\r\n<section class=\"cta-banner-section\"><div class=\"row\"><div class=\"col-12 col-md-6\"><div class=\"cta-banner-section__content\"><div class=\"tag\"><p class=\"text-14 unscaled\">Advanced Analytics<\/p><\/div><a href=\"https:\/\/www.fintego.com\/insights\/financial-services\/advanced-analytics\" class=\"stretched-link\"><p class=\"cta-banner-text text-22 unscaled\">Discover more insights to help you unlock the value of your data \r\n\r\n<\/p><\/a><div class=\"btn btn-text btn-icon focus\"><div class=\"text-container\"><div class=\"text\">Read more<\/div><div class=\"arr-offering\"><i class=\"arr-small one\"><\/i><i class=\"arr-small two\"><\/i><i class=\"arr-small three\"><\/i><\/div><\/div><\/div><\/div><\/div><div class=\"col-12 col-md-6 d-none d-md-block\"><div class=\"cta-banner-section__image\"><figure><img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/cta-banners\/Advanced-analytics.jpg\" alt=\"cta banner\"><\/figure><\/div><\/div><\/div><\/section>\r\n<p>\r\n    &nbsp;\r\n<\/p>","image":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/files\/blog\/2023\/10\/433541-FS-GEMS-blog-5-Machine-Learning-with-Microsoft-Azure-KV4-jpg-1.jpg","width":960,"height":960},"publisher":{"@type":"Organization","url":"https:\/\/www.fintego.com\/","name":"Luxoft","logo":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/theme\/luxoft\/assets\/images\/logo\/fintego-new-white.svg","width":"188","height":"50"}},"author":[{"@type":"Person","name":"Arthur Shaikhatarov","image":"https:\/\/www.fintego.com\/files\/people\/2023\/09\/Arthur-Shaikhatarov.jpg","url":"https:\/\/www.linkedin.com\/in\/arthur-shaikhatarov-1b358b211\/","jobTitle":"AI\/ML Project Manager, Automotive, Luxoft"},{"@type":"Person","name":"Suraj Manjunatha","image":"https:\/\/www.fintego.com\/files\/people\/2023\/10\/Suraj-1.jpg","url":"https:\/\/www.linkedin.com\/in\/suraj-manjunatha-727b3592\/","jobTitle":"Data scientist and ML engineer"}],"datePublished":"2023-10-06T11:51:33+00:00","dateModified":"2024-01-08T13:57:27+00:00"}</script>
+    <section class="blog-post-right-column blog-post-right-column__banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-7 offset-lg-1">
+                <h1>Machine learning with Microsoft Azure Monitoring machine learning models in production </h1>
+                <p>Oct 6, 2023
+                                             by  <b>Arthur Shaikhatarov</b>,                                             <b>Suraj Manjunatha</b>                                    </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 pl-70">
+                <div class="blog-post-right-column__banner--social">
+                    <ul>
+                        <li>
+                            <a href="#" class="social-share" data-network="linkedin">
+                                <img src="/theme/fintego/assets/images/icons/linkedin.svg" alt="linkedin icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-share" data-network="fb">
+                                <img src="/theme/fintego/assets/images/icons/fb-square.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-share" data-network="twitter">
+                                <img src="/theme/fintego/assets/images/logo-tw.svg" alt="twitter icon">
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container blog-post-right-column blog-post-right-column__content" id="main-content">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-7 offset-lg-1 text-content">
+        <p><section class="container-breadcrumbs--light"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/"><span>Home</span></a></li><li class="breadcrumb-item"><a href="/blog"><span>Blog</span></a></li><li class="breadcrumb-item active"><span>Machine learning with Microsoft Azure Monitoring machine learning models in production </span></li></ol></section></p>
+<p>
+    &nbsp;
+</p>
+<section class="blog-in-brief">
+<p class="blog-in-brief__heading text-20 unscaled">
+    In brief
+</p>
+<ul class="text-18 default-ul unscaled"><li><b></b><b></b><b></b><span data-contrast="auto"></span><span data-contrast="none">This article describes the basics of machine learning operations (MLOps) and using these practices while handling machine learning (ML) models on the Azure cloud </span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span><span data-ccp-props="{" 201341983":0,"335559740":276}"=""></span></li>
+    <li><b></b><b></b><span data-contrast="none">Small fragments of the code are provided to share knowledge on uploading models onto the Azure workplace environment and deploying them in a cluster</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span><span data-ccp-props="{" 201341983":0,"335559740":276}"=""></span></li><li><b></b><b></b><span data-contrast="none">An example of the lane detection use case is used to describe the relevant workflow developed as a set of steps</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span><span data-ccp-props="{" 201341983":0,"335559740":276}"=""></span></li>
+</ul>
+</section>
+<p>
+    &nbsp;&nbsp;
+</p>
+<h2 class="text-24 unscaled">
+    Abstract   
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div><p><span data-contrast="none">This article outlines the architecture of the MLOps provided by Microsoft Azure and the separation of roles and responsibilities between a DevOps engineer and a data scientist. An example of a lane detection use case is provided to describe the relevant workflow developed as a set of steps.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+</div>
+<div>
+<p>&nbsp;&nbsp;</p>
+</div>
+<h2 class="text-24 unscaled">
+    Introduction 
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div><div><p><span data-contrast="none">In one of our projects, we worked with evaluating different versions of trained machine learning (ML) models and monitoring their performance in real time (production-like environment) using some of the most popular visualization tools. In our end-to-end workflow, we utilized the practices of MLflow on an Azure cloud environment. We share an overview of the working knowledge in this article split across two parts. About the basics of MLOps and using these practices while handling ML models on the Azure cloud. Small fragments of the code are provided to share knowledge on uploading models onto the Azure workplace environment and deploying them in a cluster.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">Once the models are put into production, monitoring the performance against new incoming data, and taking care of any drift in performance is equally important. In real time, looking into the generated scores onscreen and log files to make efficient decisions is quite tedious. However, some tools helped us monitor the health of our cluster and containerized applications with logs, metrics, and triggers on custom-built dashboards. These topics are studied using two popular open-source tools, Kibana and Grafana, and this subject forms part two of this article.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div></div>
+</div>
+<p>&nbsp;&nbsp;</p>
+<h2 class="text-24 unscaled">Use case: Lane detection   </h2>
+<p>&nbsp;</p>
+<div><div><p><span data-contrast="none">The requirement in our project was to have a lane detection model on which we could research the principles of MLOps. A lane detection algorithm tries to identify the yellow and white lane markings on the road, thereby assisting the driver in steering, and in providing autonomous driving. For this task, firstly, we explored various open-source datasets such as Caltech, BDD100K, CULane, TuSimple Lane, KITTI. Of all the datasets explored, BDD100K has one of the largest driving datasets with annotations. It has image frames captured in variable weather conditions and is useful for a wide range of computer vision problems.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">As our project’s main goal wasn’t to develop a lane detection model as such, we started to look for open-source models that we could use in our research. From the models explored on the BDDK dataset, the </span><a href="https://github.com/datvuthanh/HybridNets" target="_blank">Hybridnets model</a><span data-contrast="none"> developed by Dat Vu and others, was most suitable for our task in terms of performance. The Hybridnets model has multiple objectives such as traffic object detection, drivable area segmentation and lane line detection. The model output was modified to serve only lane line identification.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">Some of the metrics that were custom calculated were Intersection over Union (IoU) score, Accuracy, Precision, Recall and Inference time. The scores of these metrics were taken into consideration to evaluate the performance of the model.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div></div>
+<div><p>&nbsp;&nbsp;</p></div>
+<h2 class="text-24 unscaled">MLOps    </h2>
+<p>&nbsp;</p>
+<div><p><span data-contrast="none">MLOps is a set of practices that aim to get the development of ML models faster into production. A MLOps cycle consists of various stages belonging to machine learning activities followed by operations from software engineering. For example, a MLOps cycle could include data preparation, feature engineering, model training and evaluation on the machine learning part while the packaging of model, deployment, and monitoring on the operations part. Therefore, it is usual to see data scientists and DevOps engineers working together in collaborative projects.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The advantage of using MLOps principles is that it facilitates continuous Integration (CI) of the development code, continuous delivery (CD) into production as well as continuous testing (CT). Unlike the stages in DevOps which involve only CI and CD, the CT stage is equally important in the MLOps lifecycle because the performance of the model also deteriorates over time.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Understanding-MLOps-vs-DevOps-IK.jpg" id="23lwxbxoj956" data-image="23lwxbxoj956"></figure><p>&nbsp;</p><p>Understanding MLOps vs DevOps&nbsp;<span data-contrast="auto"> </span><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ML_Ops_Venn_Diagram.svg/330px-ML_Ops_Venn_Diagram.svg.png" target="_blank"><span data-contrast="none">[Image Source]</span></a></p></div>
+<p>&nbsp;</p>
+<h2 class="text-24 unscaled">MLOps on Azure    </h2>
+<p>&nbsp;</p>
+<div><p><span data-contrast="none">The figure below depicts the architecture of the MLOps framework provided by Microsoft. It includes all three stages of continuous integration (CI), continuous delivery (CD) and continuous training (CT). These pipelines include the activities carried out by DevOps engineers and data scientists. For example, in a project the DevOps engineer could provision the workspace for machine learning tasks and help in model deployment and monitoring postproduction. Data scientists would carry out the tasks of feature engineering, model training and evaluation, etc.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Architecture-of-the-MLOps-framework-in-Azure-IK-1.jpg" id="fite0udp53xb" data-image="fite0udp53xb"></figure><p>&nbsp;</p></div>
+<div><div><p><span data-contrast="auto">Architecture of the MLOps framework in Azure [Image by Microsoft in </span><a href="https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ai/mlops-python" target="_blank"><span data-contrast="none">Source</span></a><span data-contrast="auto">]</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">To get started with ML on Azure, the first step would be to create a workspace. Azure machine learning workspace acts as a common umbrella where data and computing clusters can be accessed, models can be trained, metrics logged and much more. As per our project’s requirements, we worked on Azure workplace to infer performance from different versions (trained on different dimensions of data) of a pretrained model by running experiments. The model was deployed to Azure Kubernetes cluster (AKS). Below is the set of steps that detail the use of the principles of MLOps for efficient model deployment and evaluation.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><ol class="text-18 unscaled"><li data-leveltext="%1." data-font="Calibri" data-listid="1" data-list-defn-props="{" 335552541":0,"335559684":-1,"335559685":720,"335559991":360,"469769242":[65533,0],"469777803":"left","469777804":"%1.","469777815":"multilevel"}"="" data-aria-posinset="1" data-aria-level="1"><span data-contrast="none">Register data and model with AzureML workplace</span><span data-ccp-props="{" 201341983":0,"335559685":1170,"335559739":120,"335559740":276}"="">&nbsp;</span></li></ol></div>
+<div><p><span data-contrast="none">The data in AzureML can be accessed from external cloud sources such as a data lake. In our experiments, the data and model were accessed locally with Azure command line interface (CLI). The Azure CLI along with Azure Python SDK helps in connecting the local artifacts with resources on the Azure cloud. A workspace on Azure is associated with a subscription ID, resource name and workspace name. These details are present in a config file that is made available immediately after workspace resource creation. The config file is then used by Azure CLI to establish a connection.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><pre>from azureml.core.model import Model 
+model1 = Model.register(workspace = ws,    # Workspace credentials loaded from a config file 
+                       model_path = model_dir + "/" + "lane_detection.onnx", # Local model path 
+                       model_name = "Lane_detection_model_1", 
+                       tags = {"Model1": "V1"}, 
+                       description = "First model version") </pre><p><span data-contrast="none">Azure provides support for models of various formats to be registered such as Sklearn, Pytorch, Tensorflow, etc. ONNX is an intermediary representation of ML model formats which are favorable while working in a cloud environment </span><span data-contrast="none">—</span><span data-contrast="none"> the advantage being low response time and interoperability between different programming languages and frameworks. Official packages for converting Pytorch/Tensorflow models to ONNX are available and can be created with a few lines of code. On AzureML workspace, the registered data and models (code to register above) can be viewed on their respective tabs on the left panel. The figure below gives a view of the registered models on the AzureML workspace. When models are retrained and registered again, the version number auto-increments.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Overview-of-deployed-models.jpg" id="v2y6yte6lwln" data-image="v2y6yte6lwln"></figure><p>&nbsp;</p><div><p><span data-contrast="auto">Overview of deployed models</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p class="text-18 unscaled"><span data-contrast="none">2. Package model and dependencies</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">Once a model is registered with the workspace, it can be packaged into a container for deployment. The model would then be exposed as a REST API endpoint and can interact with Json requests. The packaging of a model needs a model dependencies file and an entry script. The entry script, also known as scoring script, contains two functions init() and run(). The init method contains the code to initialize the model from the Azure directory where it was registered, while the run method could accept Json requests, make calls for pre-processing, models prediction, and does postprocessing such as metric calculation and sends back the response. Below are the code fragments for creating an inference configuration with the packaged dependencies and scoring file.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><div><pre>from azureml.core.conda_dependencies import CondaDependencies  
+myenv = CondaDependencies.create(pip_packages=["numpy","opencv-python-headless", 
+        "onnxruntime","azureml-core", "azureml-defaults"]) 
+with open("myenv.yml","w") as f: 
+    f.write(myenv.serialize_to_string()) 
+from azureml.core.model import InferenceConfig 
+from azureml.core.environment import Environment 
+myenv = Environment.from_conda_specification(name="myenv", file_path="myenv.yml") 
+inference_config1 = InferenceConfig(entry_script="score1.py", environment=myenv) </pre></div>
+<div><div><p><span data-contrast="none">3. Deploy the model</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The contained model can be deployed either on an Azure container instance (ACI) or an Azure Kubernetes instance (AKS). The Azure ACI instance is ideal for small scale and lightweight container deployment for test or automation jobs. There’s no need to create a dedicated virtual machine cluster, and this also saves costs for resource utilization.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">However, when a dedicated environment is needed to deploy large containers, handle networking, autoscaling and manage their services, the AKS service should be the appropriate choice. The number of worker nodes where the service should be deployed would have to be specified and AKS service would take care of the orchestration. Here the charges incurred would be per worker node that is added to the cluster. The code fragment below shows how a service endpoint can be created using the registered model and inference configuration from the previous step.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><pre>from azureml.core.webservice import AksWebservice, Webservice 
+from azureml.core.model import Model 
+from azureml.core.compute import AksCompute 
+aks_target = AksCompute(ws,"Lane-detection") 
+deployment_config = AksWebservice.deploy_configuration(cpu_cores = 1, memory_gb = 1) 
+service1 = Model.deploy(ws, "lane-detection-service-1", [model1],  
+                        inference_config1, deployment_config, aks_target) 
+service1.wait_for_deployment(show_output = True) </pre><div><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Overview-of-containerized-services-deployed-in-an-Azure-Kubernetes-instance.jpg" id="m6spuqlptgtu" data-image="m6spuqlptgtu"></figure><p>&nbsp;</p><p><b>Overview of containerized services deployed in an Azure Kubernetes instance<span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></b></p></div>
+<div><p><span data-contrast="none">When using either of the two services </span><span data-contrast="none">—</span><span data-contrast="none"> ACI or AKS </span><span data-contrast="none">—</span><span data-contrast="none"> the interaction is with a REST endpoint. It’s advisable to delete these services when they are not in use to avoid incurring additional charges.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">4. Make requests and log metrics</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The performance of the model can be inferred by sending requests to the deployed service endpoint. In the workspace, under the Jobs tab, the results of the experiments can be traced. The experiments carried out during the training phase would also be recorded in this section. A set of runs are grouped under a common experiment. An example of a run could be validating a model for a set of hyperparameters.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The tracking of metrics, logs, artifacts and hyperparameters is necessary during the model training as well as the validation phase. Tools such as MLflow help in managing the end-to-end lifecycle of the experiments.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><pre>import time 
+exp_name = "Lane_detection_prod"  
+mlflow.set_experiment(exp_name) 
+i=1 
+run_name = 'First Model Run' 
+with mlflow.start_run(run_name=run_name): 
+    for name in image_file_names: 
+        print("Processing image:",i,"of",len(image_file_names)) 
+        test_image=cv2.imread(image_path+'\\'+name+'.jpg') 
+        ground_truth_image=cv2.imread(labels_path+'\\'+name+'.png',cv2.IMREAD_GRAYSCALE) 
+        test_data=json.dumps({'image':test_image.tolist(), 
+                              'output':ground_truth_image.tolist()}) 
+        response=service1.run(test_data) 
+        seg_map=response['segmentation_map'] 
+        seg_map=np.array(seg_map) 
+        seg_map[seg_map==1]=0 
+        segmented_image=draw_seg_image(seg_map,test_image) 
+        Iou=response['Iou'] 
+        accuracy=response['Accuracy'] 
+        precision=response['Precision'] 
+        recall=response['Recall'] 
+        inference_time=response['Inference_time'] 
+        mlflow.log_metric("Iou",Iou) 
+        mlflow.log_metric(key="Accuracy", value=accuracy) 
+        mlflow.log_metric(key="Precison", value=precision) 
+        mlflow.log_metric(key="Recall", value=recall) 
+        mlflow.log_metric(key="Inference_time", value=inference_time) 
+        image_name="Output_image_"+str(i)+".png" 
+        print(image_name) 
+        mlflow.log_image(segmented_image,image_name) 
+        i+=1 
+mlflow.end_run() </pre><div><p><span data-contrast="none">The run function in our scoring script receives a Json request containing the test image and its ground truth. With the available ground truth and the predicted segmentation map, some metrics are computed. In the code fragment above for creating a run, you notice the image being encoded into a Json request and sent to the deployed service as a parameter call. The computed segmentation map and metrics are received back in response. These are logged under a run ID using MLflow. It is also possible to log artifacts such as files/images under the same run ID along with metrics.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The image below showcases an example of logged metrics and outputs under a single run.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Logging-metrics-in-a-single-run.jpg" id="5jv97019eata" data-image="5jv97019eata"></figure><p>&nbsp;</p><div><p><b>Logging metrics in a single run</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">On the Jobs panel, it is possible to create and download charts to infer performance between the runs using the metrics logged with MLflow.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Overview-of-all-runs-in-an-experiment.jpg" id="f8lucd68j30j" data-image="f8lucd68j30j"></figure><p>&nbsp;</p><p><b>Overview of all runs in an experiment</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div></div></div></div></div><p>&nbsp;</p></div></div></div>
+<h2 class="text-24 unscaled">Monitoring application health    </h2>
+<p>&nbsp;</p>
+<div><p><span data-contrast="none">As mentioned in the introduction of this article we had two primary targets, the second of which was how to monitor the health of the project as it ran. This section delves into that very subject in more detail.&nbsp;</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">We deployed models into an Azure Kubernetes cluster and were able to extrapolate the performance of our models on the Jobs dashboard. The health of our Kubernetes cluster can be monitored on the Azure monitor available on the Azure portal in terms of CPU, memory loads, etc. However, the functionalities are suitable for small-scaled applications. As closely inferring our deployments in the cluster is important, we can take advantage of open-source tools available for this purpose. The two most popular tools for monitoring logs and metrics are Kibana and Grafana. With these tools, it is possible to have some ready-to-use metrics along with custom-calculated ones on a nice interactive dashboard.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">In our project we used these tools to monitor the logs and metrics of our three differently trained models. The subsections below describe the functionalities of each of them.&nbsp;</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<p>&nbsp;</p>
+<h2 class="text-24 unscaled">Grafana    </h2>
+<p>&nbsp;</p>
+<div><div><p><span data-contrast="none">Grafana is a web-based visualization tool that helps monitor metrics on a custom-built dashboard. Grafana supports various data sources to receive data, such as PostgreSQL, Influx dB, Prometheus, etc. A developer working on these tools might need the knowledge of writing queries in a language supported by these data sources. For metric visualization, Grafana supports commonly used chart types such as bar, line, heatmap, pie, etc.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">In our lane detection project, we used Prometheus and PostgreSQL data sources in two different combinations. Prometheus is a software application that scrapes metrics at regular intervals from each of the worker nodes in the Kubernetes cluster. It works based on a HTTP pull model and then stores data in its local time-series database. To setup a combination of Grafana and Prometheus, we created a namespace in the cluster and used helm charts to install Grafana and Prometheus. Grafana could then be interacted in our local browser by port-forwarding the Prometheus-Grafana service. Use the link in the references for installation.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">With the help of this setup, we could monitor the health of our Kubernetes cluster. All our deployments, pods and services running inside the cluster could be visualized. These include resource metrics such as CPU utilization, memory, and disk utilization, etc., as well as system metrics in the form of Request throughput, Error rate, Request latency, etc. The figure below illustrates this. These metrics are computed by Prometheus and can be picked from “Dashboards -&gt; Kubernetes -&gt; Compute Resources”.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-System-metrics-on-Grafana.jpg" id="8eaqw2rwpi2s" data-image="8eaqw2rwpi2s"></figure><p>&nbsp;</p><div><p><b>System metrics on Grafana<span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></b></p></div>
+<div><p><span data-contrast="none">The performance of our lane detection model couldn’t be captured by Prometheus as it had no clue about our Python application running inside the pods. To make it possible with Prometheus, our metrics had to be manually sent to the Prometheus server. This requires instrumentation to the code with the help of the Prometheus-client to implement understandable Prometheus metric types. For this task we used an alternative approach by designing a custom metric exporter for Azure and using a PostgreSQL database. Our metric exporter service uses a service principle to connect with Azure ML-workspace and extract the MLflow metrics that were previously created. The exporter service pings the Azure resource within a small time interval and sends the data to a PostgreSQL database. The exporter and database services were wrapped in two different docker containers and the architecture used is illustrated below.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Architecture-overview-for-visualizing-custom-metrics-on-Grafana.jpg" id="3mu1bz127a5p" data-image="3mu1bz127a5p"></figure><p>&nbsp;</p><div><p><b>Architecture overview for visualizing custom metrics on Grafana</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">We had the docker containers running locally, but for a production like environment, we can have these containers running on the cluster, i.e., an Azure Kubernetes cluster. On setting up the PostgreSQL as data source on Grafana, we were then able to visualize the same metrics on Azure ML workspace but here on Grafana with more interactions.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Visualizing-custom-machine-learning-metrics-on-Grafana.jpg" id="6njlq82f3i15" data-image="6njlq82f3i15"></figure><p>&nbsp;</p><p><b><span data-contrast="auto">Visualizing custom machine learning metrics on Grafana</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></b></p></div></div></div></div>
+<p><b>&nbsp; &nbsp;</b></p>
+<h2 class="text-24 unscaled">
+    Kibana 
+</h2>
+<p>&nbsp;</p>
+<p><span data-contrast="none">Kibana is a visualization tool for monitoring logs and metrics. It is a part of the ELK stack (Elastic-Logstash-Kibana) owned by Elastic NV. To install Kibana on a Kubernetes cluster, the entire ELK stack has to be set up. The Elastic search database, unlike Grafana, is the only data source that Kibana supports. On the other hand, Elastic search can also be used as a data source for Grafana. Therefore, for Kibana, all logs must be first shipped to an Elasticsearch database before creating any visualization. When the data gets stored in Elastic search, it can be searched, indexed and queried. The language used by Kibana for querying is called Kibana Query Language (KQL). The ELK stack architecture is illustrated below.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p>
+<p>&nbsp;</p>
+<figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Architecture-of-ELK-stack-IK.jpg" id="uwm893alhokm" data-image="uwm893alhokm"></figure>
+<p>&nbsp;</p>
+<div><p><b>Architecture of ELK stack (Source: </b><a href="https://www.guru99.com/elk-stack-tutorial.html" target="_blank"><b>guru99</b></a><b>)</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><b></b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">Filebeat, represented by beats in the architecture above, collects the logs from all the nodes in the cluster and is responsible for sending it to Elasticsearch. These logs can be modified, altered, or parsed by using Logstash which is responsible for transforming and editing in the form of pipeline operations. In our project we used Logstash to make Elasticsearch understand and store our custom metric type and value.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">Once the metrics were calculated, we first ingested the metric type and value to logs in the run function of the scoring script. Later we used grok patterns (see references for more) to map the metric type and metric scores present in the logs into new fields for elastic search. The grok filter was added to our </span><i>values.yaml</i><span data-contrast="none"> file of Logstash (code snippet below). The transformed output was received by Elasticsearch.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><pre>logstashPipeline: 
+  logstash.conf: | 
+    input { 
+      beats { 
+        port =&gt; 5044 
+      } 
+    } 
+    filter { 
+      grok { 
+        match =&gt; { "message" =&gt; "%{WORD:metrictype} : %{NUMBER:metricscores:float} } 
+      } 
+    } 
+    output { elasticsearch { hosts =&gt; "http://elasticsearch-master:9200" } } </pre></div>
+<p><span data-contrast="none">With this setup, Kibana dashboards could now be created for live visualization of metrics and other logs. To get started with Kibana, first create an index management by reaching “Stack Management -&gt; Index Patterns -&gt; Create index” page and specify the source as “logstash-*”/ “filebeat-*”. The live streaming logs can now be observed in “Analytics -&gt; Discover” page. To create a dashboard, follow the illustration below.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p>
+<p>&nbsp;</p>
+<figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Step-1-Reach-the-Create-dashboard-link-using-the-Analytics-panel-on-the-left.jpg" id="nggb0vz8r1gf" data-image="nggb0vz8r1gf"></figure>
+<p>&nbsp;</p>
+<p><b>Step 1 </b><span data-contrast="none">—</span><b> Reach the Create dashboard link using the Analytics panel on the left</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p>
+<p>&nbsp;</p>
+<figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Step-2-Selecting-different-elements-of-a-chart.jpg" id="t0hy55rlroeq" data-image="t0hy55rlroeq"></figure>
+<p>&nbsp;</p>
+<div><p><b>Step 2 </b><span data-contrast="none">— </span><b>Selecting different elements of a chart</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><b></b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">The “metric type” and “metric score” fields created with Logstash were now reachable from the filters panel shown in Step 2. Our metrics dashboard developed in Kibana is as shown below. The MLflow metrics that were seen on the Azure dashboard could now be observed on Kibana. A dashboard of logs created using the filters and chart elements is also illustrated below.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Dashboard-of-metric-comparison-of-different-deployed-models.jpg" id="wc9pqfvvjphq" data-image="wc9pqfvvjphq"></figure><p>&nbsp;</p><p><b>Dashboard of metric comparison of different deployed models</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p><p>&nbsp;</p><figure><img src="/files/blog-posts/2023/10/Machine-learning-with-Microsoft-Azure-Monitoring-machine-learning-models-in-production/02/Fig-Dashboard-of-streaming-performance-logs-in-Kibana.jpg" id="4nid9ti3p069" data-image="4nid9ti3p069"></figure><p>&nbsp;</p><div><p><b>Dashboard of streaming performance logs in Kibana</b><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+<div><p><span data-contrast="none">In a nutshell, both Kibana and Grafana are powerful tools for visualization. Grafana is more suitable for visualizing metrics while Kibana is for the logs, although both tools can be used for both purposes. The creation of alerts and user management is also supported in both. As Kibana has Elasticsearch as its only data source, the choice can be shifted over to Grafana if the data source is of importance. With respect to cluster deployments, in our experience it was easier while working on Kibana than Grafana. Kibana also offers a wide range of chart types with simple edits and query functionalities.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div></div>
+<p>&nbsp;</p>
+<h2 class="text-24 unscaled">
+ Conclusion     
+</h2>
+<p>&nbsp;</p>
+<div><div><p><span data-contrast="none">This article outlined the architecture of the MLOps provided by Microsoft Azure and the separation of roles and responsibilities between a DevOps engineer and a data scientist. Utilizing the use case of lane detection, the workflow for registering models with Azure cloud and deploying them to a cluster after containerization was described as a set of steps. We introduced two popular open-source tools for the monitoring of machine learning deployments. The architecture of these frameworks was outlined. Based on the project requirements and database technology, the choice of tools can be made.</span><span data-ccp-props="{" 201341983":0,"335559739":120,"335559740":276}"="">&nbsp;</span></p></div>
+</div>
+<p>&nbsp;&nbsp;</p>
+<section class="cta-banner-section"><div class="row"><div class="col-12 col-md-6"><div class="cta-banner-section__content"><div class="tag"><p class="text-14 unscaled">Advanced Analytics</p></div><a href="/insights/financial-services/advanced-analytics" class="stretched-link"><p class="cta-banner-text text-22 unscaled">Discover more insights to help you unlock the value of your data 
+</p></a><div class="btn btn-text btn-icon focus"><div class="text-container"><div class="text">Read more</div><div class="arr-offering"><i class="arr-small one"></i><i class="arr-small two"></i><i class="arr-small three"></i></div></div></div></div></div><div class="col-12 col-md-6 d-none d-md-block"><div class="cta-banner-section__image"><figure><img src="/files/blog-posts/cta-banners/Advanced-analytics.jpg" alt="cta banner"></figure></div></div></div></section>
+<p>
+    &nbsp;
+</p>
+            <section class="enhanced-blog-author blog-post-right-column">
+        <div class="quote-container">
+            <div class="quote">
+                                                            <div class="quote__content">
+                                                        <div class="author-image">
+                                <figure>
+                                    <img src="/files/people/2023/09/Arthur-Shaikhatarov.jpg" class="picture" alt="Arthur Shaikhatarov , AI/ML Project Manager, Automotive, Luxoft ">
+                                </figure>
+                            </div>
+                                                        <div class="author-content">
+                                <h3 class="author-name d-flex align-items-center text-20 unscaled">
+                                                                            Arthur Shaikhatarov
+                                                                                                                <a href="https://www.linkedin.com/in/arthur-shaikhatarov-1b358b211/" target="_blank">
+                                            <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" alt="author linkedin">
+                                        </a>
+                                                                    </h3>
+                                <p class="author-title text-16 unscaled">AI/ML Project Manager, Automotive, Luxoft </p>
+                                <p class="text-16 unscaled">Arthur has served as project manager specializing in AI/ML initiatives at Luxoft for 4 years. His journey in artificial intelligence and machine learning began as an engineer, where he honed his skills and knowledge. Arthur is responsible for team management and formation, presales activities for ML projects, the orchestration and execution of AI/ML proofs-of-concept and the growth of AI/ML activities within Luxoft. </p>
+                            </div>
+                        </div>
+                                                                                <div class="quote__content">
+                                                        <div class="author-image">
+                                <figure>
+                                    <img src="/files/people/2023/10/Suraj-1.jpg" class="picture" alt="Suraj Manjunatha , Data scientist and ML engineer">
+                                </figure>
+                            </div>
+                                                        <div class="author-content">
+                                <h3 class="author-name d-flex align-items-center text-20 unscaled">
+                                                                            Suraj Manjunatha
+                                                                                                                <a href="https://www.linkedin.com/in/suraj-manjunatha-727b3592/" target="_blank">
+                                            <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" alt="author linkedin">
+                                        </a>
+                                                                    </h3>
+                                <p class="author-title text-16 unscaled">Data scientist and ML engineer</p>
+                                <p class="text-16 unscaled">Suraj’s proficiency extends across a spectrum of domains within data science, including diverse data processing algorithms, implementation of computer vision techniques, and a deep understanding of Natural Language Processing algorithms. His extensive experience in the realm of MLOps equips his team to efficiently and effectively undertake even the most intricate AI/ML projects and Proof of Concepts (PoCs).</p>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </section>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 d-none d-md-block pl-70">
+          <div class="blog-post-right-column__right-column ">
+            <div class="blog-post-right-column blog-post-right-column__authors">
+                        <div class="item">
+                                <div class="image">
+                    <figure>
+                        <img src="/files/people/2023/09/Arthur-Shaikhatarov.jpg" class="picture" alt="Arthur Shaikhatarov , AI/ML Project Manager, Automotive, Luxoft ">
+                    </figure>
+                </div>
+                                <div class="text">
+                    <h3 class="author-name d-flex align-items-center text-16 unscaled">
+                                                    Arthur Shaikhatarov
+                                                                            <a href="https://www.linkedin.com/in/arthur-shaikhatarov-1b358b211/" target="_blank">
+                                <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" class="author-linkedin" alt="author linkedin">
+                            </a>
+                                            </h3>
+                    <p class="author-title text-14 unscaled">AI/ML Project Manager, Automotive, Luxoft </p>
+                </div>
+            </div>
+                                <div class="item">
+                                <div class="image">
+                    <figure>
+                        <img src="/files/people/2023/10/Suraj-1.jpg" class="picture" alt="Suraj Manjunatha , Data scientist and ML engineer">
+                    </figure>
+                </div>
+                                <div class="text">
+                    <h3 class="author-name d-flex align-items-center text-16 unscaled">
+                                                    Suraj Manjunatha
+                                                                            <a href="https://www.linkedin.com/in/suraj-manjunatha-727b3592/" target="_blank">
+                                <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" class="author-linkedin" alt="author linkedin">
+                            </a>
+                                            </h3>
+                    <p class="author-title text-14 unscaled">Data scientist and ML engineer</p>
+                </div>
+            </div>
+            </div>
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="utf-8" ?><?xml encoding="utf-8" ?><html><body><div class="container"><div class="related-content">
+								<div class="related-content__title">
+									<p class="text-20 fs-4 unscaled">Related content</p>
+								</div>
+								<div class="related-content__items">
+											<div class="item">
+    <div class="item--image">
+      <figure>
+        <img src="/files/blog/2023/09/431694-CO-QA-automation-optimize-images-KV1-chosen.jpg" alt="Unleashing the power of automation with conversational AI">
+      </figure>
+    </div>
+    <div class="item--title">
+      <a href="/blog/unleashing-the-power-of-automation-with-conversational-ai" class="stretched-link" aria-label="Unleashing the power of automation with conversational AI">
+        <p class="text-20 unscaled fw-bold">
+            Unleashing the power of automation with conversational AI
+        </p>
+      </a>
+    </div>
+</div>
+											<div class="item">
+    <div class="item--image">
+      <figure>
+        <img src="/files/blog/2023/09/960x960-GEMS3blog.jpg" alt="Anomaly detection using recurrent neural network autoencoders">
+      </figure>
+    </div>
+    <div class="item--title">
+      <a href="/blog/advanced-anomaly-detection-deep-learning-pytorch" class="stretched-link" aria-label="Anomaly detection using recurrent neural network autoencoders ">
+        <p class="text-20 unscaled fw-bold">
+            Anomaly detection using recurrent neural network autoencoders 
+        </p>
+      </a>
+    </div>
+</div>
+													</div>
+							</div></div></body></html>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-right-column__related-content">
+      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="utf-8" ?><html><body><div class="related-content-snippet container"><div class="row title"><div class="col text-center"><p class="text-28 fs-2 unscaled">Related content</p></div></div><div class="row"><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/blog/2023/08/431955-CIS-CIS-blog-page-2-Blog-banner-960x960px-2023-07-27.jpg" alt="Mastering MLOps practices for a trading bot"></figure></div><div class="related-content-snippet__item--content"><a href="/blog/mastering-mlops-for-trading-bots"><div class="stretched-link"><b class="text-18 unscaled">Mastering MLOps practices for a trading bot</b></div></a><p class="text-16 unscaled">by Arthur Shaikhatarov</p></div></div></div><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/blog/2023/09/431694-CO-QA-automation-optimize-images-KV1-chosen.jpg" alt="Unleashing the power of automation with conversational AI"></figure></div><div class="related-content-snippet__item--content"><a href="/blog/unleashing-the-power-of-automation-with-conversational-ai"><div class="stretched-link"><b class="text-18 unscaled">Unleashing the power of automation with conversational AI</b></div></a><p class="text-16 unscaled">by Arthur Shaikhatarov,&nbsp;Martin D&rsquo;Ippolito</p></div></div></div>
+<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/services/machine-learning/header-banner.jpg" alt="Graphics-embedded machine learning development services"></figure></div><div class="related-content-snippet__item--content"><a href="/services/machine-learning"><div class="stretched-link"><b class="text-18 unscaled">Graphics-embedded machine learning development services</b></div></a></div></div></div></div></div></body></html>
+    </div>
+        <div id="back-to-top-btn" class="back-to-top-btn">
+            <button type="button">
+                <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
+            </button>
+        </div>
+                                                                            <div id="page-industries" class="industry-Telecom,-Media-and-Technologies "></div>
+                                            <div id="page-services" class=""></div>
+        <footer class="footer">
+    <div class="container pt-10">
+        <div class="row">
+            <div class="col-12 col-lg-3 footer__col-contact">
+                <p class="text-white paragraph-as-5">Enable your digital advantage with Luxoft</p>
+                <a class="btn btn-outline" id="button-addon2" type="button" href="/contact-form">
+                    Connect with us
+                </a>
+                <ul class="footer__social-networks">
+                    <li>
+                        <a href="https://www.facebook.com/Luxoft" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-fb.svg" alt="facebook icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCDtOIqWxKHTdtmVi8yr_D7Q" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-yt.svg" alt="youtube icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Luxoft" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-tw.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/companies/luxoft" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-in.svg" alt="linkedin icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Discover Luxoft
+        </p>
+        <ul>
+            <li>
+                <a href="/about-us">About Us</a>
+            </li>
+            <li>
+                <a href="https://career.fintego.com/">Careers</a>
+            </li>
+            <li>
+                <a href="/contact-form">Contact Us</a>
+            </li>
+            <li>
+                <a href="/event">Events</a>
+            </li>
+            <li>
+                <a href="/esg">Environmental, Social and Governance</a>
+            </li>
+            <li>
+                <a href="/global-presence">Global Presence</a>
+            </li>
+            <li>
+                <a href="/insights">Insights</a>
+            </li>
+            <li>
+                <a href="/pr">Newsroom</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePartnerships"
+                                aria-controls="collapsePartnerships"
+                                aria-expanded="false">
+                                Partnerships
+                        </button>
+                    </p>
+                    <div id="collapsePartnerships" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/partners">Luxoft's partners</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/nasdaq">Nasdaq</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/appian">Appian</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/aws">AWS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/clm">Fenergo</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/finastra">Finastra</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/itrs">ITRS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/microsoft">Microsoft</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/moodys">Moody's Analytics</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/murex">Murex</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/orchestrade">Orchestrade</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/pega">Pega</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/planixs">Planixs</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/smartstream">SmartStream</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos">Temenos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/ukraine-updates">Ukraine updates</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Services
+        </p>
+        <ul>
+            <li>
+                <a href="/services/cloud-solutions">Cloud Solutions</a>
+            </li>
+            <li>
+                <a href="/services/data-to-insights">Data Analytics</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseDesign"
+                                aria-controls="collapseDesign"
+                                aria-expanded="false">
+                                Design
+                        </button>
+                    </p>
+                    <div id="collapseDesign" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/design">Design services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/innovation-strategy">Innovation strategy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFrontendDevelopment"
+                                aria-controls="collapseFrontendDevelopment"
+                                aria-expanded="false">
+                            Front-end Development
+                        </button>
+                    </p>
+                    <div id="collapseFrontendDevelopment" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/front-end-development">Front-end development services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mobile-app-development">Mobile Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-development">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntelligentAutomation"
+                                aria-controls="collapseIntelligentAutomation"
+                                aria-expanded="false">
+                            Intelligent Automation
+                        </button>
+                    </p>
+                    <div id="collapseIntelligentAutomation" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/low-code-development">Low-code development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseLegacyModernization"
+                                aria-controls="collapseLegacyModernization"
+                                aria-expanded="false">
+                            Legacy Modernization
+                        </button>
+                    </p>
+                    <div id="collapseLegacyModernization" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/legacy-modernization">Legacy modernization services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/services/beyond">Luxoft Beyond</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMachineLearning"
+                                aria-controls="collapseMachineLearning"
+                                aria-expanded="false">
+                                Machine Learning
+                        </button>
+                    </p>
+                    <div id="collapseMachineLearning" class="accordion-collapse collapse">
+                        <div class="accordion-body small">
+                            <ul>
+                                <li>
+                                    <a href="/services/machine-learning">Machine learning services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/computer-vision">Computer vision</a>
+                                </li>
+                                <li>
+                                    <a href="/services/natural-language-processing">Natural language processing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseSoftwareEngineering"
+                                aria-controls="collapseSoftwareEngineering"
+                                aria-expanded="false">
+                                Software Engineering
+                        </button>
+                    </p>
+                    <div id="collapseSoftwareEngineering" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/engineering-services">Software engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/financial-software-development">Financial software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/qa-automation">QA automation</a>
+                                </li>
+                                <li>
+                                    <a href="/services/trading-software-development">Trading software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                </li>
+                                <li>
+                                    <a href="/services/custom-software-development">Custom software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/application-engineering-services">Application engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/product-engineering-services">Product engineering services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Industries
+        </p>
+        <ul>
+            <li>
+                <a href="/industries/automotive">Automotive</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseBanking"
+                                aria-controls="collapseBanking"
+                                aria-expanded="false">
+                                Banking
+                        </button>
+                    </p>
+                    <div id="collapseBanking" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/banking">IT services for banking</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/boomerang">Boomerang software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/cloud">Cloud banking services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/core-banking">Core banking software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan">Hogan banking system</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/luxoft-banking-transformation-advisory">Banking transformation advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/luxoft-cams">CAMS card processing solution</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/health-check">Temenos health check</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseCapitalMarkets"
+                                aria-controls="collapseCapitalMarkets"
+                                aria-expanded="false">
+                                Capital Markets
+                        </button>
+                    </p>
+                    <div id="collapseCapitalMarkets" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource client services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/consumer-goods">Consumer Goods</a>
+            </li>
+            <li>
+                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+            </li>
+            <li>
+                <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseInsurance"
+                                aria-controls="collapseInsurance"
+                                aria-expanded="false">
+                            Insurance
+                        </button>
+                    </p>
+                    <div id="collapseInsurance" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/insurance">Insurance technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/software-engineering">Software development</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/manufacturing">Manufacturing</a>
+            </li>
+            <li>
+                <a href="/industries/media">Media</a>
+            </li>
+            <li>
+                <a href="/industries/technology-networking">Networking and Technology</a>
+            </li>
+            <li>
+                <a href="/industries/oil">Oil and Gas</a>
+            </li>
+            <li>
+                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+            </li>
+            <li>
+                <a href="/industries/telecommunications">Telecommunications</a>
+            </li>
+            <li>
+                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+            </li>
+            <li>
+                <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer__menu-mobile">
+    <div class="menu-accordion">
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseIndustries"
+                        aria-controls="collapseIndustries">
+                    Industries
+                </button>
+            </p>
+            <div id="collapseIndustries" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/industries/automotive">Automotive</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseBankingMobile"
+                                            aria-controls="collapseBankingMobile">
+                                            Banking
+                                    </button>
+                                </p>
+                                <div id="collapseBankingMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/banking">IT services for banking</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/boomerang">Boomerang software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/cloud">Cloud banking services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/core-banking">Core banking software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan">Hogan banking system</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/luxoft-banking-transformation-advisory">Banking transformation advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/luxoft-cams">CAMS card processing solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/health-check">Temenos health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseCapitalMobile"
+                                            aria-controls="collapseCapitalMobile">
+                                            Capital Markets
+                                    </button>
+                                </p>
+                                <div id="collapseCapitalMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource client services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/consumer-goods">Consumer Goods</a>
+                        </li>
+                        <li>
+                            <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseInsuranceMobile"
+                                            aria-controls="collapseInsuranceMobile">
+                                        Insurance
+                                    </button>
+                                </p>
+                                <div id="collapseInsuranceMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/insurance">Insurance technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/software-engineering">Software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/manufacturing">Manufacturing</a>
+                        </li>
+                        <li>
+                            <a href="/industries/media">Media</a>
+                        </li>
+                        <li>
+                            <a href="/industries/technology-networking">Networking and Technology</a>
+                        </li>
+                        <li>
+                            <a href="/industries/oil">Oil and Gas</a>
+                        </li>
+                        <li>
+                            <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                        </li>
+                        <li>
+                            <a href="/industries/telecommunications">Telecommunications</a>
+                        </li>
+                        <li>
+                            <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                        </li>
+                        <li>
+                            <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseServices"
+                        aria-controls="collapseServices">
+                    Services
+                </button>
+            </p>
+            <div id="collapseServices" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/services/cloud-solutions">Cloud Solutions</a>
+                        </li>
+                        <li>
+                            <a href="/services/data-to-insights">Data Analytics</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDesignMobile"
+                                            aria-controls="collapseDesignMobile">
+                                            Design
+                                    </button>
+                                </p>
+                                <div id="collapseDesignMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/design">Design services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/innovation-strategy">Innovation strategy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFrontendDevelopmentMobile"
+                                            aria-controls="collapseFrontendDevelopmentMobile">
+                                        Front-end Development
+                                    </button>
+                                </p>
+                                <div id="collapseFrontendDevelopmentMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/front-end-development">Front-end development services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mobile-app-development">Mobile Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-development">Web Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseIntelligentAutomationMobile"
+                                            aria-controls="collapseIntelligentAutomationMobile">
+                                        Intelligent Automation
+                                    </button>
+                                </p>
+                                <div id="collapseIntelligentAutomationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/low-code-development">Low-code development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseLegacyModernizationMobile"
+                                            aria-controls="collapseLegacyModernizationMobile">
+                                            Legacy Modernization
+                                    </button>
+                                </p>
+                                <div id="collapseLegacyModernizationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/legacy-modernization">Legacy Modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/services/beyond">Luxoft Beyond</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseMachineLearningMobile"
+                                            aria-controls="collapseMachineLearningMobile">
+                                            Machine Learning
+                                    </button>
+                                </p>
+                                <div id="collapseMachineLearningMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/machine-learning">Machine learning services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/computer-vision">Computer vision</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/natural-language-processing">Natural language processing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSoftwareEngineeringMobile"
+                                            aria-controls="collapseSoftwareEngineeringMobile">
+                                            Software Engineering
+                                    </button>
+                                </p>
+                                <div id="collapseSoftwareEngineeringMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/engineering-services">Software engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/financial-software-development">Financial software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/qa-automation">QA automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/trading-software-development">Trading software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/custom-software-development">Custom software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/application-engineering-services">Application engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/product-engineering-services">Product engineering services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseDiscoverLuxoft"
+                        aria-controls="collapseDiscoverLuxoft">
+                    Discover Luxoft
+                </button>
+            </p>
+            <div id="collapseDiscoverLuxoft" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://career.fintego.com/">Careers</a>
+                        </li>
+                        <li>
+                            <a href="/contact-form">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/event">Events</a>
+                        </li>
+                        <li>
+                            <a href="/esg">Environmental, Social and Governance</a>
+                        </li>
+                        <li>
+                            <a href="/global-presence">Global Presence</a>
+                        </li>
+                        <li>
+                            <a href="/insights">Insights</a>
+                        </li>
+                        <li>
+                            <a href="/pr">Newsroom</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsePartnershipsMobile"
+                                            aria-controls="collapsePartnershipsMobile">
+                                            Partnerships
+                                    </button>
+                                </p>
+                                <div id="collapsePartnershipsMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/partners">Luxoft's partners</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/nasdaq">Nasdaq</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/appian">Appian</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/aws">AWS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/clm">Fenergo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/finastra">Finastra</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/itrs">ITRS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/microsoft">Microsoft</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/moodys">Moody's Analytics</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/murex">Murex</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/orchestrade">Orchestrade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/pega">Pega</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/planixs">Planixs</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/smartstream">SmartStream</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos">Temenos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/ukraine-updates">Ukraine updates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="container border-top">
+        <div class="row footer__sub-footer pt-3 pb-3">
+            <div class="col-12 col-lg-5 text-uppercase order-lg-first order-sm-last copy-right mt-sm-3 pt-sm-3 pt-lg-0 mt-lg-0">
+                <p>© 2025 LUXOFT, A DXC TECHNOLOGY COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="col-12 col-lg-7 order-lg-last order-sm-first">
+                <ul class="list-group list-group-horizontal-lg float-lg-end text-uppercase">
+                    <li>
+                        <a href="/procurement">Procurement</a>
+                    </li>
+                    <li>
+                        <a href="/corporate-policies">Corporate Policies</a>
+                    </li>
+                    <li>
+                        <a href="/online-privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-use">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/contact-form#copyrights">Report Copyright Violation</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
+        <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
+                <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
+    </body>
+</html>
