@@ -1,0 +1,15 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M71 12.12L55.88 4.56995L40.77 12.12V31" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M40.76 14L55.87 21.55L71 14" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M55.88 49.89V38.5601L40.77 31.01L25.66 38.5601V57.45" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M40.76 83.88L50.11 79.21" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="3.9 3.9"/>
+<path d="M25.65 40.45L40.76 48L55.87 40.45" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M40.76 65L25.65 57.45L10.54 65V83.89L25.65 91.4399L40.76 83.89V65Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M10.53 66.89L25.64 74.4399L40.75 66.89" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M55.88 21.5601V38.5601" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M40.76 48V65" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M25.65 74.4399V91.4399" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M82.33 66.89C82.33 65.87 82.21 64.85 81.97 63.85L85.75 61.7L81.97 55.16L78.1899 57.3C76.6899 55.85 74.87 54.78 72.88 54.16V49.89H65.3199V54.2C63.3299 54.8 61.52 55.86 60.03 57.3L56.25 55.13L52.47 61.66L56.25 63.85C56 64.85 55.88 65.87 55.87 66.89C55.88 67.92 56.01 68.95 56.25 69.95L52.47 72.16L56.25 78.7L60.03 76.51C61.54 77.91 63.3499 78.94 65.3199 79.51V83.89H72.88V79.53C74.86 78.95 76.67 77.91 78.17 76.49L81.95 78.66L85.73 72.13L81.95 69.98C82.2 68.96 82.33 67.92 82.33 66.89Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M69.1 72.55C72.23 72.55 74.77 70.01 74.77 66.88C74.77 63.75 72.23 61.21 69.1 61.21C65.97 61.21 63.4301 63.75 63.4301 66.88C63.4401 70.02 65.98 72.55 69.1 72.55Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M71.15 40.9V11.71" stroke="white" stroke-width="1.5" stroke-dasharray="3.9 3.9"/>
+</svg>
