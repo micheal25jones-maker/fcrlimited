@@ -1,0 +1,1738 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- OneTrust Cookies Consent Notice start for fintego.com -->
+        <script refer async type="text/javascript">
+            function OptanonWrapper() { }
+        </script>
+        <!-- OneTrust Cookies Consent Notice end for fintego.com -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script refer async>
+            document.addEventListener('DOMContentLoaded', e => {
+                window.dataLayer = window.dataLayer || []
+                if (document.getElementById('page-industries')) {
+                    const industriesList = Array.from(document.getElementById('page-industries').classList)
+                    industriesList.forEach(industry => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": industry});
+                    })
+                }
+                if (document.getElementById('page-services')) {
+                    const servicesList = Array.from(document.getElementById('page-services').classList)
+                    servicesList.forEach(service => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": service});
+                    })
+                }
+            })
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+        <script refer async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/theme/fintego/static/images/favicon/favicon.svg" />
+        <script refer src="https://code.jquery.com/jquery-3.7.1.min.js"crossorigin="anonymous"></script>
+        <link rel="manifest" href="/theme/fintego/static/images/favicon/site.webmanifest">
+        <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[[{"@type":"ListItem","position":1,"item":"https:\/\/www.fintego.com\/","name":"Home"},{"@type":"ListItem","position":2,"item":"https:\/\/www.fintego.com\/blog","name":"Blog"},{"@type":"ListItem","position":3,"name":"Cross-platform mobile development recap"}]]}</script>
+        <title>
+        Cross-platform mobile development recap | fintego Blog
+        </title>
+        <script refer async type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041441-10041537.js"></script>
+        <link rel="stylesheet" href="/theme/fintego/assets/app.min.41025cec95a71e1b0698.css">
+        <link rel="preload" href="/theme/fintego/assets/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+                <script refer src="//offer.fintego.com/js/forms2/js/forms2.min.js"></script>
+    <meta property="og:locale" content="en" />
+        <meta property="og:title" content="Cross Platform Mobile Development Recap" />
+        <meta property="og:description" content="Explore challenges in cross-device mobile development for Java developers using Codename One. Topics include device fragmentation, graphics rendering, and memory efficiency." />
+        <meta name="description" content="Explore challenges in cross-device mobile development for Java developers using Codename One. Topics include device fragmentation, graphics rendering, and memory efficiency." />
+                    <meta property="og:url" content="/blog/cross-platform-mobile-development-recap" />
+                    <meta property="og:image:width" content="960">
+        <meta property="og:image:height" content="960">
+        <meta property="og:image" content="/files/blog/2023/02/1675860737_114-Cross-Platform-Mobile-Development-Recap-960x960px.jpg" />
+        <meta name="twitter:image" content="/files/blog/2023/02/1675860737_114-Cross-Platform-Mobile-Development-Recap-960x960px.jpg" />
+        <meta name="twitter:description" content="Explore challenges in cross-device mobile development for Java developers using Codename One. Topics include device fragmentation, graphics rendering, and memory efficiency." />
+        <meta name="twitter:title" content="Cross Platform Mobile Development Recap" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@fintego" />
+        <script id="imageMarkUpData" type="application/ld+json"></script>
+                            <link rel="canonical" href="/blog/cross-platform-mobile-development-recap">
+<meta name="generator" content="Bolt">
+</head>
+    <body class="  bd-white blog
+">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+<header class="header ">
+    <div class="container--wide">
+        <div class="header__nav">
+            <div class="switch" id="menu-switcher">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="text">
+                    <span>Menu</span>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/">
+                    <img src="/theme/fintego/assets/images/logo/fintego-new-white.svg"
+                         class="img img--white"
+                         alt="fintego | A leading IT company for cutting-edge software engineering and digital transformation services"
+                         style="width:110px" />
+                </a>
+            </div>
+            <div class="lux-menu">
+                <nav class="lux-menu__nav">
+                    <div class="lux-menu__line"></div>
+                    <ul>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Industries</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Industries
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/automotive">Automotive</a></li>
+                                    <li><a href="/industries/banking">Banking</a></li>
+                                    <li>
+                                        <a href="/industries/capital-markets">Capital Markets</a>
+                                    </li>
+                                    <li><a href="/industries/consumer-goods">Consumer Goods</a></li>
+                                    <li>
+                                        <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/healthcare">
+                                            Healthcare and Life Sciences
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/insurance">Insurance</a></li>
+                                    <li>
+                                        <a href="/industries/manufacturing">Manufacturing</a>
+                                    </li>
+                                    <li><a href="/industries/media">Media</a></li>
+                                    <li>
+                                        <a href="/industries/technology-networking">
+                                            Networking and Technology
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/oil">Oil and Gas</a></li>
+                                    <li>
+                                        <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/telecommunications">
+                                            Telecommunications
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/travel-and-hospitality">Travel and Hospitality</a></li>
+                                    <li>
+                                        <a href="/industries/transportation-and-logistics">
+                                            Transportation and Logistics
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Services</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/cloud-solutions">Cloud Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/data-to-insights">Data Analytics</a>
+                                    </li>
+                                    <li><a href="/services/design">Design</a></li>
+                                    <li>
+                                        <a href="/services/engineering-services">Engineering</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/front-end-development">Front-end Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/innovation-strategy">
+                                            Innovation Strategy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/intelligent-automation">
+                                            Intelligent Automation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/legacy-modernization">
+                                            Legacy Modernization
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/beyond">fintego Beyond</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/machine-learning">Machine Learning</a>
+                                    </li>
+                                    <li><a href="/services/qa-automation">QA Automation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="/case-studies">Case studies</a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Insights</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Insights
+                                        </a>
+                                    </li>
+                                    <li><a href="/insights">Insights and Resource Hub</a></li>
+                                    <li><a href="/insights/automotive">Automotive Insights</a></li>
+                                    <li><a href="/insights/financial-services">Financial Services Insights</a></li>
+                                    <li><a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a></li>
+                                    <li><a href="/insights/technology-and-engineering">Technology and Engineering Insights</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="https://career.fintego.com/">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">About us</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>About us
+                                        </a>
+                                    </li>
+                                    <li><a href="/about-us">About fintego</a></li>
+                                    <li><a href="/esg">Environmental, Social and Governance</a></li>
+                                    <li><a href="/event">Events</a></li>
+                                    <li><a href="/global-presence">Global Presence</a></li>
+                                    <li><a href="/pr">Newsroom</a></li>
+                                    <li><a href="/partners">Partnerships</a></li>
+                                    <li><a href="/ukraine-updates">Ukraine updates</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                                                <li class="firstLvl"><a href="/contact-form">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__new-menu">
+            <ul>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Industries</a>
+                    <div class="header__new-menu--sub-menu industry-expertise">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/automotive">Automotive</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/healthcare">
+                                    Healthcare and Life Sciences
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/oil">Oil and Gas</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/banking">Banking</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/insurance">Insurance</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/capital-markets">Capital Markets</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/manufacturing">Manufacturing</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/telecommunications">Telecommunications</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/consumer-goods">Consumer Goods</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/media">Media</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/technology-networking">
+                                    Networking and Technology
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/transportation-and-logistics">
+                                    Transportation and Logistics
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <div class="header__new-menu--sub-menu our-services">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/cloud-solutions">Cloud Solutions</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/engineering-services">Engineering</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/intelligent-automation">
+                                    Intelligent Automation
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/machine-learning">Machine Learning</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/data-to-insights">Data Analytics</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/front-end-development">Front-end Development</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/legacy-modernization">
+                                    Legacy Modernization
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/qa-automation">QA Automation</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/design">Design</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/innovation-strategy">
+                                    Innovation Strategy
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/beyond">fintego Beyond</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/case-studies" class="element">Case studies</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Insights</a>
+                    <div class="header__new-menu--sub-menu insights-menu">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/insights">Insights and Resource Hub</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/automotive">Automotive Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/financial-services">Financial Services Insights</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/technology-and-engineering">Technology and Engineering Insights</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://career.fintego.com/" class="element">Careers</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">About us</a>
+                    <div class="header__new-menu--sub-menu about-us">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/about-us">About fintego</a>
+                            </div>
+                            <div class="single">
+                                <a href="/esg">Environmental, Social and Governance</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/event">Events</a>
+                            </div>
+                            <div class="single">
+                                <a href="/pr">Newsroom</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/global-presence">Global Presence</a>
+                            </div>
+                            <div class="single">
+                                <a href="/partners">Partnerships</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/ukraine-updates">Ukraine updates</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="contact" href="/contact-form" aria-label="Contact us">
+                        <div class="contact--image"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+                <div class="header__contact">
+            <ul>
+                <li>
+                    <a href="#" class="search-btn" id="search-btn">
+                        <img src="/theme/fintego/assets/images/icons/search.svg"
+                             alt="search icon" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__contact--square" id="header--square"></div>
+    <div class="header__search-open">
+        <div class="header__search-open__panel">
+            <div class="header__search-open__top">
+                <div class="close" id="close-search">
+                    &times;
+                </div>
+            </div>
+            <div class="header__search-open__form">
+                <form id="global-search" method="GET" action="/search">
+                    <input id="input-search" type="text" name="q" placeholder="Search..." />
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+      <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","headline":"Cross-platform mobile development recap","description":"Explore challenges in cross-device mobile development for Java developers using Codename One. Topics include device fragmentation, graphics rendering, and memory efficiency.","name":"Blog","url":"https:\/\/www.fintego.com\/blog\/cross-platform-mobile-development-recap","inLanguage":"en","articleBody":"<div>\r\n    <section class=\"container-hero-short-purple\">\r\n    <div class=\"col gradient06\">\r\n        <div class=\"content\">\r\n            <h1 class=\"fs-2\">\r\n                Cross-platform mobile development recap\r\n            <\/h1>\r\n            <p class=\"text-20\">\r\n                Nov 12, 2013 by <b>Shai Almog<\/b>\r\n            <\/p>\r\n        <\/div>\r\n    <\/div>\r\n    <div class=\"col\">\r\n        <figure>\r\n            <img src=\"\/files\/blog\/2023\/02\/114-Cross-Platform-Mobile-Development-Recap-960x960px.jpg\">\r\n        <\/figure>\r\n    <\/div>\r\n    <div class=\"down-arr\">\r\n        <a href=\"#banner-down\"><\/a>\r\n    <\/div>\r\n    <\/section>\r\n<\/div>\r\n<div>\r\n    <p><\/p>\r\n    <p><\/p>\r\n<\/div>\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-12 col-lg-2\">\r\n        <\/div>\r\n        <div class=\"col-12 col-lg-8\">\r\n            \r\n            <p>{​{light_breadcrumbs(record)}​}<\/p><p>\r\n                &nbsp;\r\n            <\/p>\r\n            \r\n            \r\n            <p><b>It was my pleasure speaking at the first LTS event last week about the complexity and issues related to cross device mobile development from the perspective of a Java\/JVM developer.<\/b><\/p><p><\/p><p>When we created Codename One with the intent of delivering Java’s Write Once Run Anywhere (WORA) solution to all mobile devices we were keenly aware of many of the issues involved since we came from an established background of device development and porting. We too, however, were caught by surprise at some of the difficulties and complexities we ran into when trying to adapt such solutions for all of today's mobile devices.<\/p><p><\/p><p><b>Recap<\/b><\/p><p><\/p><p>In my talk I covered 4 major topics going from the easy stuff to the more complex issues, the major topics I discussed are: device density, device fragmentation, scene graph\/adapting to low level graphics and JIT\/AOT\/GC issues.<\/p><p><\/p><p>I naturally simplified all of the above considerably in order to squeeze the general ideas into a 90 minute talk but the concepts should give you some perspective of the difficulties involved when creating such a solution and as well as providing perspective when building mobile applications (using cross platform tools or otherwise).<\/p><p><\/p><p><b>Device Fragmentation<\/b><\/p><p><\/p><p>My opinion of device fragmentation is that this subject is often addressed by developers comparing Android to iOS which is both unfair and no longer accurate. In the past iOS development was MUCH easier since it had just one or two resolutions but these keep piling up. While the number of resolutions needed in Android is a few order of magnitude larger than the one iOS developers have to deal with, Android was constructed to deal with this reality from day one and iOS was not.<\/p><p><\/p><p>Today there are really 3 major problems that are at the root of device fragmentation:<\/p><ul class=\"default-ul\"><li>Bugs - there are serious device specific bugs in Android mostly when dealing with specific hardware capabilities such as with a camera. However, there are odd VM behaviors that only appear in specific devices I’m assuming that these relate to a very specific Android version that a particular vendor chose to use.<\/li><li>Lack of OS updates - as a Galaxy Nexus owner this stings. Google just announced that the device I bought from them directly 18 months ago will no longer be supported or updated.<\/li><\/ul><p><\/p><p>This is painful, we still have a VERY large Android 2.x install base years after 4.x came out. This in itself isn’t a big deal as much as the fact that OS bugs (of which there are many) just don’t get fixed. Worse, new issues get introduced in newer OS’s and you can no longer use the backward compatible API effectively e.g.: <a href=\"https:\/\/issuetracker.google.com\/code\/p\/android\/issues\/detail?id=58385\" target=\"_blank\">issuetracker.google.com\/code\/...<\/a> (the workaround is obviously to adapt by version detection, hardly elegant or simple).<br><\/p><ul class=\"default-ul\"><li>Vendors - Google is currently trying to grab hold of Android by moving its new features into the market app (google play) and offering services thru apps. This is actually a great way to add features to older devices that are no longer updated (e.g. my galaxy nexus) however, this code is proprietary.<\/li><\/ul><p><\/p><p>Hence it doesn’t make it into Amazon’s version of Android. Samsung is also trying to fork the OS more and more and this approach is leading to a bad place.<\/p><p><\/p><p><b>Resolutions<\/b><\/p><p><\/p><p>Dealing with multiple resolutions is often perceived as the big challenge of Android and cross platform. It’s really not that hard since the strategies for multi resolutions programming have been around for years.<br>However, most multi resolution development centered around desktop developers who had relatively low variance in their target platforms. It’s really easy to illustrate the problem when discussing the iPhone 4 which has exactly double the density that iPhone 3 had (4 times the pixels per inch of screen!). This is PPI or DPI (Points\/Dots Per Inch) iPhone 4 and 5 have 326ppi where modern Android devices can reach past 500!<br>These are ridiculously high numbers and it’s far harder to work with higher ppi devices than with resolution variation.<\/p><p><\/p><p>Normally when we build a touch oriented application we try to size elements for fingers, they should be big enough to touch and spaced enough so you won’t touch the wrong thing. However, if the pixels are two dense you will end up with a smaller physical surface and a cramped UI. If you err on the side of safety your data will not appear on the screen.<\/p><p><\/p><p>Since the variation is so large a developer needs to provide image alternatives for every density to enable the UI to adapt properly. This is the strategy taken both by Android and iOS however iOS has the advantage of supporting only two densities retina and non-retina since it has such strong control over its devices\/market.<\/p><p><\/p><p>We also have the 9-patch (or 9-piece) images which allow us to construct infinitely scaled textures without degradation and layout managers to arrange elements as we need them.<\/p><p><\/p><p>This whole scenario would seem like an ideal case for vector graphics, however they aren’t supported natively by Android or iOS and are only supported via their webkit implementation. The main reasoning behind this is battery life and performance; raster graphics are simple and very fast. They don’t require CPU power to draw thus don’t waste battery life which is a very precious rare substance on mobile devices.<\/p><p><\/p><p><b>Scene Graph<\/b><\/p><p><\/p><p>There are two approaches a platform vendor can pick when building a graphics layer in his mobile OS. Scene Graph and Immediate Mode (Immediate mode is used in many different and contradicting contexts, there is no clearly defined definition for the “opposite approach to scene graph”).<br><\/p><p><\/p><p>Immediate mode is simple and should be very familiar to anyone who wrote graphics in Swing\/AWT\/Java2D, Win32 etc.<br><\/p><p><\/p><p>Effectively the OS invokes your paint method instructing you to draw, you draw everything you need every time and rinse repeat. If you need to refresh the UI invoke repaint to draw again. This has the huge advantage of simplicity over other solutions, it’s really easy to get started and just draw arbitrary data.<\/p><p><\/p><p>Scene graph is arguably more advanced, instead of drawing elements you construct a tree (graph) of the environment e.g. to draw a rectangle you just add a rectangle object to the tree or objects. To rotate it you define a rotation transform and place it above the rectangle in the hierarchy.<\/p><p><\/p><p>This is more complex and it gets both harder and simpler when animations come into play. With animations we (developers) bare all the responsibility in the immediate mode and we tend to be lazy just moving things around. Scene graph requires a bit of work since you need to create a destination mutation for the tree, define keyframes and a way in which the mutation will take place. This is complex but it ends up creating a very refined animation from pre-existing pieces which give scene graph UI’s a very fluid feel.<\/p><p><\/p><p>The real benefit of scene graphs is that they are optimized by the vendor and can use the GPU very effectively by potential. Unfortunately because they provide a relatively high level of abstraction it’s really hard to tune your application properly with scene graph and detect when you are doing things that aren’t quite optimal.<\/p><p><\/p><p>The problem with scene graph is that it is inherently hard to port. While an immediate mode API will always have a set of simple API’s matching things such as drawString, drawImage etc. a scene graph will have a far more complex hierarchy not to mention complex rules and logic about animations. So you can create a portable scene graph implementation (e.g. Flash and JavaFX are such examples) but you will find it very hard to port it on to a scene graph native API e.g. JavaFX is written on top of OpenGL and not on top of Core Animation which is a scene graph API.<\/p><p><\/p><p>The real challenge here is with platforms such as iOS which are based on Scene Graph, we can’t port into that API since it’s too platform specific. Luckily all platforms have a gaming API are always very fast and efficient. Unfortunately this often doesn’t include API’s that are rather important for applications but not essential for some games such as text input or even string drawing. iOS is pretty good in that regard since it allows mixing its OpenGL implementation with its higher level graphics API resulting in both great performance and access to all of the native API’s.<\/p><p><\/p><p>Windows Phone 8 doesn’t include that and effectively forces you into a choice of either using its highly limiting scene graph API or using Directx from C++ without fonts, text input or interaction with native widgets. This is obviously pretty limiting.<br><\/p><p><\/p><p>Our current approach maps our immediate mode API on top of the Windows Phone 8 scene graph API which is obviously very limited and problematic.<br>VM’s, AOT &amp; GC<br><\/p><p><\/p><p>Mobile JIT’s (just in time compilers) aren’t optimized for performance; they are optimized for memory conservation, battery conservation and security. This is very evident in J2ME’s pre-verification process which both saved battery and size by moving a piece of the VM verifier to work offline. This is just as correct for Dalvik which is a pretty great VM, it isn’t the fastest VM for mobile but it isn’t trying to be and we should not judge mobile performance based on our experiences when dealing with desktop development.<\/p><p><\/p><p>Apple doesn’t allow JIT’s for obvious reasons; self-modifying code would be a huge security risk on a mobile device. Google controls its own JIT and can thus guarantee its security the same is true for Apple and the JavaScript JIT in webkit.<\/p><p><\/p><p>The only way of getting Java code onto iOS is by AOT compilation (ahead of time compilation) which allows us to package the fully complied application as a single binary.<\/p><p><\/p><p>Since Objective-C isn’t the fastest language in the world Java is actually pretty high performance in this case and compiles rather well using several open source solutions available today. The main issue still remaining is the HUGE size of the JVM and thus the overhead of even a stripped down Java application binary. The solution is to ruthlessly prune the AOT compiler to remove all unnecessary overhead and bring it down; also tools such as reflection just don’t work in this case since they effectively require the packaging of the whole VM without removing the symbol information!<br>In this sense the Java API is often a much bigger hindrance to portability\/size\/performance than the Java language.<\/p><p><\/p><p>GC is often maligned as a major cost in terms of performance, it is not free and it is not determined that it is a given. However, it isn’t very expensive and because of its nature GC cycles can effectively be tuned to points in the application where CPU is idle. If you don’t have CPU idle points you are doing something wrong (even in a high FPS game CPU utilization should max the GPU well before the CPU is maxed out). The big cost with GC is deal locating native resources which hold “peer” references.<\/p><p><\/p><p>Since these resources need an additional GC cycle for the finalization process which is very volatile to begin with, these native resources can both clear a lot of memory but also trigger complex types of fragmentation and very slow cleanups. When working with resources that have a native element to them it is highly recommended to hold on to them when possible to avoid a major GC penalty.<\/p><p><\/p><p><b>Final Thoughts<\/b><\/p><p><\/p><p>I got some feedback both during and after the talk from listeners most of which revolved around Codename One and performance. Codename One was designed initially to run on far weaker CPU’s than the ones we have today and with heaps as low as 2mb.<br><\/p><p><\/p><p>When running on a modern phone e.g. Android which considers a 512mb heap as low end, this might seem amusing but it’s a huge advantage since Codename One’s efficient architecture really takes advantage of the additional horsepower.<br><\/p><p><\/p><p>The main benefit is in very low memory utilization which in turn allows for more caching, overall caching is pretty much the biggest benefit you can give to performance. You see this in CPU level caches all the way up to big data sharding strategies!<br><\/p><p><\/p><p>Keeping your data as close as possible is a sure way to make your code fly.<\/p><p><\/p><p>The other thing we do well is just push out raw pixels as fast as possible. The fact that Codename One’s graphics layer is actually very simple and it does one thing well: push pixels fast. This allows something that both Google &amp; Apple figured out when building their platforms. They gave raster images a front center place within their architecture because that is just the fastest most battery efficient way to push pixels to the screen.\r\n            <\/p>\r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            \r\n            <p><\/p>\r\n            <p>\r\n                &nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div class=\"col-12 col-lg-2\">\r\n        <\/div>\r\n    <\/div>\r\n<\/div>","image":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/files\/blog\/2023\/02\/114-Cross-Platform-Mobile-Development-Recap-960x960px.jpg","width":960,"height":960},"publisher":{"@type":"Organization","url":"https:\/\/www.fintego.com\/","name":"fintego","logo":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/theme\/fintego\/assets\/images\/logo\/fintego-new-white.svg","width":"188","height":"50"}},"author":[{"@type":"Person","name":"Shai Almog","image":"https:\/\/www.fintego.com\/files\/people\/2023\/02\/shai-225x225.jpg","jobTitle":"CEO and Co-Founder of Codename One"}],"datePublished":"2013-11-12T12:44:00+00:00","dateModified":"2024-02-12T08:13:20+00:00"}</script>
+      <div>
+    <section class="container-hero-short-purple">
+    <div class="col gradient06">
+        <div class="content">
+            <h1 class="fs-2">
+                Cross-platform mobile development recap
+            </h1>
+            <p class="text-20">
+                Nov 12, 2013 by <b>Shai Almog</b>
+            </p>
+        </div>
+    </div>
+    <div class="col">
+        <figure>
+            <img src="/files/blog/2023/02/114-Cross-Platform-Mobile-Development-Recap-960x960px.jpg">
+        </figure>
+    </div>
+    <div class="down-arr">
+        <a href="#banner-down"></a>
+    </div>
+    </section>
+</div>
+<div>
+    <p></p>
+    <p></p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-2">
+        </div>
+        <div class="col-12 col-lg-8">
+            <p><section class="container-breadcrumbs--light"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/"><span>Home</span></a></li><li class="breadcrumb-item"><a href="/blog"><span>Blog</span></a></li><li class="breadcrumb-item active"><span>Cross-platform mobile development recap</span></li></ol></section></p><p>
+                &nbsp;
+            </p>
+            <p><b>It was my pleasure speaking at the first LTS event last week about the complexity and issues related to cross device mobile development from the perspective of a Java/JVM developer.</b></p><p></p><p>When we created Codename One with the intent of delivering Java’s Write Once Run Anywhere (WORA) solution to all mobile devices we were keenly aware of many of the issues involved since we came from an established background of device development and porting. We too, however, were caught by surprise at some of the difficulties and complexities we ran into when trying to adapt such solutions for all of today's mobile devices.</p><p></p><p><b>Recap</b></p><p></p><p>In my talk I covered 4 major topics going from the easy stuff to the more complex issues, the major topics I discussed are: device density, device fragmentation, scene graph/adapting to low level graphics and JIT/AOT/GC issues.</p><p></p><p>I naturally simplified all of the above considerably in order to squeeze the general ideas into a 90 minute talk but the concepts should give you some perspective of the difficulties involved when creating such a solution and as well as providing perspective when building mobile applications (using cross platform tools or otherwise).</p><p></p><p><b>Device Fragmentation</b></p><p></p><p>My opinion of device fragmentation is that this subject is often addressed by developers comparing Android to iOS which is both unfair and no longer accurate. In the past iOS development was MUCH easier since it had just one or two resolutions but these keep piling up. While the number of resolutions needed in Android is a few order of magnitude larger than the one iOS developers have to deal with, Android was constructed to deal with this reality from day one and iOS was not.</p><p></p><p>Today there are really 3 major problems that are at the root of device fragmentation:</p><ul class="default-ul"><li>Bugs - there are serious device specific bugs in Android mostly when dealing with specific hardware capabilities such as with a camera. However, there are odd VM behaviors that only appear in specific devices I’m assuming that these relate to a very specific Android version that a particular vendor chose to use.</li><li>Lack of OS updates - as a Galaxy Nexus owner this stings. Google just announced that the device I bought from them directly 18 months ago will no longer be supported or updated.</li></ul><p></p><p>This is painful, we still have a VERY large Android 2.x install base years after 4.x came out. This in itself isn’t a big deal as much as the fact that OS bugs (of which there are many) just don’t get fixed. Worse, new issues get introduced in newer OS’s and you can no longer use the backward compatible API effectively e.g.: <a href="https://issuetracker.google.com/code/p/android/issues/detail?id=58385" target="_blank">issuetracker.google.com/code/...</a> (the workaround is obviously to adapt by version detection, hardly elegant or simple).<br></p><ul class="default-ul"><li>Vendors - Google is currently trying to grab hold of Android by moving its new features into the market app (google play) and offering services thru apps. This is actually a great way to add features to older devices that are no longer updated (e.g. my galaxy nexus) however, this code is proprietary.</li></ul><p></p><p>Hence it doesn’t make it into Amazon’s version of Android. Samsung is also trying to fork the OS more and more and this approach is leading to a bad place.</p><p></p><p><b>Resolutions</b></p><p></p><p>Dealing with multiple resolutions is often perceived as the big challenge of Android and cross platform. It’s really not that hard since the strategies for multi resolutions programming have been around for years.<br>However, most multi resolution development centered around desktop developers who had relatively low variance in their target platforms. It’s really easy to illustrate the problem when discussing the iPhone 4 which has exactly double the density that iPhone 3 had (4 times the pixels per inch of screen!). This is PPI or DPI (Points/Dots Per Inch) iPhone 4 and 5 have 326ppi where modern Android devices can reach past 500!<br>These are ridiculously high numbers and it’s far harder to work with higher ppi devices than with resolution variation.</p><p></p><p>Normally when we build a touch oriented application we try to size elements for fingers, they should be big enough to touch and spaced enough so you won’t touch the wrong thing. However, if the pixels are two dense you will end up with a smaller physical surface and a cramped UI. If you err on the side of safety your data will not appear on the screen.</p><p></p><p>Since the variation is so large a developer needs to provide image alternatives for every density to enable the UI to adapt properly. This is the strategy taken both by Android and iOS however iOS has the advantage of supporting only two densities retina and non-retina since it has such strong control over its devices/market.</p><p></p><p>We also have the 9-patch (or 9-piece) images which allow us to construct infinitely scaled textures without degradation and layout managers to arrange elements as we need them.</p><p></p><p>This whole scenario would seem like an ideal case for vector graphics, however they aren’t supported natively by Android or iOS and are only supported via their webkit implementation. The main reasoning behind this is battery life and performance; raster graphics are simple and very fast. They don’t require CPU power to draw thus don’t waste battery life which is a very precious rare substance on mobile devices.</p><p></p><p><b>Scene Graph</b></p><p></p><p>There are two approaches a platform vendor can pick when building a graphics layer in his mobile OS. Scene Graph and Immediate Mode (Immediate mode is used in many different and contradicting contexts, there is no clearly defined definition for the “opposite approach to scene graph”).<br></p><p></p><p>Immediate mode is simple and should be very familiar to anyone who wrote graphics in Swing/AWT/Java2D, Win32 etc.<br></p><p></p><p>Effectively the OS invokes your paint method instructing you to draw, you draw everything you need every time and rinse repeat. If you need to refresh the UI invoke repaint to draw again. This has the huge advantage of simplicity over other solutions, it’s really easy to get started and just draw arbitrary data.</p><p></p><p>Scene graph is arguably more advanced, instead of drawing elements you construct a tree (graph) of the environment e.g. to draw a rectangle you just add a rectangle object to the tree or objects. To rotate it you define a rotation transform and place it above the rectangle in the hierarchy.</p><p></p><p>This is more complex and it gets both harder and simpler when animations come into play. With animations we (developers) bare all the responsibility in the immediate mode and we tend to be lazy just moving things around. Scene graph requires a bit of work since you need to create a destination mutation for the tree, define keyframes and a way in which the mutation will take place. This is complex but it ends up creating a very refined animation from pre-existing pieces which give scene graph UI’s a very fluid feel.</p><p></p><p>The real benefit of scene graphs is that they are optimized by the vendor and can use the GPU very effectively by potential. Unfortunately because they provide a relatively high level of abstraction it’s really hard to tune your application properly with scene graph and detect when you are doing things that aren’t quite optimal.</p><p></p><p>The problem with scene graph is that it is inherently hard to port. While an immediate mode API will always have a set of simple API’s matching things such as drawString, drawImage etc. a scene graph will have a far more complex hierarchy not to mention complex rules and logic about animations. So you can create a portable scene graph implementation (e.g. Flash and JavaFX are such examples) but you will find it very hard to port it on to a scene graph native API e.g. JavaFX is written on top of OpenGL and not on top of Core Animation which is a scene graph API.</p><p></p><p>The real challenge here is with platforms such as iOS which are based on Scene Graph, we can’t port into that API since it’s too platform specific. Luckily all platforms have a gaming API are always very fast and efficient. Unfortunately this often doesn’t include API’s that are rather important for applications but not essential for some games such as text input or even string drawing. iOS is pretty good in that regard since it allows mixing its OpenGL implementation with its higher level graphics API resulting in both great performance and access to all of the native API’s.</p><p></p><p>Windows Phone 8 doesn’t include that and effectively forces you into a choice of either using its highly limiting scene graph API or using Directx from C++ without fonts, text input or interaction with native widgets. This is obviously pretty limiting.<br></p><p></p><p>Our current approach maps our immediate mode API on top of the Windows Phone 8 scene graph API which is obviously very limited and problematic.<br>VM’s, AOT &amp; GC<br></p><p></p><p>Mobile JIT’s (just in time compilers) aren’t optimized for performance; they are optimized for memory conservation, battery conservation and security. This is very evident in J2ME’s pre-verification process which both saved battery and size by moving a piece of the VM verifier to work offline. This is just as correct for Dalvik which is a pretty great VM, it isn’t the fastest VM for mobile but it isn’t trying to be and we should not judge mobile performance based on our experiences when dealing with desktop development.</p><p></p><p>Apple doesn’t allow JIT’s for obvious reasons; self-modifying code would be a huge security risk on a mobile device. Google controls its own JIT and can thus guarantee its security the same is true for Apple and the JavaScript JIT in webkit.</p><p></p><p>The only way of getting Java code onto iOS is by AOT compilation (ahead of time compilation) which allows us to package the fully complied application as a single binary.</p><p></p><p>Since Objective-C isn’t the fastest language in the world Java is actually pretty high performance in this case and compiles rather well using several open source solutions available today. The main issue still remaining is the HUGE size of the JVM and thus the overhead of even a stripped down Java application binary. The solution is to ruthlessly prune the AOT compiler to remove all unnecessary overhead and bring it down; also tools such as reflection just don’t work in this case since they effectively require the packaging of the whole VM without removing the symbol information!<br>In this sense the Java API is often a much bigger hindrance to portability/size/performance than the Java language.</p><p></p><p>GC is often maligned as a major cost in terms of performance, it is not free and it is not determined that it is a given. However, it isn’t very expensive and because of its nature GC cycles can effectively be tuned to points in the application where CPU is idle. If you don’t have CPU idle points you are doing something wrong (even in a high FPS game CPU utilization should max the GPU well before the CPU is maxed out). The big cost with GC is deal locating native resources which hold “peer” references.</p><p></p><p>Since these resources need an additional GC cycle for the finalization process which is very volatile to begin with, these native resources can both clear a lot of memory but also trigger complex types of fragmentation and very slow cleanups. When working with resources that have a native element to them it is highly recommended to hold on to them when possible to avoid a major GC penalty.</p><p></p><p><b>Final Thoughts</b></p><p></p><p>I got some feedback both during and after the talk from listeners most of which revolved around Codename One and performance. Codename One was designed initially to run on far weaker CPU’s than the ones we have today and with heaps as low as 2mb.<br></p><p></p><p>When running on a modern phone e.g. Android which considers a 512mb heap as low end, this might seem amusing but it’s a huge advantage since Codename One’s efficient architecture really takes advantage of the additional horsepower.<br></p><p></p><p>The main benefit is in very low memory utilization which in turn allows for more caching, overall caching is pretty much the biggest benefit you can give to performance. You see this in CPU level caches all the way up to big data sharding strategies!<br></p><p></p><p>Keeping your data as close as possible is a sure way to make your code fly.</p><p></p><p>The other thing we do well is just push out raw pixels as fast as possible. The fact that Codename One’s graphics layer is actually very simple and it does one thing well: push pixels fast. This allows something that both Google &amp; Apple figured out when building their platforms. They gave raster images a front center place within their architecture because that is just the fastest most battery efficient way to push pixels to the screen.
+            </p>
+            <p></p>
+            <p>
+                &nbsp;
+            </p>
+        </div>
+        <div class="col-12 col-lg-2">
+        </div>
+    </div>
+</div>
+        <section class="blog-author quotes-section--v1">
+        <div class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-item__content">
+                        <figure>
+                            <img src="/files/people/2023/02/shai-225x225.jpg" class="client" alt="Shai Almog , CEO and Co-Founder of Codename One">
+                        </figure>
+                        <div class="author-content">
+                            <p>Shai Almog has been developing software professionally for over 20 years. He started specializing in Java in 1996 and most recently joined fellow veteran software developer, Chen Fishbein, to form Codename One, which allows Java developers to write mobile applications to all devices. Shai has vast experience in VM internals, UI, enterprise backend and almost every aspect of Java. He has worked on specifying and implementing Java VMs/APIs, building tools, end user applications, sites and much more.</p>
+                            <h5>
+                                                                    Shai Almog
+                                                            </h5>
+                            <h6>CEO and Co-Founder of Codename One</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bd-black">
+      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="utf-8" ?><html><body><div class="container"><section class="container-insights">
+                        <div class="title">
+                            <h2>
+                              Related content</h2>
+                        </div>
+                          <div class="row">
+                        <div class="twig-code"></div>
+                                                  <div class="col twig-code">
+    <div class="insight-img">
+        <img src="/files/blog/2023/01/five-pillars-of-knowledge-management-for-software-engineering.png" alt="Five pillars of knowledge management for software engineering">
+    </div>
+                    <p class="item-contenttype body-text-bold">Blog</p>
+                <h3 class="item-title">Five pillars of knowledge management for software engineering</h3>
+    <div class="btn-container">
+        <a class="btn btn-text btn-icon focus" href="/blog/five-pillars-of-knowledge-management-for-software-engineering">
+        <div class="text-container">
+            <div class="text stretched-link">
+            Read more
+            </div>
+            <div class="arr-offering">
+            <i class="arr-small one"></i>
+            <i class="arr-small two"></i>
+            <i class="arr-small three"></i>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+                        <div class="twig-code"></div>
+                                                  <div class="col twig-code">
+    <div class="insight-img">
+        <img src="/files/blog/2023/02/453-What-OEMs-Need-to-Know-About-Microcontrollers-960x960px.jpg" alt="What OEMs Need to Know About Microcontrollers - Introducing Cypress Amber">
+    </div>
+                    <p class="item-contenttype body-text-bold">Blog</p>
+                <h3 class="item-title">What OEMs Need to Know About Microcontrollers - Introducing Cypress Amber</h3>
+    <div class="btn-container">
+        <a class="btn btn-text btn-icon focus" href="/blog/what-oems-need-to-know-about-microcontrollers-introducing-cypress-amber">
+        <div class="text-container">
+            <div class="text stretched-link">
+            Read more
+            </div>
+            <div class="arr-offering">
+            <i class="arr-small one"></i>
+            <i class="arr-small two"></i>
+            <i class="arr-small three"></i>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+                        <div class="twig-code"></div>
+                                                  <div class="col twig-code">
+    <div class="insight-img">
+        <img src="/files/blog/2023/02/412-LUI-AR-Virtual-Interaction-with-the-car-960x960px.jpg" alt="LUI AR - Virtual Interaction with the car">
+    </div>
+                    <p class="item-contenttype body-text-bold">Blog</p>
+                <h3 class="item-title">LUI AR - Virtual Interaction with the car</h3>
+    <div class="btn-container">
+        <a class="btn btn-text btn-icon focus" href="/blog/lui-ar-virtual-interaction-with-the-car">
+        <div class="text-container">
+            <div class="text stretched-link">
+            Read more
+            </div>
+            <div class="arr-offering">
+            <i class="arr-small one"></i>
+            <i class="arr-small two"></i>
+            <i class="arr-small three"></i>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+                                                  </div>
+                      </section></div></body></html>
+    </div>
+        <div id="back-to-top-btn" class="back-to-top-btn">
+            <button type="button">
+                <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
+            </button>
+        </div>
+                                                <div id="page-industries" class=""></div>
+                                                                        <div id="page-services" class="service-Design "></div>
+        <footer class="footer">
+    <div class="container pt-10">
+        <div class="row">
+            <div class="col-12 col-lg-3 footer__col-contact">
+                <p class="text-white paragraph-as-5">Enable your digital advantage with fintego</p>
+                <a class="btn btn-outline" id="button-addon2" type="button" href="/contact-form">
+                    Connect with us
+                </a>
+                <ul class="footer__social-networks">
+                    <li>
+                        <a href="https://www.facebook.com/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-fb.svg" alt="facebook icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCDtOIqWxKHTdtmVi8yr_D7Q" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-yt.svg" alt="youtube icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-tw.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/companies/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-in.svg" alt="linkedin icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Discover fintego
+        </p>
+        <ul>
+            <li>
+                <a href="/about-us">About Us</a>
+            </li>
+            <li>
+                <a href="https://career.fintego.com/">Careers</a>
+            </li>
+            <li>
+                <a href="/contact-form">Contact Us</a>
+            </li>
+            <li>
+                <a href="/event">Events</a>
+            </li>
+            <li>
+                <a href="/esg">Environmental, Social and Governance</a>
+            </li>
+            <li>
+                <a href="/global-presence">Global Presence</a>
+            </li>
+            <li>
+                <a href="/insights">Insights</a>
+            </li>
+            <li>
+                <a href="/pr">Newsroom</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePartnerships"
+                                aria-controls="collapsePartnerships"
+                                aria-expanded="false">
+                                Partnerships
+                        </button>
+                    </p>
+                    <div id="collapsePartnerships" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/partners">fintego's partners</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/nasdaq">Nasdaq</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/appian">Appian</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/aws">AWS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/clm">Fenergo</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/finastra">Finastra</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/itrs">ITRS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/microsoft">Microsoft</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/moodys">Moody's Analytics</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/murex">Murex</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/orchestrade">Orchestrade</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/pega">Pega</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/planixs">Planixs</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/smartstream">SmartStream</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos">Temenos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/ukraine-updates">Ukraine updates</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Services
+        </p>
+        <ul>
+            <li>
+                <a href="/services/cloud-solutions">Cloud Solutions</a>
+            </li>
+            <li>
+                <a href="/services/data-to-insights">Data Analytics</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseDesign"
+                                aria-controls="collapseDesign"
+                                aria-expanded="false">
+                                Design
+                        </button>
+                    </p>
+                    <div id="collapseDesign" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/design">Design services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/innovation-strategy">Innovation strategy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFrontendDevelopment"
+                                aria-controls="collapseFrontendDevelopment"
+                                aria-expanded="false">
+                            Front-end Development
+                        </button>
+                    </p>
+                    <div id="collapseFrontendDevelopment" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/front-end-development">Front-end development services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mobile-app-development">Mobile Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-development">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntelligentAutomation"
+                                aria-controls="collapseIntelligentAutomation"
+                                aria-expanded="false">
+                            Intelligent Automation
+                        </button>
+                    </p>
+                    <div id="collapseIntelligentAutomation" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/low-code-development">Low-code development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseLegacyModernization"
+                                aria-controls="collapseLegacyModernization"
+                                aria-expanded="false">
+                            Legacy Modernization
+                        </button>
+                    </p>
+                    <div id="collapseLegacyModernization" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/legacy-modernization">Legacy modernization services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/services/beyond">fintego Beyond</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMachineLearning"
+                                aria-controls="collapseMachineLearning"
+                                aria-expanded="false">
+                                Machine Learning
+                        </button>
+                    </p>
+                    <div id="collapseMachineLearning" class="accordion-collapse collapse">
+                        <div class="accordion-body small">
+                            <ul>
+                                <li>
+                                    <a href="/services/machine-learning">Machine learning services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/computer-vision">Computer vision</a>
+                                </li>
+                                <li>
+                                    <a href="/services/natural-language-processing">Natural language processing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseSoftwareEngineering"
+                                aria-controls="collapseSoftwareEngineering"
+                                aria-expanded="false">
+                                Software Engineering
+                        </button>
+                    </p>
+                    <div id="collapseSoftwareEngineering" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/engineering-services">Software engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/financial-software-development">Financial software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/qa-automation">QA automation</a>
+                                </li>
+                                <li>
+                                    <a href="/services/trading-software-development">Trading software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                </li>
+                                <li>
+                                    <a href="/services/custom-software-development">Custom software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/application-engineering-services">Application engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/product-engineering-services">Product engineering services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Industries
+        </p>
+        <ul>
+            <li>
+                <a href="/industries/automotive">Automotive</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseBanking"
+                                aria-controls="collapseBanking"
+                                aria-expanded="false">
+                                Banking
+                        </button>
+                    </p>
+                    <div id="collapseBanking" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/banking">IT services for banking</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/boomerang">Boomerang software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/cloud">Cloud banking services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/core-banking">Core banking software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan">Hogan banking system</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/fintego-banking-transformation-advisory">Banking transformation advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/fintego-cams">CAMS card processing solution</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/health-check">Temenos health check</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseCapitalMarkets"
+                                aria-controls="collapseCapitalMarkets"
+                                aria-expanded="false">
+                                Capital Markets
+                        </button>
+                    </p>
+                    <div id="collapseCapitalMarkets" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource client services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/consumer-goods">Consumer Goods</a>
+            </li>
+            <li>
+                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+            </li>
+            <li>
+                <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseInsurance"
+                                aria-controls="collapseInsurance"
+                                aria-expanded="false">
+                            Insurance
+                        </button>
+                    </p>
+                    <div id="collapseInsurance" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/insurance">Insurance technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/software-engineering">Software development</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/manufacturing">Manufacturing</a>
+            </li>
+            <li>
+                <a href="/industries/media">Media</a>
+            </li>
+            <li>
+                <a href="/industries/technology-networking">Networking and Technology</a>
+            </li>
+            <li>
+                <a href="/industries/oil">Oil and Gas</a>
+            </li>
+            <li>
+                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+            </li>
+            <li>
+                <a href="/industries/telecommunications">Telecommunications</a>
+            </li>
+            <li>
+                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+            </li>
+            <li>
+                <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer__menu-mobile">
+    <div class="menu-accordion">
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseIndustries"
+                        aria-controls="collapseIndustries">
+                    Industries
+                </button>
+            </p>
+            <div id="collapseIndustries" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/industries/automotive">Automotive</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseBankingMobile"
+                                            aria-controls="collapseBankingMobile">
+                                            Banking
+                                    </button>
+                                </p>
+                                <div id="collapseBankingMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/banking">IT services for banking</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/boomerang">Boomerang software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/cloud">Cloud banking services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/core-banking">Core banking software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan">Hogan banking system</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/fintego-banking-transformation-advisory">Banking transformation advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/fintego-cams">CAMS card processing solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/health-check">Temenos health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseCapitalMobile"
+                                            aria-controls="collapseCapitalMobile">
+                                            Capital Markets
+                                    </button>
+                                </p>
+                                <div id="collapseCapitalMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource client services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/consumer-goods">Consumer Goods</a>
+                        </li>
+                        <li>
+                            <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseInsuranceMobile"
+                                            aria-controls="collapseInsuranceMobile">
+                                        Insurance
+                                    </button>
+                                </p>
+                                <div id="collapseInsuranceMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/insurance">Insurance technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/software-engineering">Software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/manufacturing">Manufacturing</a>
+                        </li>
+                        <li>
+                            <a href="/industries/media">Media</a>
+                        </li>
+                        <li>
+                            <a href="/industries/technology-networking">Networking and Technology</a>
+                        </li>
+                        <li>
+                            <a href="/industries/oil">Oil and Gas</a>
+                        </li>
+                        <li>
+                            <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                        </li>
+                        <li>
+                            <a href="/industries/telecommunications">Telecommunications</a>
+                        </li>
+                        <li>
+                            <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                        </li>
+                        <li>
+                            <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseServices"
+                        aria-controls="collapseServices">
+                    Services
+                </button>
+            </p>
+            <div id="collapseServices" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/services/cloud-solutions">Cloud Solutions</a>
+                        </li>
+                        <li>
+                            <a href="/services/data-to-insights">Data Analytics</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDesignMobile"
+                                            aria-controls="collapseDesignMobile">
+                                            Design
+                                    </button>
+                                </p>
+                                <div id="collapseDesignMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/design">Design services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/innovation-strategy">Innovation strategy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFrontendDevelopmentMobile"
+                                            aria-controls="collapseFrontendDevelopmentMobile">
+                                        Front-end Development
+                                    </button>
+                                </p>
+                                <div id="collapseFrontendDevelopmentMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/front-end-development">Front-end development services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mobile-app-development">Mobile Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-development">Web Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseIntelligentAutomationMobile"
+                                            aria-controls="collapseIntelligentAutomationMobile">
+                                        Intelligent Automation
+                                    </button>
+                                </p>
+                                <div id="collapseIntelligentAutomationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/low-code-development">Low-code development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseLegacyModernizationMobile"
+                                            aria-controls="collapseLegacyModernizationMobile">
+                                            Legacy Modernization
+                                    </button>
+                                </p>
+                                <div id="collapseLegacyModernizationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/legacy-modernization">Legacy Modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/services/beyond">fintego Beyond</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseMachineLearningMobile"
+                                            aria-controls="collapseMachineLearningMobile">
+                                            Machine Learning
+                                    </button>
+                                </p>
+                                <div id="collapseMachineLearningMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/machine-learning">Machine learning services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/computer-vision">Computer vision</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/natural-language-processing">Natural language processing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSoftwareEngineeringMobile"
+                                            aria-controls="collapseSoftwareEngineeringMobile">
+                                            Software Engineering
+                                    </button>
+                                </p>
+                                <div id="collapseSoftwareEngineeringMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/engineering-services">Software engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/financial-software-development">Financial software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/qa-automation">QA automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/trading-software-development">Trading software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/custom-software-development">Custom software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/application-engineering-services">Application engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/product-engineering-services">Product engineering services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseDiscoverfintego"
+                        aria-controls="collapseDiscoverfintego">
+                    Discover fintego
+                </button>
+            </p>
+            <div id="collapseDiscoverfintego" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://career.fintego.com/">Careers</a>
+                        </li>
+                        <li>
+                            <a href="/contact-form">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/event">Events</a>
+                        </li>
+                        <li>
+                            <a href="/esg">Environmental, Social and Governance</a>
+                        </li>
+                        <li>
+                            <a href="/global-presence">Global Presence</a>
+                        </li>
+                        <li>
+                            <a href="/insights">Insights</a>
+                        </li>
+                        <li>
+                            <a href="/pr">Newsroom</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsePartnershipsMobile"
+                                            aria-controls="collapsePartnershipsMobile">
+                                            Partnerships
+                                    </button>
+                                </p>
+                                <div id="collapsePartnershipsMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/partners">fintego's partners</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/nasdaq">Nasdaq</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/appian">Appian</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/aws">AWS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/clm">Fenergo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/finastra">Finastra</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/itrs">ITRS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/microsoft">Microsoft</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/moodys">Moody's Analytics</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/murex">Murex</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/orchestrade">Orchestrade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/pega">Pega</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/planixs">Planixs</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/smartstream">SmartStream</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos">Temenos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/ukraine-updates">Ukraine updates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="container border-top">
+        <div class="row footer__sub-footer pt-3 pb-3">
+            <div class="col-12 col-lg-5 text-uppercase order-lg-first order-sm-last copy-right mt-sm-3 pt-sm-3 pt-lg-0 mt-lg-0">
+                <p>© 2025 fintego, A DXC TECHNOLOGY COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="col-12 col-lg-7 order-lg-last order-sm-first">
+                <ul class="list-group list-group-horizontal-lg float-lg-end text-uppercase">
+                    <li>
+                        <a href="/procurement">Procurement</a>
+                    </li>
+                    <li>
+                        <a href="/corporate-policies">Corporate Policies</a>
+                    </li>
+                    <li>
+                        <a href="/online-privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-use">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/contact-form#copyrights">Report Copyright Violation</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
+        <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
+                <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
+    </body>
+</html>

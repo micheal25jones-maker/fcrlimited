@@ -1,0 +1,2507 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- OneTrust Cookies Consent Notice start for fintego.com -->
+        <script refer async type="text/javascript">
+            function OptanonWrapper() { }
+        </script>
+        <!-- OneTrust Cookies Consent Notice end for fintego.com -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script refer async>
+            document.addEventListener('DOMContentLoaded', e => {
+                window.dataLayer = window.dataLayer || []
+                if (document.getElementById('page-industries')) {
+                    const industriesList = Array.from(document.getElementById('page-industries').classList)
+                    industriesList.forEach(industry => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": industry});
+                    })
+                }
+                if (document.getElementById('page-services')) {
+                    const servicesList = Array.from(document.getElementById('page-services').classList)
+                    servicesList.forEach(service => {
+                        window.dataLayer.push ({"event": "page-load", "PageGrouping": service});
+                    })
+                }
+            })
+        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+        <script refer async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/theme/fintego/static/images/favicon/favicon.svg" />
+        <script refer src="https://code.jquery.com/jquery-3.7.1.min.js"crossorigin="anonymous"></script>
+        <link rel="manifest" href="/theme/fintego/static/images/favicon/site.webmanifest">
+        <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[[{"@type":"ListItem","position":1,"item":"https:\/\/www.fintego.com\/","name":"Home"},{"@type":"ListItem","position":2,"item":"https:\/\/www.fintego.com\/blog","name":"Blog"},{"@type":"ListItem","position":3,"name":"Anomaly detection using recurrent neural network autoencoders "}]]}</script>
+        <title>
+        Unlocking advanced anomaly detection with deep learning and PyTorch 
+        </title>
+        <script refer async type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041441-10041537.js"></script>
+        <link rel="stylesheet" href="/theme/fintego/assets/app.min.41025cec95a71e1b0698.css">
+        <link rel="preload" href="/theme/fintego/assets/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+                <script refer src="//offer.fintego.com/js/forms2/js/forms2.min.js"></script>
+    <meta property="og:locale" content="en" />
+        <meta property="og:title" content="Unlocking advanced anomaly detection with deep learning and PyTorch " />
+        <meta property="og:description" content="Explore how deep learning techniques and neural networks implemented in PyTorch offer a cutting-edge solution for anomaly detection.  " />
+        <meta name="description" content="Explore how deep learning techniques and neural networks implemented in PyTorch offer a cutting-edge solution for anomaly detection.  " />
+                    <meta property="og:url" content="/blog/advanced-anomaly-detection-deep-learning-pytorch" />
+                    <meta property="og:image:width" content="960">
+        <meta property="og:image:height" content="960">
+        <meta property="og:image" content="/files/blog/2023/09/1695798792_960x960-GEMS3blog.jpg" />
+        <meta name="twitter:image" content="/files/blog/2023/09/1695798792_960x960-GEMS3blog.jpg" />
+        <meta name="twitter:description" content="Explore how deep learning techniques and neural networks implemented in PyTorch offer a cutting-edge solution for anomaly detection.  " />
+        <meta name="twitter:title" content="Unlocking advanced anomaly detection with deep learning and PyTorch " />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@fintego" />
+        <script id="imageMarkUpData" type="application/ld+json"></script>
+                            <link rel="canonical" href="/blog/advanced-anomaly-detection-deep-learning-pytorch">
+<meta name="generator" content="Bolt">
+</head>
+    <body class="  bd-white
+">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+<header class="header ">
+    <div class="container--wide">
+        <div class="header__nav">
+            <div class="switch" id="menu-switcher">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="text">
+                    <span>Menu</span>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/">
+                    <img src="/theme/fintego/assets/images/logo/fintego-new-white.svg"
+                         class="img img--white"
+                         alt="fintego | A leading IT company for cutting-edge software engineering and digital transformation services"
+                         style="width:110px" />
+                </a>
+            </div>
+            <div class="lux-menu">
+                <nav class="lux-menu__nav">
+                    <div class="lux-menu__line"></div>
+                    <ul>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Industries</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Industries
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/automotive">Automotive</a></li>
+                                    <li><a href="/industries/banking">Banking</a></li>
+                                    <li>
+                                        <a href="/industries/capital-markets">Capital Markets</a>
+                                    </li>
+                                    <li><a href="/industries/consumer-goods">Consumer Goods</a></li>
+                                    <li>
+                                        <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/healthcare">
+                                            Healthcare and Life Sciences
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/insurance">Insurance</a></li>
+                                    <li>
+                                        <a href="/industries/manufacturing">Manufacturing</a>
+                                    </li>
+                                    <li><a href="/industries/media">Media</a></li>
+                                    <li>
+                                        <a href="/industries/technology-networking">
+                                            Networking and Technology
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/oil">Oil and Gas</a></li>
+                                    <li>
+                                        <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                                    </li>
+                                    <li>
+                                        <a href="/industries/telecommunications">
+                                            Telecommunications
+                                        </a>
+                                    </li>
+                                    <li><a href="/industries/travel-and-hospitality">Travel and Hospitality</a></li>
+                                    <li>
+                                        <a href="/industries/transportation-and-logistics">
+                                            Transportation and Logistics
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Services</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/cloud-solutions">Cloud Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/data-to-insights">Data Analytics</a>
+                                    </li>
+                                    <li><a href="/services/design">Design</a></li>
+                                    <li>
+                                        <a href="/services/engineering-services">Engineering</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/front-end-development">Front-end Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/innovation-strategy">
+                                            Innovation Strategy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/intelligent-automation">
+                                            Intelligent Automation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/legacy-modernization">
+                                            Legacy Modernization
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/beyond">fintego Beyond</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services/machine-learning">Machine Learning</a>
+                                    </li>
+                                    <li><a href="/services/qa-automation">QA Automation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="/case-studies">Case studies</a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">Insights</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>Insights
+                                        </a>
+                                    </li>
+                                    <li><a href="/insights">Insights and Resource Hub</a></li>
+                                    <li><a href="/insights/automotive">Automotive Insights</a></li>
+                                    <li><a href="/insights/financial-services">Financial Services Insights</a></li>
+                                    <li><a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a></li>
+                                    <li><a href="/insights/technology-and-engineering">Technology and Engineering Insights</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="firstLvl">
+                            <a href="https://career.fintego.com/">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="has-children firstLvl">
+                            <a href="javascript:" class="root-link">About us</a>
+                            <div class="lux-menu__submenuLvlTwo">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:" class="back-mobile back-mobileLvlOne">
+                                            <i class="arr-left"></i>About us
+                                        </a>
+                                    </li>
+                                    <li><a href="/about-us">About fintego</a></li>
+                                    <li><a href="/esg">Environmental, Social and Governance</a></li>
+                                    <li><a href="/event">Events</a></li>
+                                    <li><a href="/global-presence">Global Presence</a></li>
+                                    <li><a href="/pr">Newsroom</a></li>
+                                    <li><a href="/partners">Partnerships</a></li>
+                                    <li><a href="/ukraine-updates">Ukraine updates</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                                                <li class="firstLvl"><a href="/contact-form">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__new-menu">
+            <ul>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Industries</a>
+                    <div class="header__new-menu--sub-menu industry-expertise">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/automotive">Automotive</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/healthcare">
+                                    Healthcare and Life Sciences
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/oil">Oil and Gas</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/banking">Banking</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/insurance">Insurance</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/capital-markets">Capital Markets</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/manufacturing">Manufacturing</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/telecommunications">Telecommunications</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/consumer-goods">Consumer Goods</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/media">Media</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/technology-networking">
+                                    Networking and Technology
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/industries/transportation-and-logistics">
+                                    Transportation and Logistics
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Services</a>
+                    <div class="header__new-menu--sub-menu our-services">
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/cloud-solutions">Cloud Solutions</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/engineering-services">Engineering</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/intelligent-automation">
+                                    Intelligent Automation
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/machine-learning">Machine Learning</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/data-to-insights">Data Analytics</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/front-end-development">Front-end Development</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/legacy-modernization">
+                                    Legacy Modernization
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/qa-automation">QA Automation</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/services/design">Design</a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/innovation-strategy">
+                                    Innovation Strategy
+                                </a>
+                            </div>
+                            <div class="single">
+                                <a href="/services/beyond">fintego Beyond</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="/case-studies" class="element">Case studies</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">Insights</a>
+                    <div class="header__new-menu--sub-menu insights-menu">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/insights">Insights and Resource Hub</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/automotive">Automotive Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/financial-services">Financial Services Insights</a>
+                            </div>
+                            <div class="single">
+                                <a href="/insights/cross-industry-solutions">Cross-Industry Solutions Insights</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/insights/technology-and-engineering">Technology and Engineering Insights</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="https://career.fintego.com/" class="element">Careers</a>
+                </li>
+                <li>
+                    <a href="javascript:" class="element" aria-expanded="false" aria-haspopup="true">About us</a>
+                    <div class="header__new-menu--sub-menu about-us">
+                        <div class="header__new-menu--sub-menu--item align-items-center">
+                            <div class="single">
+                                <a href="/about-us">About fintego</a>
+                            </div>
+                            <div class="single">
+                                <a href="/esg">Environmental, Social and Governance</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/event">Events</a>
+                            </div>
+                            <div class="single">
+                                <a href="/pr">Newsroom</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/global-presence">Global Presence</a>
+                            </div>
+                            <div class="single">
+                                <a href="/partners">Partnerships</a>
+                            </div>
+                        </div>
+                        <div class="header__new-menu--sub-menu--item">
+                            <div class="single">
+                                <a href="/ukraine-updates">Ukraine updates</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="contact" href="/contact-form" aria-label="Contact us">
+                        <div class="contact--image"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+                <div class="header__contact">
+            <ul>
+                <li>
+                    <a href="#" class="search-btn" id="search-btn">
+                        <img src="/theme/fintego/assets/images/icons/search.svg"
+                             alt="search icon" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__contact--square" id="header--square"></div>
+    <div class="header__search-open">
+        <div class="header__search-open__panel">
+            <div class="header__search-open__top">
+                <div class="close" id="close-search">
+                    &times;
+                </div>
+            </div>
+            <div class="header__search-open__form">
+                <form id="global-search" method="GET" action="/search">
+                    <input id="input-search" type="text" name="q" placeholder="Search..." />
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+      <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","headline":"Anomaly detection using recurrent neural network autoencoders ","description":"Explore how deep learning techniques and neural networks implemented in PyTorch offer a cutting-edge solution for anomaly detection.  ","name":"Blog","url":"https:\/\/www.fintego.com\/blog\/advanced-anomaly-detection-deep-learning-pytorch","inLanguage":"en","articleBody":"<p>\r\n    {​{light_breadcrumbs(record)}​}\r\n<\/p>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<section class=\"blog-in-brief\">\r\n<p class=\"blog-in-brief__heading text-20 unscaled\">\r\n    In brief\r\n<\/p>\r\n<ul class=\"text-18 default-ul unscaled\">\r\n    <li>Anomaly detection is the identification of items that deviate significantly from the majority of the data and do not conform to a well-defined notion of normal behavior. These may have been generated by a different mechanism or appear inconsistent with the remainder of a particular data set&nbsp;<\/li>\r\n    <li>Traditional detection methods perform well when dealing with binary classification of anomalies but are not designed to capture the temporal\/spatial correlation pattern between data points &nbsp;<\/li>\r\n    <li>In this article, we consider an application for anomaly detection using deep learning techniques and neural networks (NNs) implemented with the PyTorch framework&nbsp;<\/li>\r\n<\/ul>\r\n<\/section>\r\n<p>\r\n    &nbsp;&nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <div>\r\n                <p>\r\n                    Thanks to data science and, in particular, machine learning, businesses can better understand and perform preventive and timely maintenance on processes that might cause high losses when they don’t work properly.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    Anomaly detection, also known as outlier detection, is the identification of items, events or observations that deviate significantly from the majority of the data and do not conform to a well-defined notion of normal behavior. Such items, events or observations may have been generated by a different mechanism or appear inconsistent with the remainder of that data set.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    To deal with an anomaly detection problem, traditional methods are usually applied. Some of these methods could be seasonal autoregressive moving average (ARIMA), deviation from static location parameters from an underlying distribution, quantile regression, ensemble techniques using feature bagging, isolation forests and cluster analysis-based anomaly detection.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    The above techniques perform well when dealing with data points and events labeled “anomaly” with a binary classification logic. Unfortunately, they are not designed to capture the temporal\/spatial correlation pattern between data points. Although classical time series models can model those patterns, we can resort to deep learning techniques in neural networks (NNs) to achieve more meaningful results.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    In this article, we will consider an application for anomaly detection using an RNN autoencoder-based technique where a sequence of data points is labeled as either “normal” or “anomaly” behavior. The NN is implemented with a PyTorch framework.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<p>\r\n    &nbsp; &nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    Deep learning solutions\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                <b>Autoencoder<\/b>&nbsp;\r\n            <\/p>\r\n            <p>\r\n                &nbsp;\r\n            <\/p>\r\n            <figure>\r\n                <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-Charts-Tables-layouts-02-01.jpg\" id=\"a8oom4o46jrj\" data-image=\"a8oom4o46jrj\">\r\n            <\/figure>\r\n            <p>\r\n                &nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <div>\r\n                <p>\r\n                    Figure 1. The autoencoder structure, from left to right: The vector sequence as input, the encoder NN for dimensionality reduction, the latent encoded vector, the decoder NN and the output of the model&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    In Figure 1, the encoder is a neural network trained to encode the input sequence into a compact representation called the latent vector. The decoder does the opposite by trying to reconstruct the input sequence starting from its compressed encoded representation. To determine whether an input sequence is anomalous, it is compared with the autoencoder output. If the reconstruction error exceeds a chosen threshold, the sequence is considered anomalous.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    The training strategy to achieve high accuracy consists of only training the autoencoder on normal data, i.e., when the system that generates the data works properly. A normal sequence fed into the model will show an output close to its input; however, with anomalous sequences, the output is expected to deviate significantly by at least a chosen meaningful threshold.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n            <div>\r\n                <p>\r\n                    <i>The above is one of the cases where overfitting might be beneficial as the success of the models lies in the ability to not generalize to anomalous sequence data. Good and bad performance of the model is the key to correct classification<\/i>.&nbsp;\r\n                <\/p>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        &nbsp;\r\n    <\/p>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n   Recurrent neural networks\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                The choice of the encoder is crucial, and its architecture must capture the pattern structure of the data and keep their most important characteristics in a reduced representation. The same can be said for the choice of the decoder, which, starting from the reduced vector, must expand the encoded information to a full-size sequence output.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Recurrent neural networks (RNNs) are particularly capable of capturing the interdependence of the data thanks to their recurrent mechanism. The main idea is that if we have a sequence of size <i>T<\/i> and <i>t<\/i> is the index of the observation ranging in [1, 2, …, <i>t<\/i>, …, <i>T<\/i>], when the observation at time <i>t<\/i> is passed into the network, the past observations at times [<i>t<\/i>-1, <i>t<\/i>-2, …] influence the output result.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                RNNs have been so successful that researchers have implemented modifications of the vanilla algorithm like the gated recurrent unit (GRU) and the long short-term memory (LSTM). Apart from solving the vanilla RNN vanishing gradient problem, they are capable of interpolating longer time series dependencies thanks to structures called gates and memory cells.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<p>\r\n    &nbsp;&nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    Data source\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                The original dataset can be found on Kaggle as the <a href=\"https:\/\/www.kaggle.com\/datasets\/nphantawee\/pump-sensor-data\" target=\"_blank\">pump sensor data<\/a>, where a water pump system is monitored because it does not work for some periods. The following motivation drives the investigation and attempts to find a solution:&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                <i><b>Problem statement: <\/b><\/i><i>There were 7 system failures last year. Those failures cause huge problems for many people, leading to some serious living problem<\/i>s <i>for a number of families. The team can’t see any pattern in the data when the system goes down, so they are not sure where to focus their attention (from the above source)<\/i>.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The dataset columns are:&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n    <\/div>\r\n    <div>\r\n        <ul class=\"unscaled default-ul\">\r\n            <li><b>timestamp<\/b> —<b> <\/b>time of observation recorded every minute<\/li>\r\n            <li><b>sensor_##<\/b> — reading value of each sensor, where ## is the sensor number ranging from 00 to 51, inclusively.<\/li>\r\n            <li><b>machine_status<\/b> — has the values ‘NORMAL’ when the water pump is working properly, or ‘BROKEN’ or ‘RECOVERING’ otherwise<\/li>\r\n        <\/ul>\r\n        <p>\r\n            Firstly, the column<b>machine_status<\/b>is dropped in favor of a new column called<b>target<\/b>, where<b> <\/b>elements are assigned the value 0 when the<b>machine_status<\/b>is ‘NORMAL’ or 1 otherwise.&nbsp;\r\n        <\/p>\r\n        <p>\r\n            &nbsp;\r\n        <\/p>\r\n        <figure>\r\n            <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-Charts-Tables-layouts-02-04.jpg\" id=\"z7g0pjdhu57z\" data-image=\"z7g0pjdhu57z\">\r\n        <\/figure>\r\n        <p>\r\n            &nbsp;\r\n        <\/p>\r\n    <\/div>\r\n<\/div>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                Figure 2. The blue bar over the ‘0’ label represents the number of points under which the water pump is functioning properly, and the ‘1’ bar represents the number of points when the water pump is not working or is recovering&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The water pump system was not working at the moments represented at 14484 time points. However, this graph would not tell us how many times the system went down. Although the problem statement already clarifies that issue, we need to better study the temporal pattern for periods when the water pump system was not functioning.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The article focuses more on applying ML techniques than packaging a final solution to the problem; hence, we will work only with <b>sensor_02<\/b>.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            &nbsp;\r\n        <\/p>\r\n        <figure>\r\n            <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-Charts-Tables-layouts-02-02.jpg\" id=\"qudv27znmlo8\" data-image=\"qudv27znmlo8\">\r\n        <\/figure>\r\n        <p>\r\n            &nbsp;\r\n        <\/p>\r\n        <div>\r\n            <p>\r\n                Sensor values: Blue shows when the system is working nominally, whereas yellow shows anomalies\/regime shifts.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The water pump system does not work approximately 6% of the time, and there are 7 failures:&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 1: 945 minutes, 15.75 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 2: 3111 minutes, 51.85 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 3: 1313 minutes, 21.88 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 4: 606 minutes, 10.1 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 5: 8391 minutes, 139.85 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 6: 42 minutes, 0.7 hour&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                Failure 7: 76 minutes, 1.27 hours&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The first 4 failures endured for a maximum of 2 days, and the longest failure lasted 6 days, whereas the later failures were solved in less than 2 hours.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The goal is to identify when the system is not working by looking at the last available sequence of points in time with an arbitrary size <i>t.<\/i><i> <\/i>The choice of the size <i>t<\/i> depends on many factors. If <i>t<\/i> is set to 60, last-hour measurements are observed to determine whether the system is working.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n    <\/div>\r\n    <p>\r\n        &nbsp;\r\n    <\/p>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n    Data wrangling\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <p style=\"word-break: break-all;\">\r\n        The data provided by the sensor is a long time series consisting of 220,320 observations. These data are scaled using the Python class sklearn.preprocessing.StandardScaler(), which centers the data to a 0 mean series and unit variance.\r\n    <\/p>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        The scaler is fitted only on normal data and then applied to the whole series. Once scaled, a rolling window with a size of 60 data points with a lag of 45 steps creates a dataset of 1-hour sequences. For each sequence, the column <b>target<\/b> counts the number of anomalous points.\r\n    <\/p>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        In this way, 4895 sequences are generated, some of which are shown below:\r\n    <\/p>\r\n    <figure>\r\n        <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-article-Anomaly-Detection-PIC-01.jpg\" id=\"1zvtqkug3hpb\" data-image=\"1zvtqkug3hpb\">\r\n    <\/figure>\r\n    <p>\r\n        &nbsp;\r\n    <\/p>\r\n    <div>\r\n        <p>\r\n            The red highlighted rows are discarded due to their ambiguity in whether they are anomalous or not, while the green rows with target valued 0 are normal sequences, when the value 60 is anomalous.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            As sequences with anomalies between 1 and 59 can signal partial working of the water pump system. only rows whose target columns are valued at 0 or 60 are retained, representing normal and anomalous sequences, respectfully. Some of the rows present not a number (NaN) values filled with the respective sequences’ medians.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            Due to PyTorch being used as a Python library for building the autoencoder architecture, the sequences are cast to torch tensors and, eventually, the dataset is partitioned into the training (85%), validation (5%), and test (10%) subdatasets which include only ‘normal’ sequences. In contrast, the anomalous sequences are grouped as an ‘anomalous’ test subdataset due to the design of the training procedure.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n<\/div>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    PyTorch implementation\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <p>\r\n            The LSTM Autoencoder implementation will be shown and explained below, as the GRU and Vanilla RNN in terms of code are a simple variation of LSTM.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        &nbsp;&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n    Encoder\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<p>\r\n    The encoder’s full code is presented below:&nbsp;\r\n<\/p>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<pre>from torch import nn, distributions, exp, log \r\nimport torch \r\nclass LSTM_Encoder(nn.Module): \r\n  def __init__(self, n_features, seq_len, embedding_dim=20): \r\n    super(LSTM_Encoder, self).__init__() \r\n    self.seq_len, self.n_features = seq_len, n_features \r\n    self.embedding_dim = embedding_dim \r\n    self.rnn = nn.LSTM( \r\n      input_size=n_features, \r\n      hidden_size=embedding_dim, \r\n      num_layers=1, \r\n      batch_first=True \r\n    ) \r\n  def forward(self, x): \r\n    x = x.reshape((1, self.seq_len, self.n_features)) \r\n    _, (hidden_n, _) = self.rnn(x) \r\n    return hidden_n.reshape((self.n_features, self.embedding_dim)) \r\n<\/pre>\r\n<div>\r\n    <div>\r\n        <p>\r\n            The following is a line-by-line explanation of the encoder implementation:&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <pre>from torch import nn, distributions, exp, log \r\nimport torch <\/pre>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            These are all elements of the torch: torch.nn allows a neural network to be built, whereas torch.distributions, torch.exp and torch.log are needed for the variational autoencoder.&nbsp;\r\n        <\/p>\r\n        <pre>class RNN_Encoder(nn.Module): \r\n  def __init__(self, n_features, seq_len, embedding_dim=20): \r\n    super(RNN_Encoder, self).__init__() # The same as super().__init__() \r\n    self.seq_len, self.n_features = seq_len, n_features \r\n    self.embedding_dim = embedding_dim \r\n    self.rnn = nn.LSTM( \r\n      input_size=n_features, \r\n      hidden_size=self.embedding_dim, \r\n      num_layers=1, \r\n      batch_first=True \r\n    ) \r\n        <\/pre>\r\n        <div>\r\n            <p>\r\n                The RNN_Encoder class inherits the functionality of the nn.Module class, <i>self.seq_len<\/i> is the length of the input time series sequence (60 in this case), <i>self.n_features<\/i> is the input number of sequences corresponding to 1 here, as only the data of sensor_02 are taken into consideration. The attribute <i>self.embedding<\/i>_dim is the size of the reduced size vector where the information of the input sequence is encoded to.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                <i>self.rnn<\/i> is the recurrent neural network to be implemented, and its LSTM layer has the following parameters:&nbsp;\r\n            <\/p>\r\n            <div>\r\n                <div>\r\n                    <ul class=\"unscaled default-ul\">\r\n                        <li><i>input_size<\/i> is the number of feature sequences (only one for sensor_02)&nbsp;<\/li>\r\n                        <li><i>hidden_size<\/i> is the size of the hidden layer&nbsp;<\/li>\r\n                        <li><i>num_layers<\/i> is the number of hidden layers of the RNN architecture&nbsp;<\/li>\r\n                        <li><i>batch_first<\/i> is set to true when the input torch vector dimension has to be in a specific order (batch size, length of the sequence and number of features)&nbsp;<\/li>\r\n                    <\/ul>\r\n                    <pre> def forward(self, x): \r\n    x = x.reshape((1, self.seq_len, self.n_features)) \r\n    _, (hidden_n, _) = self.rnn(x) \r\n    return hidden_n.reshape((self.n_features, self.embedding_dim)) <\/pre>\r\n                    <div>\r\n                        <p>\r\n                            The forward method defines how the input is passed through the network. It consists of a reshape of the input torch vector for this application because <i>b<\/i>atch_first is set to true; for the subsequent LSTM step the torch tensor dimension is (1, 60, 1).&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            The LSTM pass will produce a first torch tensor corresponding to the output of the NN and a second bidimensional torch tensor corresponding to the hidden layer and the cell layer. The Encoder returns the latent vector from the hidden layer.&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        &nbsp;&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n    Decoder\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <pre>class LSTM_Decoder(nn.Module): \r\n  def __init__(self, n_features=1, seq_len=60, input_dim=20): \r\n    super(LSTM_Decoder, self).__init__() \r\n    self.seq_len, self.input_dim = seq_len, input_dim \r\n    self.hidden_dim, self.n_features = 2 * input_dim, n_features \r\n    self.rnn = nn.LSTM( \r\n      input_size=input_dim, \r\n      hidden_size=self.hidden_dim, \r\n      num_layers=1, \r\n      batch_first=True \r\n    ) \r\n    self.output_layer = nn.Linear(self.hidden_dim, n_features) \r\n  def forward(self, x): \r\n    x = x.repeat(self.seq_len, self.n_features) \r\n    x = x.reshape((self.n_features, self.seq_len, self.input_dim)) \r\n    x, (hidden_n, cell_n) = self.rnn(x) \r\n    x = x.reshape((self.seq_len, self.hidden_dim)) \r\n    return self.output_layer(x) \r\n       <\/pre>\r\n<\/div>\r\n<div>\r\n    <div>\r\n        <p>\r\n            A similar procedure inverse to the encoder’s procedure is followed for the decoder. Here the input sequence is size 20 of the encoded vector, which is mapped to an input of double the size of the input sequence. The output sequence must be 60 as the initial input. For this reason, a single linear feed-forward layer is employed.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            For the forward pass, the data are repeated 60 times; these sequences are encoded to a sequence of 40 data points and eventually to a 60-point sequence.&nbsp;\r\n        <\/p>\r\n    <\/div>\r\n<\/div>\r\n<p>\r\n    &nbsp;&nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n    Training\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <p>\r\n        The training procedure is shown below. There is no batch gradient descend, and the code shown is not encapsulated in a function or a class for educational purposes.&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<div>\r\n    <pre>device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\") \r\noptimizer = torch.optim.Adam(model.parameters(), lr=1e-3) \r\ncriterion = nn.L1Loss(reduction='sum').to(device) \r\nhistory = dict(train=[], val=[]) \r\nbest_loss = 10000.0 \r\nbest_model_wts = copy.deepcopy(model.state_dict()) \r\n# train_dataset \r\n# val_dataset \r\n        <\/pre>\r\n    <p>\r\n        &nbsp;\r\n    <\/p>\r\n    <div>\r\n        <p>\r\n            The first line of code regulates GPU usage when available. The optimizer is the known Adam optimizer with the learning parameter 0.0003. The experiments prove this value is optimal for training: Bigger values do not lead to convergence, while smaller values bring slower convergence. The loss is the sum of the absolute difference.\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <p>\r\n            A dictionary called <i>history<\/i> is instantiated to save the training dataset and validation dataset loss across epochs. The variable <i>best_loss<\/i> is an arbitrary big value as the placeholder for the highest loss: When it is exceeded in any of the subsequent epochs, the model parameters will be saved within the object <i>best_model_wts<\/i>.\r\n        <\/p>\r\n    <\/div>\r\n    <div>\r\n        <p style=\"word-break: break-all;\">\r\n            There is the set of sequences <i>train_dataset<\/i> and <i>val_dataset<\/i> — the training and validation set consisting only of normal sequences.\r\n        <\/p>\r\n        <pre>for epoch in range(50): \r\n    model = model.train() \r\n    train_losses = [] \r\n    for seq_true in train_dataset: \r\n        seq_true = seq_true.to(device) \r\n        seq_pred = model(seq_true) \r\n        loss = criterion(seq_pred, seq_true) \r\n        optimizer.zero_grad() \r\n        loss.backward() \r\n        optimizer.step() \r\n        train_losses.append(loss.item()) \r\n    val_losses = [] \r\n    model = model.eval() \r\n    with torch.no_grad(): \r\n        for seq_true in val_dataset: \r\n            seq_true = seq_true.to(device) \r\n            seq_pred = model(seq_true) \r\n            loss = criterion(seq_pred, seq_true) \r\n            val_losses.append(loss.item()) \r\n    train_loss = np.mean(train_losses) \r\n    val_loss = np.mean(val_losses) \r\n    history['train'].append(train_loss) \r\n    history['val'].append(val_loss) \r\n    if val_loss &lt; best_loss: \r\n        best_loss = val_loss \r\n        best_model_wts = copy.deepcopy(model.state_dict()) \r\n           <\/pre>\r\n    <\/div>\r\n    <p>\r\n        The training starts as usual in an NN. For 50 epochs, each sequence is moved to GPU if available, passed through the model, the loss is computed, and the neural network parameters are adjusted thanks to backpropagation. Then the training and validation losses are saved, and the best-performing model is chosen through the epochs.&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<p>\r\n    <b>&nbsp;&nbsp;<\/b>\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n   Threshold\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<p>\r\n    Once the model is fitted, it is necessary to decide which threshold has to be specified for discriminating between normal and anomalous sequences.&nbsp;\r\n<\/p>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<figure>\r\n    <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-Charts-Tables-layouts-02-03.jpg\" id=\"ljci1sr59hyk\" data-image=\"ljci1sr59hyk\">\r\n<\/figure>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <p>\r\n        Figure 3. Distribution of loss values for the training dataset using the best model&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        The distribution is skewed to the right, i.e., a more significant number of reconstructed sequences exist that are closer to the inputs rather than further from them.&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<div>\r\n    <p>\r\n        One strategy is to set a quantile of the distribution as the threshold. If the quantile is set to be high, more anomalous sequences will be labeled as normal; on the contrary, a lower quantile means normal sequences will be labeled as anomalous. The choice of threshold is highly dependent on the business problem, and a cost analysis should be done to determine the optimal threshold. This information, in this case, is not available; therefore, an arbitrary 90% quantile seems reasonable.&nbsp;\r\n    <\/p>\r\n<\/div>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n   Performance metrics\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                Now, the normal and anomalous sequence test subdatasets can be used to compute crucial metrics for this binary classification problem. In particular, with the normal sequences, the number of true negative (TN) and false positive (FP) sequences is computed, and with the anomalous sequences, the number of FN and TP sequences is obtained.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <div>\r\n                <div>\r\n                    <ul class=\"unscaled default-ul\">\r\n                        <li>TP is the number of anomalous sequences labeled as anomalous by the model — i.e., the reconstruction error is greater than the threshold<\/li>\r\n                        <li>TN is the number of normal sequences labeled as normal by the model — i.e., the reconstruction error is smaller than the threshold<\/li>\r\n                        <li>FP is the number of normal sequences reconstructed badly by the model and, hence, labeled as anomalous<\/li>\r\n                        <li>FN is the number of anomalous sequences labeled as normal since the model could reconstruct close to the input for the threshold selected<\/li>\r\n                    <\/ul>\r\n                <\/div>\r\n            <\/div>\r\n            <div>\r\n                <div>\r\n                    <div>\r\n                        <p>\r\n                            From these quantities, the following metrics can be obtained:&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            Accuracy = (TP + TN) \/ (TP + TN + FP + FN)&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            Precision = TP \/ (TP + FP)&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            Recall = TP \/ (TP + FN)&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            The precision is the model’s capability to discriminate the input sequence only when it is anomalous, and it needs to be maximized if the most important solution must avoid false water system failure alarms. The highest recall metric is preferred when the crucial thing is to identify most of the anomalies.&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                    <div>\r\n                        <p>\r\n                            For this problem, the accuracy is the percentage of correctly labeled sequences, whether anomalous or normal.&nbsp;\r\n                        <\/p>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<h2 class=\"text-24 unscaled\">\r\n Results\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <div>\r\n                <div>\r\n                    <p>\r\n                        The results of some of our experiments are shown below. The Vanilla RNN, GRU, and LSTM have been implemented similarly, as the demonstrated code highlighted by the suffix <i>_light <\/i>where only one hidden layer exists, a deeper version with two hidden layers. The results also include a variational autoencoder with a one hidden layer RNN.&nbsp;\r\n                    <\/p>\r\n                    <p>\r\n                        &nbsp;\r\n                    <\/p>\r\n                    <figure>\r\n                        <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/2023\/09\/Anomaly-detection-using-recurrent-neural-network-autoencoders\/fintego-article-Anomaly-Detection-PIC-02.png\" id=\"mddmjg47622l\" data-image=\"mddmjg47622l\">\r\n                    <\/figure>\r\n                    <p>\r\n                        &nbsp;\r\n                    <\/p>\r\n                <\/div>\r\n                <div>\r\n                    <p>\r\n                        All the methods perform well according to the metrics considered. The GRU and LSTM implementations have a clear advantage in recall, compared with RNN, which is the worst performing, especially when using the lighter architecture; it’s probably unable to capture some parts of sequences complexity. The VAE implementation improves the performance of the LSTM architecture. The other two RNN types are not equally beneficial; on the contrary, they deteriorate the TP.&nbsp;\r\n                    <\/p>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<h2 class=\"text-24 unscaled\">\r\n  Summary\r\n<\/h2>\r\n<p>\r\n    &nbsp;\r\n<\/p>\r\n<div>\r\n    <div>\r\n        <div>\r\n            <p>\r\n                We can conclude that there is no preferred model of architecture among those considered that significantly outperforms the others for this problem. The GRU architecture seems a good choice in production from the MLOps perspective, as it has shown higher performance than RNN and it is lighter than LSTM, and the latter is also the slowest to train.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                In this article, we have shown some snippets of code that might help data scientists and developers to implement those ML techniques with more profound theoretical knowledge rather than hard writing the code. It is important to note that our code is educational, and when delivering a model into production, the codebase should follow best practices, such as unit testing, linting, OOP paradigm, etc.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <div>\r\n            <p>\r\n                The null treatment can be done with better techniques, such as smoothing kernels, and other metrics such as F1, ROC AUC curve, etc. can be considered to choose the optimal model for the problem’s needs. Also, for the variational autoencoder, the training function has to be endowed by a more complex loss function that takes into consideration the KL convergence.&nbsp;\r\n            <\/p>\r\n        <\/div>\r\n        <p>\r\n            &nbsp;\r\n        <\/p>\r\n    <\/div>\r\n<\/div>\r\n<section class=\"cta-banner-section\">\r\n<div class=\"row\">\r\n    <div class=\"col-12 col-md-6\">\r\n        <div class=\"cta-banner-section__content\">\r\n            <div class=\"tag\">\r\n                <p class=\"text-14 unscaled\">\r\n                    Advanced Analytics\r\n                <\/p>\r\n            <\/div>\r\n            <a href=\"https:\/\/www.fintego.com\/insights\/financial-services\/advanced-analytics\" class=\"stretched-link\">\r\n            <p class=\"cta-banner-text text-22 unscaled\">\r\n                Discover more insights to help you unlock the value of your data\r\n            <\/p>\r\n            <\/a>\r\n            <div class=\"btn btn-text btn-icon focus\">\r\n                <div class=\"text-container\">\r\n                    <div class=\"text\">\r\n                        Read more\r\n                    <\/div>\r\n                    <div class=\"arr-offering\">\r\n                        <i class=\"arr-small one\"><\/i><i class=\"arr-small two\"><\/i><i class=\"arr-small three\"><\/i>\r\n                    <\/div>\r\n                <\/div>\r\n            <\/div>\r\n        <\/div>\r\n    <\/div>\r\n    <div class=\"col-12 col-md-6 d-none d-md-block\">\r\n        <div class=\"cta-banner-section__image\">\r\n            <figure>\r\n                <img src=\"https:\/\/www.fintego.com\/files\/blog-posts\/cta-banners\/Advanced-analytics.jpg\" alt=\"cta banner\">\r\n            <\/figure>\r\n        <\/div>\r\n    <\/div>\r\n<\/div>\r\n<\/section>\r\n<p>\r\n    &nbsp;\r\n<\/p>","image":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/files\/blog\/2023\/09\/960x960-GEMS3blog.jpg","width":960,"height":960},"publisher":{"@type":"Organization","url":"https:\/\/www.fintego.com\/","name":"fintego","logo":{"@type":"ImageObject","url":"https:\/\/www.fintego.com\/theme\/fintego\/assets\/images\/logo\/fintego-new-white.svg","width":"188","height":"50"}},"author":[{"@type":"Person","name":"Arthur Shaikhatarov","image":"https:\/\/www.fintego.com\/files\/people\/2023\/09\/Arthur-Shaikhatarov.jpg","url":"https:\/\/www.linkedin.com\/in\/arthur-shaikhatarov-1b358b211\/","jobTitle":"AI\/ML Project Manager, Automotive, fintego"},{"@type":"Person","name":"Martin d’Ippolito","image":"https:\/\/www.fintego.com\/files\/people\/2023\/09\/Martin-Dippolito.jpg","url":"https:\/\/www.linkedin.com\/in\/martin-d-ippolito-202593122\/","jobTitle":"Data Scientist and ML Engineer, Automotive, fintego"}],"datePublished":"2023-09-27T07:16:00+00:00","dateModified":"2025-06-05T17:28:57+00:00"}</script>
+    <section class="blog-post-right-column blog-post-right-column__banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-7 offset-lg-1">
+                <h1>Anomaly detection using recurrent neural network autoencoders </h1>
+                <p>Sep 27, 2023
+                                             by  <b>Arthur Shaikhatarov</b>,                                             <b>Martin d’Ippolito</b>                                    </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 pl-70">
+                <div class="blog-post-right-column__banner--social">
+                    <ul>
+                        <li>
+                            <a href="#" class="social-share" data-network="linkedin">
+                                <img src="/theme/fintego/assets/images/icons/linkedin.svg" alt="linkedin icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-share" data-network="fb">
+                                <img src="/theme/fintego/assets/images/icons/fb-square.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-share" data-network="twitter">
+                                <img src="/theme/fintego/assets/images/logo-tw.svg" alt="twitter icon">
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container blog-post-right-column blog-post-right-column__content" id="main-content">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-7 offset-lg-1 text-content">
+        <p>
+    <section class="container-breadcrumbs--light"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/"><span>Home</span></a></li><li class="breadcrumb-item"><a href="/blog"><span>Blog</span></a></li><li class="breadcrumb-item active"><span>Anomaly detection using recurrent neural network autoencoders </span></li></ol></section>
+</p>
+<p>
+    &nbsp;
+</p>
+<section class="blog-in-brief">
+<p class="blog-in-brief__heading text-20 unscaled">
+    In brief
+</p>
+<ul class="text-18 default-ul unscaled">
+    <li>Anomaly detection is the identification of items that deviate significantly from the majority of the data and do not conform to a well-defined notion of normal behavior. These may have been generated by a different mechanism or appear inconsistent with the remainder of a particular data set&nbsp;</li>
+    <li>Traditional detection methods perform well when dealing with binary classification of anomalies but are not designed to capture the temporal/spatial correlation pattern between data points &nbsp;</li>
+    <li>In this article, we consider an application for anomaly detection using deep learning techniques and neural networks (NNs) implemented with the PyTorch framework&nbsp;</li>
+</ul>
+</section>
+<p>
+    &nbsp;&nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <div>
+                <p>
+                    Thanks to data science and, in particular, machine learning, businesses can better understand and perform preventive and timely maintenance on processes that might cause high losses when they don’t work properly.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    Anomaly detection, also known as outlier detection, is the identification of items, events or observations that deviate significantly from the majority of the data and do not conform to a well-defined notion of normal behavior. Such items, events or observations may have been generated by a different mechanism or appear inconsistent with the remainder of that data set.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    To deal with an anomaly detection problem, traditional methods are usually applied. Some of these methods could be seasonal autoregressive moving average (ARIMA), deviation from static location parameters from an underlying distribution, quantile regression, ensemble techniques using feature bagging, isolation forests and cluster analysis-based anomaly detection.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    The above techniques perform well when dealing with data points and events labeled “anomaly” with a binary classification logic. Unfortunately, they are not designed to capture the temporal/spatial correlation pattern between data points. Although classical time series models can model those patterns, we can resort to deep learning techniques in neural networks (NNs) to achieve more meaningful results.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    In this article, we will consider an application for anomaly detection using an RNN autoencoder-based technique where a sequence of data points is labeled as either “normal” or “anomaly” behavior. The NN is implemented with a PyTorch framework.&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    &nbsp; &nbsp;
+</p>
+<h2 class="text-24 unscaled">
+    Deep learning solutions
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <p>
+                <b>Autoencoder</b>&nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <figure>
+                <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-Charts-Tables-layouts-02-01.jpg" id="a8oom4o46jrj" data-image="a8oom4o46jrj">
+            </figure>
+            <p>
+                &nbsp;
+            </p>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Figure 1. The autoencoder structure, from left to right: The vector sequence as input, the encoder NN for dimensionality reduction, the latent encoded vector, the decoder NN and the output of the model&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    In Figure 1, the encoder is a neural network trained to encode the input sequence into a compact representation called the latent vector. The decoder does the opposite by trying to reconstruct the input sequence starting from its compressed encoded representation. To determine whether an input sequence is anomalous, it is compared with the autoencoder output. If the reconstruction error exceeds a chosen threshold, the sequence is considered anomalous.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    The training strategy to achieve high accuracy consists of only training the autoencoder on normal data, i.e., when the system that generates the data works properly. A normal sequence fed into the model will show an output close to its input; however, with anomalous sequences, the output is expected to deviate significantly by at least a chosen meaningful threshold.&nbsp;
+                </p>
+            </div>
+            <div>
+                <p>
+                    <i>The above is one of the cases where overfitting might be beneficial as the success of the models lies in the ability to not generalize to anomalous sequence data. Good and bad performance of the model is the key to correct classification</i>.&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p>
+        &nbsp;
+    </p>
+</div>
+<h2 class="text-24 unscaled">
+   Recurrent neural networks
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <p>
+                The choice of the encoder is crucial, and its architecture must capture the pattern structure of the data and keep their most important characteristics in a reduced representation. The same can be said for the choice of the decoder, which, starting from the reduced vector, must expand the encoded information to a full-size sequence output.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Recurrent neural networks (RNNs) are particularly capable of capturing the interdependence of the data thanks to their recurrent mechanism. The main idea is that if we have a sequence of size <i>T</i> and <i>t</i> is the index of the observation ranging in [1, 2, …, <i>t</i>, …, <i>T</i>], when the observation at time <i>t</i> is passed into the network, the past observations at times [<i>t</i>-1, <i>t</i>-2, …] influence the output result.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                RNNs have been so successful that researchers have implemented modifications of the vanilla algorithm like the gated recurrent unit (GRU) and the long short-term memory (LSTM). Apart from solving the vanilla RNN vanishing gradient problem, they are capable of interpolating longer time series dependencies thanks to structures called gates and memory cells.&nbsp;
+            </p>
+        </div>
+    </div>
+</div>
+<p>
+    &nbsp;&nbsp;
+</p>
+<h2 class="text-24 unscaled">
+    Data source
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <p>
+                The original dataset can be found on Kaggle as the <a href="https://www.kaggle.com/datasets/nphantawee/pump-sensor-data" target="_blank">pump sensor data</a>, where a water pump system is monitored because it does not work for some periods. The following motivation drives the investigation and attempts to find a solution:&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                <i><b>Problem statement: </b></i><i>There were 7 system failures last year. Those failures cause huge problems for many people, leading to some serious living problem</i>s <i>for a number of families. The team can’t see any pattern in the data when the system goes down, so they are not sure where to focus their attention (from the above source)</i>.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The dataset columns are:&nbsp;
+            </p>
+        </div>
+    </div>
+    <div>
+        <ul class="unscaled default-ul">
+            <li><b>timestamp</b> —<b> </b>time of observation recorded every minute</li>
+            <li><b>sensor_##</b> — reading value of each sensor, where ## is the sensor number ranging from 00 to 51, inclusively.</li>
+            <li><b>machine_status</b> — has the values ‘NORMAL’ when the water pump is working properly, or ‘BROKEN’ or ‘RECOVERING’ otherwise</li>
+        </ul>
+        <p>
+            Firstly, the column<b>machine_status</b>is dropped in favor of a new column called<b>target</b>, where<b> </b>elements are assigned the value 0 when the<b>machine_status</b>is ‘NORMAL’ or 1 otherwise.&nbsp;
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <figure>
+            <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-Charts-Tables-layouts-02-04.jpg" id="z7g0pjdhu57z" data-image="z7g0pjdhu57z">
+        </figure>
+        <p>
+            &nbsp;
+        </p>
+    </div>
+</div>
+<div>
+    <div>
+        <div>
+            <p>
+                Figure 2. The blue bar over the ‘0’ label represents the number of points under which the water pump is functioning properly, and the ‘1’ bar represents the number of points when the water pump is not working or is recovering&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The water pump system was not working at the moments represented at 14484 time points. However, this graph would not tell us how many times the system went down. Although the problem statement already clarifies that issue, we need to better study the temporal pattern for periods when the water pump system was not functioning.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The article focuses more on applying ML techniques than packaging a final solution to the problem; hence, we will work only with <b>sensor_02</b>.&nbsp;
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>
+            &nbsp;
+        </p>
+        <figure>
+            <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-Charts-Tables-layouts-02-02.jpg" id="qudv27znmlo8" data-image="qudv27znmlo8">
+        </figure>
+        <p>
+            &nbsp;
+        </p>
+        <div>
+            <p>
+                Sensor values: Blue shows when the system is working nominally, whereas yellow shows anomalies/regime shifts.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The water pump system does not work approximately 6% of the time, and there are 7 failures:&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 1: 945 minutes, 15.75 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 2: 3111 minutes, 51.85 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 3: 1313 minutes, 21.88 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 4: 606 minutes, 10.1 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 5: 8391 minutes, 139.85 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 6: 42 minutes, 0.7 hour&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                Failure 7: 76 minutes, 1.27 hours&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The first 4 failures endured for a maximum of 2 days, and the longest failure lasted 6 days, whereas the later failures were solved in less than 2 hours.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The goal is to identify when the system is not working by looking at the last available sequence of points in time with an arbitrary size <i>t.</i><i> </i>The choice of the size <i>t</i> depends on many factors. If <i>t</i> is set to 60, last-hour measurements are observed to determine whether the system is working.&nbsp;
+            </p>
+        </div>
+    </div>
+    <p>
+        &nbsp;
+    </p>
+</div>
+<h2 class="text-24 unscaled">
+    Data wrangling
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <p style="word-break: break-all;">
+        The data provided by the sensor is a long time series consisting of 220,320 observations. These data are scaled using the Python class sklearn.preprocessing.StandardScaler(), which centers the data to a 0 mean series and unit variance.
+    </p>
+</div>
+<div>
+    <p>
+        The scaler is fitted only on normal data and then applied to the whole series. Once scaled, a rolling window with a size of 60 data points with a lag of 45 steps creates a dataset of 1-hour sequences. For each sequence, the column <b>target</b> counts the number of anomalous points.
+    </p>
+</div>
+<div>
+    <p>
+        In this way, 4895 sequences are generated, some of which are shown below:
+    </p>
+    <figure>
+        <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-article-Anomaly-Detection-PIC-01.jpg" id="1zvtqkug3hpb" data-image="1zvtqkug3hpb">
+    </figure>
+    <p>
+        &nbsp;
+    </p>
+    <div>
+        <p>
+            The red highlighted rows are discarded due to their ambiguity in whether they are anomalous or not, while the green rows with target valued 0 are normal sequences, when the value 60 is anomalous.&nbsp;
+        </p>
+    </div>
+    <div>
+        <p>
+            As sequences with anomalies between 1 and 59 can signal partial working of the water pump system. only rows whose target columns are valued at 0 or 60 are retained, representing normal and anomalous sequences, respectfully. Some of the rows present not a number (NaN) values filled with the respective sequences’ medians.&nbsp;
+        </p>
+    </div>
+    <div>
+        <p>
+            Due to PyTorch being used as a Python library for building the autoencoder architecture, the sequences are cast to torch tensors and, eventually, the dataset is partitioned into the training (85%), validation (5%), and test (10%) subdatasets which include only ‘normal’ sequences. In contrast, the anomalous sequences are grouped as an ‘anomalous’ test subdataset due to the design of the training procedure.&nbsp;
+        </p>
+    </div>
+</div>
+<p>
+    &nbsp;
+</p>
+<h2 class="text-24 unscaled">
+    PyTorch implementation
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <p>
+            The LSTM Autoencoder implementation will be shown and explained below, as the GRU and Vanilla RNN in terms of code are a simple variation of LSTM.&nbsp;
+        </p>
+    </div>
+</div>
+<div>
+    <p>
+        &nbsp;&nbsp;
+    </p>
+</div>
+<h2 class="text-24 unscaled">
+    Encoder
+</h2>
+<p>
+    &nbsp;
+</p>
+<p>
+    The encoder’s full code is presented below:&nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<pre>from torch import nn, distributions, exp, log 
+import torch 
+class LSTM_Encoder(nn.Module): 
+  def __init__(self, n_features, seq_len, embedding_dim=20): 
+    super(LSTM_Encoder, self).__init__() 
+    self.seq_len, self.n_features = seq_len, n_features 
+    self.embedding_dim = embedding_dim 
+    self.rnn = nn.LSTM( 
+      input_size=n_features, 
+      hidden_size=embedding_dim, 
+      num_layers=1, 
+      batch_first=True 
+    ) 
+  def forward(self, x): 
+    x = x.reshape((1, self.seq_len, self.n_features)) 
+    _, (hidden_n, _) = self.rnn(x) 
+    return hidden_n.reshape((self.n_features, self.embedding_dim)) 
+</pre>
+<div>
+    <div>
+        <p>
+            The following is a line-by-line explanation of the encoder implementation:&nbsp;
+        </p>
+    </div>
+    <div>
+        <pre>from torch import nn, distributions, exp, log 
+import torch </pre>
+    </div>
+    <div>
+        <p>
+            These are all elements of the torch: torch.nn allows a neural network to be built, whereas torch.distributions, torch.exp and torch.log are needed for the variational autoencoder.&nbsp;
+        </p>
+        <pre>class RNN_Encoder(nn.Module): 
+  def __init__(self, n_features, seq_len, embedding_dim=20): 
+    super(RNN_Encoder, self).__init__() # The same as super().__init__() 
+    self.seq_len, self.n_features = seq_len, n_features 
+    self.embedding_dim = embedding_dim 
+    self.rnn = nn.LSTM( 
+      input_size=n_features, 
+      hidden_size=self.embedding_dim, 
+      num_layers=1, 
+      batch_first=True 
+    ) 
+        </pre>
+        <div>
+            <p>
+                The RNN_Encoder class inherits the functionality of the nn.Module class, <i>self.seq_len</i> is the length of the input time series sequence (60 in this case), <i>self.n_features</i> is the input number of sequences corresponding to 1 here, as only the data of sensor_02 are taken into consideration. The attribute <i>self.embedding</i>_dim is the size of the reduced size vector where the information of the input sequence is encoded to.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                <i>self.rnn</i> is the recurrent neural network to be implemented, and its LSTM layer has the following parameters:&nbsp;
+            </p>
+            <div>
+                <div>
+                    <ul class="unscaled default-ul">
+                        <li><i>input_size</i> is the number of feature sequences (only one for sensor_02)&nbsp;</li>
+                        <li><i>hidden_size</i> is the size of the hidden layer&nbsp;</li>
+                        <li><i>num_layers</i> is the number of hidden layers of the RNN architecture&nbsp;</li>
+                        <li><i>batch_first</i> is set to true when the input torch vector dimension has to be in a specific order (batch size, length of the sequence and number of features)&nbsp;</li>
+                    </ul>
+                    <pre> def forward(self, x): 
+    x = x.reshape((1, self.seq_len, self.n_features)) 
+    _, (hidden_n, _) = self.rnn(x) 
+    return hidden_n.reshape((self.n_features, self.embedding_dim)) </pre>
+                    <div>
+                        <p>
+                            The forward method defines how the input is passed through the network. It consists of a reshape of the input torch vector for this application because <i>b</i>atch_first is set to true; for the subsequent LSTM step the torch tensor dimension is (1, 60, 1).&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            The LSTM pass will produce a first torch tensor corresponding to the output of the NN and a second bidimensional torch tensor corresponding to the hidden layer and the cell layer. The Encoder returns the latent vector from the hidden layer.&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <p>
+        &nbsp;&nbsp;
+    </p>
+</div>
+<h2 class="text-24 unscaled">
+    Decoder
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <pre>class LSTM_Decoder(nn.Module): 
+  def __init__(self, n_features=1, seq_len=60, input_dim=20): 
+    super(LSTM_Decoder, self).__init__() 
+    self.seq_len, self.input_dim = seq_len, input_dim 
+    self.hidden_dim, self.n_features = 2 * input_dim, n_features 
+    self.rnn = nn.LSTM( 
+      input_size=input_dim, 
+      hidden_size=self.hidden_dim, 
+      num_layers=1, 
+      batch_first=True 
+    ) 
+    self.output_layer = nn.Linear(self.hidden_dim, n_features) 
+  def forward(self, x): 
+    x = x.repeat(self.seq_len, self.n_features) 
+    x = x.reshape((self.n_features, self.seq_len, self.input_dim)) 
+    x, (hidden_n, cell_n) = self.rnn(x) 
+    x = x.reshape((self.seq_len, self.hidden_dim)) 
+    return self.output_layer(x) 
+       </pre>
+</div>
+<div>
+    <div>
+        <p>
+            A similar procedure inverse to the encoder’s procedure is followed for the decoder. Here the input sequence is size 20 of the encoded vector, which is mapped to an input of double the size of the input sequence. The output sequence must be 60 as the initial input. For this reason, a single linear feed-forward layer is employed.&nbsp;
+        </p>
+    </div>
+    <div>
+        <p>
+            For the forward pass, the data are repeated 60 times; these sequences are encoded to a sequence of 40 data points and eventually to a 60-point sequence.&nbsp;
+        </p>
+    </div>
+</div>
+<p>
+    &nbsp;&nbsp;
+</p>
+<h2 class="text-24 unscaled">
+    Training
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <p>
+        The training procedure is shown below. There is no batch gradient descend, and the code shown is not encapsulated in a function or a class for educational purposes.&nbsp;
+    </p>
+</div>
+<div>
+    <pre>device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3) 
+criterion = nn.L1Loss(reduction='sum').to(device) 
+history = dict(train=[], val=[]) 
+best_loss = 10000.0 
+best_model_wts = copy.deepcopy(model.state_dict()) 
+# train_dataset 
+# val_dataset 
+        </pre>
+    <p>
+        &nbsp;
+    </p>
+    <div>
+        <p>
+            The first line of code regulates GPU usage when available. The optimizer is the known Adam optimizer with the learning parameter 0.0003. The experiments prove this value is optimal for training: Bigger values do not lead to convergence, while smaller values bring slower convergence. The loss is the sum of the absolute difference.
+        </p>
+    </div>
+    <div>
+        <p>
+            A dictionary called <i>history</i> is instantiated to save the training dataset and validation dataset loss across epochs. The variable <i>best_loss</i> is an arbitrary big value as the placeholder for the highest loss: When it is exceeded in any of the subsequent epochs, the model parameters will be saved within the object <i>best_model_wts</i>.
+        </p>
+    </div>
+    <div>
+        <p style="word-break: break-all;">
+            There is the set of sequences <i>train_dataset</i> and <i>val_dataset</i> — the training and validation set consisting only of normal sequences.
+        </p>
+        <pre>for epoch in range(50): 
+    model = model.train() 
+    train_losses = [] 
+    for seq_true in train_dataset: 
+        seq_true = seq_true.to(device) 
+        seq_pred = model(seq_true) 
+        loss = criterion(seq_pred, seq_true) 
+        optimizer.zero_grad() 
+        loss.backward() 
+        optimizer.step() 
+        train_losses.append(loss.item()) 
+    val_losses = [] 
+    model = model.eval() 
+    with torch.no_grad(): 
+        for seq_true in val_dataset: 
+            seq_true = seq_true.to(device) 
+            seq_pred = model(seq_true) 
+            loss = criterion(seq_pred, seq_true) 
+            val_losses.append(loss.item()) 
+    train_loss = np.mean(train_losses) 
+    val_loss = np.mean(val_losses) 
+    history['train'].append(train_loss) 
+    history['val'].append(val_loss) 
+    if val_loss &lt; best_loss: 
+        best_loss = val_loss 
+        best_model_wts = copy.deepcopy(model.state_dict()) 
+           </pre>
+    </div>
+    <p>
+        The training starts as usual in an NN. For 50 epochs, each sequence is moved to GPU if available, passed through the model, the loss is computed, and the neural network parameters are adjusted thanks to backpropagation. Then the training and validation losses are saved, and the best-performing model is chosen through the epochs.&nbsp;
+    </p>
+</div>
+<p>
+    <b>&nbsp;&nbsp;</b>
+</p>
+<h2 class="text-24 unscaled">
+   Threshold
+</h2>
+<p>
+    &nbsp;
+</p>
+<p>
+    Once the model is fitted, it is necessary to decide which threshold has to be specified for discriminating between normal and anomalous sequences.&nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<figure>
+    <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-Charts-Tables-layouts-02-03.jpg" id="ljci1sr59hyk" data-image="ljci1sr59hyk">
+</figure>
+<p>
+    &nbsp;
+</p>
+<div>
+    <p>
+        Figure 3. Distribution of loss values for the training dataset using the best model&nbsp;
+    </p>
+</div>
+<div>
+    <p>
+        The distribution is skewed to the right, i.e., a more significant number of reconstructed sequences exist that are closer to the inputs rather than further from them.&nbsp;
+    </p>
+</div>
+<div>
+    <p>
+        One strategy is to set a quantile of the distribution as the threshold. If the quantile is set to be high, more anomalous sequences will be labeled as normal; on the contrary, a lower quantile means normal sequences will be labeled as anomalous. The choice of threshold is highly dependent on the business problem, and a cost analysis should be done to determine the optimal threshold. This information, in this case, is not available; therefore, an arbitrary 90% quantile seems reasonable.&nbsp;
+    </p>
+</div>
+<p>
+    &nbsp;
+</p>
+<h2 class="text-24 unscaled">
+   Performance metrics
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <p>
+                Now, the normal and anomalous sequence test subdatasets can be used to compute crucial metrics for this binary classification problem. In particular, with the normal sequences, the number of true negative (TN) and false positive (FP) sequences is computed, and with the anomalous sequences, the number of FN and TP sequences is obtained.&nbsp;
+            </p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <ul class="unscaled default-ul">
+                        <li>TP is the number of anomalous sequences labeled as anomalous by the model — i.e., the reconstruction error is greater than the threshold</li>
+                        <li>TN is the number of normal sequences labeled as normal by the model — i.e., the reconstruction error is smaller than the threshold</li>
+                        <li>FP is the number of normal sequences reconstructed badly by the model and, hence, labeled as anomalous</li>
+                        <li>FN is the number of anomalous sequences labeled as normal since the model could reconstruct close to the input for the threshold selected</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <p>
+                            From these quantities, the following metrics can be obtained:&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Accuracy = (TP + TN) / (TP + TN + FP + FN)&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Precision = TP / (TP + FP)&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Recall = TP / (TP + FN)&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            The precision is the model’s capability to discriminate the input sequence only when it is anomalous, and it needs to be maximized if the most important solution must avoid false water system failure alarms. The highest recall metric is preferred when the crucial thing is to identify most of the anomalies.&nbsp;
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            For this problem, the accuracy is the percentage of correctly labeled sequences, whether anomalous or normal.&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    &nbsp;
+</p>
+<h2 class="text-24 unscaled">
+ Results
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <p>
+                        The results of some of our experiments are shown below. The Vanilla RNN, GRU, and LSTM have been implemented similarly, as the demonstrated code highlighted by the suffix <i>_light </i>where only one hidden layer exists, a deeper version with two hidden layers. The results also include a variational autoencoder with a one hidden layer RNN.&nbsp;
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <figure>
+                        <img src="/files/blog-posts/2023/09/Anomaly-detection-using-recurrent-neural-network-autoencoders/fintego-article-Anomaly-Detection-PIC-02.png" id="mddmjg47622l" data-image="mddmjg47622l">
+                    </figure>
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        All the methods perform well according to the metrics considered. The GRU and LSTM implementations have a clear advantage in recall, compared with RNN, which is the worst performing, especially when using the lighter architecture; it’s probably unable to capture some parts of sequences complexity. The VAE implementation improves the performance of the LSTM architecture. The other two RNN types are not equally beneficial; on the contrary, they deteriorate the TP.&nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 class="text-24 unscaled">
+  Summary
+</h2>
+<p>
+    &nbsp;
+</p>
+<div>
+    <div>
+        <div>
+            <p>
+                We can conclude that there is no preferred model of architecture among those considered that significantly outperforms the others for this problem. The GRU architecture seems a good choice in production from the MLOps perspective, as it has shown higher performance than RNN and it is lighter than LSTM, and the latter is also the slowest to train.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                In this article, we have shown some snippets of code that might help data scientists and developers to implement those ML techniques with more profound theoretical knowledge rather than hard writing the code. It is important to note that our code is educational, and when delivering a model into production, the codebase should follow best practices, such as unit testing, linting, OOP paradigm, etc.&nbsp;
+            </p>
+        </div>
+        <div>
+            <p>
+                The null treatment can be done with better techniques, such as smoothing kernels, and other metrics such as F1, ROC AUC curve, etc. can be considered to choose the optimal model for the problem’s needs. Also, for the variational autoencoder, the training function has to be endowed by a more complex loss function that takes into consideration the KL convergence.&nbsp;
+            </p>
+        </div>
+        <p>
+            &nbsp;
+        </p>
+    </div>
+</div>
+<section class="cta-banner-section">
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="cta-banner-section__content">
+            <div class="tag">
+                <p class="text-14 unscaled">
+                    Advanced Analytics
+                </p>
+            </div>
+            <a href="/insights/financial-services/advanced-analytics" class="stretched-link">
+            <p class="cta-banner-text text-22 unscaled">
+                Discover more insights to help you unlock the value of your data
+            </p>
+            </a>
+            <div class="btn btn-text btn-icon focus">
+                <div class="text-container">
+                    <div class="text">
+                        Read more
+                    </div>
+                    <div class="arr-offering">
+                        <i class="arr-small one"></i><i class="arr-small two"></i><i class="arr-small three"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 d-none d-md-block">
+        <div class="cta-banner-section__image">
+            <figure>
+                <img src="/files/blog-posts/cta-banners/Advanced-analytics.jpg" alt="cta banner">
+            </figure>
+        </div>
+    </div>
+</div>
+</section>
+<p>
+    &nbsp;
+</p>
+            <section class="enhanced-blog-author blog-post-right-column">
+        <div class="quote-container">
+            <div class="quote">
+                                                            <div class="quote__content">
+                                                        <div class="author-image">
+                                <figure>
+                                    <img src="/files/people/2023/09/Arthur-Shaikhatarov.jpg" class="picture" alt="Arthur Shaikhatarov , AI/ML Project Manager, Automotive, fintego ">
+                                </figure>
+                            </div>
+                                                        <div class="author-content">
+                                <h3 class="author-name d-flex align-items-center text-20 unscaled">
+                                                                            Arthur Shaikhatarov
+                                                                                                                <a href="https://www.linkedin.com/in/arthur-shaikhatarov-1b358b211/" target="_blank">
+                                            <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" alt="author linkedin">
+                                        </a>
+                                                                    </h3>
+                                <p class="author-title text-16 unscaled">AI/ML Project Manager, Automotive, fintego </p>
+                                <p class="text-16 unscaled">Arthur has served as project manager specializing in AI/ML initiatives at fintego for 4 years. His journey in artificial intelligence and machine learning began as an engineer, where he honed his skills and knowledge. Arthur is responsible for team management and formation, presales activities for ML projects, the orchestration and execution of AI/ML proofs-of-concept and the growth of AI/ML activities within fintego. </p>
+                            </div>
+                        </div>
+                                                                                <div class="quote__content">
+                                                        <div class="author-image">
+                                <figure>
+                                    <img src="/files/people/2023/09/Martin-Dippolito.jpg" class="picture" alt="Martin d’Ippolito , Data Scientist and ML Engineer, Automotive, fintego">
+                                </figure>
+                            </div>
+                                                        <div class="author-content">
+                                <h3 class="author-name d-flex align-items-center text-20 unscaled">
+                                                                            Martin d’Ippolito
+                                                                                                                <a href="https://www.linkedin.com/in/martin-d-ippolito-202593122/" target="_blank">
+                                            <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" alt="author linkedin">
+                                        </a>
+                                                                    </h3>
+                                <p class="author-title text-16 unscaled">Data Scientist and ML Engineer, Automotive, fintego</p>
+                                <p class="text-16 unscaled">Martin is an accomplished data scientist and machine learning engineer, with five years’ expertise in the field. His knowledge and experience go beyond computer vision and natural language processing (NLP), to include the development of end-to-end web applications. This unique combination of talents helps his team craft outstanding proofs-of-concept to engage clients. </p>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </section>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 d-none d-md-block pl-70">
+          <div class="blog-post-right-column__right-column ">
+            <div class="blog-post-right-column blog-post-right-column__authors">
+                        <div class="item">
+                                <div class="image">
+                    <figure>
+                        <img src="/files/people/2023/09/Arthur-Shaikhatarov.jpg" class="picture" alt="Arthur Shaikhatarov , AI/ML Project Manager, Automotive, fintego ">
+                    </figure>
+                </div>
+                                <div class="text">
+                    <h3 class="author-name d-flex align-items-center text-16 unscaled">
+                                                    Arthur Shaikhatarov
+                                                                            <a href="https://www.linkedin.com/in/arthur-shaikhatarov-1b358b211/" target="_blank">
+                                <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" class="author-linkedin" alt="author linkedin">
+                            </a>
+                                            </h3>
+                    <p class="author-title text-14 unscaled">AI/ML Project Manager, Automotive, fintego </p>
+                </div>
+            </div>
+                                <div class="item">
+                                <div class="image">
+                    <figure>
+                        <img src="/files/people/2023/09/Martin-Dippolito.jpg" class="picture" alt="Martin d’Ippolito , Data Scientist and ML Engineer, Automotive, fintego">
+                    </figure>
+                </div>
+                                <div class="text">
+                    <h3 class="author-name d-flex align-items-center text-16 unscaled">
+                                                    Martin d’Ippolito
+                                                                            <a href="https://www.linkedin.com/in/martin-d-ippolito-202593122/" target="_blank">
+                                <img src="/theme/fintego/assets/images/icons/linkedin-gray24x24.svg" class="author-linkedin" alt="author linkedin">
+                            </a>
+                                            </h3>
+                    <p class="author-title text-14 unscaled">Data Scientist and ML Engineer, Automotive, fintego</p>
+                </div>
+            </div>
+            </div>
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="utf-8" ?><?xml encoding="utf-8" ?><html><body><div class="container"><div class="related-content">
+								<div class="related-content__title">
+									<p class="text-20 unscaled fw-bold">Related content</p>
+								</div>
+								<div class="related-content__items">
+											<div class="item">
+    <div class="item--image">
+      <figure>
+        <img src="/files/blog/2023/08/431955-CIS-CIS-blog-page-2-Blog-banner-960x960px-2023-07-27.jpg" alt="Mastering MLOps practices for a trading bot">
+      </figure>
+    </div>
+    <div class="item--title">
+      <a href="/blog/mastering-mlops-for-trading-bots" class="stretched-link" aria-label="Mastering MLOps practices for a trading bot ">
+        <p class="text-20 unscaled fw-bold">
+            Mastering MLOps practices for a trading bot 
+        </p>
+      </a>
+    </div>
+</div>
+											<div class="item">
+    <div class="item--image">
+      <figure>
+        <img src="/files/blog/2023/09/431694-CO-QA-automation-optimize-images-KV1-chosen.jpg" alt="Unleashing the power of automation with conversational AI">
+      </figure>
+    </div>
+    <div class="item--title">
+      <a href="/blog/unleashing-the-power-of-automation-with-conversational-ai" class="stretched-link" aria-label="Unleashing the power of automation with conversational AI">
+        <p class="text-20 unscaled fw-bold">
+            Unleashing the power of automation with conversational AI
+        </p>
+      </a>
+    </div>
+</div>
+											<div class="item">
+    <div class="item--image">
+      <figure>
+        <img src="/files/blog/2023/10/433541-FS-GEMS-blog-5-Machine-Learning-with-Microsoft-Azure-KV4-jpg-1.jpg" alt="Machine learning with Microsoft Azure Monitoring machine learning models in production">
+      </figure>
+    </div>
+    <div class="item--title">
+      <a href="/blog/master-mlops-with-azure-deploy-monitor-ml-models" class="stretched-link" aria-label="Machine learning with Microsoft Azure Monitoring machine learning models in production ">
+        <p class="text-20 unscaled fw-bold">
+            Machine learning with Microsoft Azure Monitoring machine learning models in production 
+        </p>
+      </a>
+    </div>
+</div>
+													</div>
+							</div></div></body></html>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-post-right-column__related-content">
+      <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml encoding="utf-8" ?><html><body><div class="container"><div class="related-content-snippet container"><div class="row title"><div class="col text-center"><p class="text-28 fs-2 unscaled">Related content</p></div></div><div class="row"><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/services/data-to-insights/Data-to-insights-Main-banner.jpg" alt="Data analytics services"></figure></div><div class="related-content-snippet__item--content"><a href="/services/data-to-insights"><div class="stretched-link"><b class="text-18 unscaled">Data analytics services
+</b></div></a><p class="text-16 unscaled">&nbsp;</p></div></div></div><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/blog/2023/09/960x960-GEMS4blog.jpg" alt="ML/AI algorithms for room layout editing"></figure></div><div class="related-content-snippet__item--content"><a href="/blog/ml-ai-algorithms-room-layout-editing-amd-gpus"><div class="stretched-link"><b class="text-18 unscaled">ML/AI algorithms for room layout editing
+</b></div></a><p class="text-16 unscaled">by Arthur Shaikhatarov</p></div></div></div>
+<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/services/machine-learning/header-banner.jpg" alt="Graphics-embedded machine learning development services"></figure></div><div class="related-content-snippet__item--content"><a href="/services/machine-learning"><div class="stretched-link"><b class="text-18 unscaled">Graphics-embedded machine learning development services</b></div></a><p class="text-16 unscaled">&nbsp;</p></div><p></p></div></div></div></div></div></body></html>
+    </div>
+        <div id="back-to-top-btn" class="back-to-top-btn">
+            <button type="button">
+                <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
+            </button>
+        </div>
+                                                                            <div id="page-industries" class="industry-Telecom,-Media-and-Technologies "></div>
+                                                                        <div id="page-services" class="service-Data-Analytics "></div>
+        <footer class="footer">
+    <div class="container pt-10">
+        <div class="row">
+            <div class="col-12 col-lg-3 footer__col-contact">
+                <p class="text-white paragraph-as-5">Enable your digital advantage with fintego</p>
+                <a class="btn btn-outline" id="button-addon2" type="button" href="/contact-form">
+                    Connect with us
+                </a>
+                <ul class="footer__social-networks">
+                    <li>
+                        <a href="https://www.facebook.com/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-fb.svg" alt="facebook icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCDtOIqWxKHTdtmVi8yr_D7Q" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-yt.svg" alt="youtube icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-tw.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/companies/fintego" target="_blank" rel="noreferer, noopener">
+                            <img src="/theme/fintego/assets/images/logo-in.svg" alt="linkedin icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Discover fintego
+        </p>
+        <ul>
+            <li>
+                <a href="/about-us">About Us</a>
+            </li>
+            <li>
+                <a href="https://career.fintego.com/">Careers</a>
+            </li>
+            <li>
+                <a href="/contact-form">Contact Us</a>
+            </li>
+            <li>
+                <a href="/event">Events</a>
+            </li>
+            <li>
+                <a href="/esg">Environmental, Social and Governance</a>
+            </li>
+            <li>
+                <a href="/global-presence">Global Presence</a>
+            </li>
+            <li>
+                <a href="/insights">Insights</a>
+            </li>
+            <li>
+                <a href="/pr">Newsroom</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapsePartnerships"
+                                aria-controls="collapsePartnerships"
+                                aria-expanded="false">
+                                Partnerships
+                        </button>
+                    </p>
+                    <div id="collapsePartnerships" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/partners">fintego's partners</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/nasdaq">Nasdaq</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/appian">Appian</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/aws">AWS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/clm">Fenergo</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/finastra">Finastra</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/itrs">ITRS</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/microsoft">Microsoft</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/moodys">Moody's Analytics</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/murex">Murex</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/orchestrade">Orchestrade</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/pega">Pega</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/planixs">Planixs</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/smartstream">SmartStream</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos">Temenos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/ukraine-updates">Ukraine updates</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Services
+        </p>
+        <ul>
+            <li>
+                <a href="/services/cloud-solutions">Cloud Solutions</a>
+            </li>
+            <li>
+                <a href="/services/data-to-insights">Data Analytics</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseDesign"
+                                aria-controls="collapseDesign"
+                                aria-expanded="false">
+                                Design
+                        </button>
+                    </p>
+                    <div id="collapseDesign" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/design">Design services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/innovation-strategy">Innovation strategy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFrontendDevelopment"
+                                aria-controls="collapseFrontendDevelopment"
+                                aria-expanded="false">
+                            Front-end Development
+                        </button>
+                    </p>
+                    <div id="collapseFrontendDevelopment" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/front-end-development">Front-end development services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mobile-app-development">Mobile Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-development">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntelligentAutomation"
+                                aria-controls="collapseIntelligentAutomation"
+                                aria-expanded="false">
+                            Intelligent Automation
+                        </button>
+                    </p>
+                    <div id="collapseIntelligentAutomation" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/low-code-development">Low-code development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseLegacyModernization"
+                                aria-controls="collapseLegacyModernization"
+                                aria-expanded="false">
+                            Legacy Modernization
+                        </button>
+                    </p>
+                    <div id="collapseLegacyModernization" class="accordion-collapse collapse">
+                        <div class="accordion-body smallest">
+                            <ul>
+                                <li>
+                                    <a href="/services/legacy-modernization">Legacy modernization services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/services/beyond">fintego Beyond</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMachineLearning"
+                                aria-controls="collapseMachineLearning"
+                                aria-expanded="false">
+                                Machine Learning
+                        </button>
+                    </p>
+                    <div id="collapseMachineLearning" class="accordion-collapse collapse">
+                        <div class="accordion-body small">
+                            <ul>
+                                <li>
+                                    <a href="/services/machine-learning">Machine learning services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/computer-vision">Computer vision</a>
+                                </li>
+                                <li>
+                                    <a href="/services/natural-language-processing">Natural language processing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseSoftwareEngineering"
+                                aria-controls="collapseSoftwareEngineering"
+                                aria-expanded="false">
+                                Software Engineering
+                        </button>
+                    </p>
+                    <div id="collapseSoftwareEngineering" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/services/engineering-services">Software engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/financial-software-development">Financial software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/qa-automation">QA automation</a>
+                                </li>
+                                <li>
+                                    <a href="/services/trading-software-development">Trading software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                </li>
+                                <li>
+                                    <a href="/services/custom-software-development">Custom software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/application-engineering-services">Application engineering services</a>
+                                </li>
+                                <li>
+                                    <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/product-engineering-services">Product engineering services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-12 col-lg-3 footer__menu mt-0">
+    <div class="menu-section">
+        <p class="mb-3 overline menu-section--title">
+            Industries
+        </p>
+        <ul>
+            <li>
+                <a href="/industries/automotive">Automotive</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseBanking"
+                                aria-controls="collapseBanking"
+                                aria-expanded="false">
+                                Banking
+                        </button>
+                    </p>
+                    <div id="collapseBanking" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/banking">IT services for banking</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/boomerang">Boomerang software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/cloud">Cloud banking services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/core-banking">Core banking software</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan">Hogan banking system</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/fintego-banking-transformation-advisory">Banking transformation advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/banking/fintego-cams">CAMS card processing solution</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/health-check">Temenos health check</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseCapitalMarkets"
+                                aria-controls="collapseCapitalMarkets"
+                                aria-expanded="false">
+                                Capital Markets
+                        </button>
+                    </p>
+                    <div id="collapseCapitalMarkets" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                </li>
+                                <li>
+                                    <a href="/partners/goldensource">GoldenSource client services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/consumer-goods">Consumer Goods</a>
+            </li>
+            <li>
+                <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+            </li>
+            <li>
+                <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+            </li>
+            <li>
+                <div class="accordion-item">
+                    <p class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseInsurance"
+                                aria-controls="collapseInsurance"
+                                aria-expanded="false">
+                            Insurance
+                        </button>
+                    </p>
+                    <div id="collapseInsurance" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <a href="/industries/insurance">Insurance technology solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/software-engineering">Software development</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                </li>
+                                <li>
+                                    <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/industries/manufacturing">Manufacturing</a>
+            </li>
+            <li>
+                <a href="/industries/media">Media</a>
+            </li>
+            <li>
+                <a href="/industries/technology-networking">Networking and Technology</a>
+            </li>
+            <li>
+                <a href="/industries/oil">Oil and Gas</a>
+            </li>
+            <li>
+                <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+            </li>
+            <li>
+                <a href="/industries/telecommunications">Telecommunications</a>
+            </li>
+            <li>
+                <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+            </li>
+            <li>
+                <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer__menu-mobile">
+    <div class="menu-accordion">
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseIndustries"
+                        aria-controls="collapseIndustries">
+                    Industries
+                </button>
+            </p>
+            <div id="collapseIndustries" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/industries/automotive">Automotive</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseBankingMobile"
+                                            aria-controls="collapseBankingMobile">
+                                            Banking
+                                    </button>
+                                </p>
+                                <div id="collapseBankingMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/banking">IT services for banking</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/boomerang">Boomerang software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/cloud">Cloud banking services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/connected-wealth">Wealth management solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/core-banking">Core banking software</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution">EarlyResolution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/auto-loan">EarlyResolution auto loan</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/earlyresolution/borrower-portal">EarlyResolution borrower portal</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan">Hogan banking system</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/health-check">Hogan health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hybrid-cloud">Hogan hybrid cloud</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/hogan-io">Hogan io</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/academy">Hogan academy</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/fintego-banking-transformation-advisory">Banking transformation advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/banking/fintego-cams">CAMS card processing solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/health-check">Temenos health check</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos/upgrades">Temenos upgrade</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseCapitalMobile"
+                                            aria-controls="collapseCapitalMobile">
+                                            Capital Markets
+                                    </button>
+                                </p>
+                                <div id="collapseCapitalMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/capital-markets">Capital markets technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/clm-consultancy">CLM solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/energy-and-commodity">Energy and commodity trading</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource client services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/liquidity-management">Liquidity management services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/reconciliation-solution">Reconciliation solution</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regtech-solutions">Regtech in financial services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/regulatory-reporting">Regulatory reporting services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/capital-markets/treasury-solutions">Corporate treasury solutions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/consumer-goods">Consumer Goods</a>
+                        </li>
+                        <li>
+                            <a href="/industries/energy-and-utilities">Energy and Utilities</a>
+                        </li>
+                        <li>
+                            <a href="/industries/healthcare">Healthcare and Life Sciences</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseInsuranceMobile"
+                                            aria-controls="collapseInsuranceMobile">
+                                        Insurance
+                                    </button>
+                                </p>
+                                <div id="collapseInsuranceMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/industries/insurance">Insurance technology solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/data-analytics-ai">AI and Analytics solutions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/intelligent-automation">Automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/legacy-modernization">Legacy modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/software-engineering">Software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/technology-advisory">Technology advisory</a>
+                                            </li>
+                                            <li>
+                                                <a href="/industries/insurance/ui-ux-design">UI / UX Design</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/industries/manufacturing">Manufacturing</a>
+                        </li>
+                        <li>
+                            <a href="/industries/media">Media</a>
+                        </li>
+                        <li>
+                            <a href="/industries/technology-networking">Networking and Technology</a>
+                        </li>
+                        <li>
+                            <a href="/industries/oil">Oil and Gas</a>
+                        </li>
+                        <li>
+                            <a href="/industries/retail-and-ecommerce">Retail and E-commerce</a>
+                        </li>
+                        <li>
+                            <a href="/industries/telecommunications">Telecommunications</a>
+                        </li>
+                        <li>
+                            <a href="/industries/travel-and-hospitality">Travel and Hospitality</a>
+                        </li>
+                        <li>
+                            <a href="/industries/transportation-and-logistics">Transportation and Logistics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseServices"
+                        aria-controls="collapseServices">
+                    Services
+                </button>
+            </p>
+            <div id="collapseServices" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/services/cloud-solutions">Cloud Solutions</a>
+                        </li>
+                        <li>
+                            <a href="/services/data-to-insights">Data Analytics</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseDesignMobile"
+                                            aria-controls="collapseDesignMobile">
+                                            Design
+                                    </button>
+                                </p>
+                                <div id="collapseDesignMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/design">Design services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/innovation-strategy">Innovation strategy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFrontendDevelopmentMobile"
+                                            aria-controls="collapseFrontendDevelopmentMobile">
+                                        Front-end Development
+                                    </button>
+                                </p>
+                                <div id="collapseFrontendDevelopmentMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/front-end-development">Front-end development services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mobile-app-development">Mobile Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-development">Web Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/3d-ar-vr-development">3D, AR and VR Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-architecture">Web/Cloud Architecture</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseIntelligentAutomationMobile"
+                                            aria-controls="collapseIntelligentAutomationMobile">
+                                        Intelligent Automation
+                                    </button>
+                                </p>
+                                <div id="collapseIntelligentAutomationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/intelligent-automation">Intelligent automation services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/low-code-development">Low-code development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/robotic-process-automation">Robotic process automation (RPA) services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseLegacyModernizationMobile"
+                                            aria-controls="collapseLegacyModernizationMobile">
+                                            Legacy Modernization
+                                    </button>
+                                </p>
+                                <div id="collapseLegacyModernizationMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/legacy-modernization">Legacy Modernization</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/mainframe-modernization">Mainframe modernization</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/services/beyond">fintego Beyond</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseMachineLearningMobile"
+                                            aria-controls="collapseMachineLearningMobile">
+                                            Machine Learning
+                                    </button>
+                                </p>
+                                <div id="collapseMachineLearningMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/machine-learning">Machine learning services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/computer-vision">Computer vision</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/natural-language-processing">Natural language processing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSoftwareEngineeringMobile"
+                                            aria-controls="collapseSoftwareEngineeringMobile">
+                                            Software Engineering
+                                    </button>
+                                </p>
+                                <div id="collapseSoftwareEngineeringMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/services/engineering-services">Software engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/financial-software-development">Financial software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/qa-automation">QA automation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/trading-software-development">Trading software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/software-development-outsourcing">Software development outsourcing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/custom-software-development">Custom software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/application-engineering-services">Application engineering services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/bespoke-software-development">Bespoke software development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/product-engineering-services">Product engineering services</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item normal">
+            <p class="accordion-header">
+                <button class="accordion-button text-20 text-uppercase collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseDiscoverfintego"
+                        aria-controls="collapseDiscoverfintego">
+                    Discover fintego
+                </button>
+            </p>
+            <div id="collapseDiscoverfintego" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <a href="/about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://career.fintego.com/">Careers</a>
+                        </li>
+                        <li>
+                            <a href="/contact-form">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/event">Events</a>
+                        </li>
+                        <li>
+                            <a href="/esg">Environmental, Social and Governance</a>
+                        </li>
+                        <li>
+                            <a href="/global-presence">Global Presence</a>
+                        </li>
+                        <li>
+                            <a href="/insights">Insights</a>
+                        </li>
+                        <li>
+                            <a href="/pr">Newsroom</a>
+                        </li>
+                        <li>
+                            <div class="accordion-item mobile">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsePartnershipsMobile"
+                                            aria-controls="collapsePartnershipsMobile">
+                                            Partnerships
+                                    </button>
+                                </p>
+                                <div id="collapsePartnershipsMobile" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>
+                                                <a href="/partners">fintego's partners</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/nasdaq">Nasdaq</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/appian">Appian</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/aws">AWS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/clm">Fenergo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/finastra">Finastra</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/goldensource">GoldenSource</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/itrs">ITRS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/microsoft">Microsoft</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/moodys">Moody's Analytics</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/murex">Murex</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/orchestrade">Orchestrade</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/pega">Pega</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/planixs">Planixs</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/smartstream">SmartStream</a>
+                                            </li>
+                                            <li>
+                                                <a href="/partners/temenos">Temenos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/ukraine-updates">Ukraine updates</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="container border-top">
+        <div class="row footer__sub-footer pt-3 pb-3">
+            <div class="col-12 col-lg-5 text-uppercase order-lg-first order-sm-last copy-right mt-sm-3 pt-sm-3 pt-lg-0 mt-lg-0">
+                <p>© 2025 fintego, A DXC TECHNOLOGY COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="col-12 col-lg-7 order-lg-last order-sm-first">
+                <ul class="list-group list-group-horizontal-lg float-lg-end text-uppercase">
+                    <li>
+                        <a href="/procurement">Procurement</a>
+                    </li>
+                    <li>
+                        <a href="/corporate-policies">Corporate Policies</a>
+                    </li>
+                    <li>
+                        <a href="/online-privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-use">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/contact-form#copyrights">Report Copyright Violation</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
+        <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
+                <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
+    </body>
+</html>
