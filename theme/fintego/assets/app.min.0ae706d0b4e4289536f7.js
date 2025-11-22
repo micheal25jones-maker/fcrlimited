@@ -36701,7 +36701,7 @@
             "a",
             {
               class: "btn btn-text btn-icon btn-white",
-              href: "/industries/banking",
+              href: "/industries/banking.html",
             },
             [
               Lo("div", { class: "text-container" }, [
@@ -37384,7 +37384,7 @@
             "a",
             {
               class: "btn btn-text btn-icon btn-white",
-              href: "/industries/automotive",
+              href: "/industries/automotive.html",
             },
             [
               Lo("div", { class: "text-container" }, [
@@ -43788,7 +43788,7 @@
             "a",
             {
               class: "btn btn-text btn-icon btn-white",
-              href: "/industries/insurance",
+              href: "/industries/insurance.html",
             },
             [
               Lo("div", { class: "text-container" }, [
