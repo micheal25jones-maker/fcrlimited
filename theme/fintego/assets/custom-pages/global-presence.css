@@ -1,1 +1,7 @@
-.tooltip-inner{text-align:left!important;padding:1.25rem 1.25rem 0}.tooltip-inner p{display:inline-block}
+.tooltip-inner {
+  text-align: left !important;
+  padding: 1.25rem 1.25rem 0;
+}
+.tooltip-inner p {
+  display: inline-block;
+}
