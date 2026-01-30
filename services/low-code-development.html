@@ -713,7 +713,37 @@
 <div><p><span data-contrast="auto">The total cost of ownership for low-code applications is also reduced compared to high-code solutions as it&rsquo;s easier to maintain, scale and update the application.</span><span data-ccp-props="{">&nbsp;</span></p></div>
 <div><p><span data-contrast="auto">However, you have to choose business use cases wisely for low-code development as not all application types are worth building using the low-code approach. It works best for simple applications with no advanced, complex or unique requirements toward integrations, customizations, functionality or security.</span><span data-ccp-props="{">&nbsp;</span></p></div>
                     </div>
-                </div></div></section></div></div></div></body></html>
+                </div></div></section></div></div></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -1770,5 +1800,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    </body>
+    <script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>

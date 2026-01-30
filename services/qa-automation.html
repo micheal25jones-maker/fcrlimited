@@ -891,7 +891,37 @@
                     <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse-faq-dark86" class="accordion-collapse collapse">
                     <div><div><p><span data-contrast="auto">Outsourcing </span><span data-contrast="auto">software test automation services</span><span data-contrast="auto"> allows businesses to:</span><span data-ccp-props="{">&nbsp;</span></p></div><div><ul class="default-ul"><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Optimize development costs by avoiding the spending associated with hiring or training new employees and acquiring tools and hardware</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Gain access to the top domain talent in the industry at a more affordable cost</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">Leverage the experience and expertise of the vendor to maximize testing efficiency and speed up the time to market</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Boost testing accuracy by minimizing the risk of human error</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Mitigate financial and reputational risks associated with poorly conducted or incomplete testing</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">Dedicate their resources to core activities while the vendor takes on quality assurance</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="4" data-aria-level="1"><span data-contrast="auto">Ensure 24/7 testing with the help of a global vendor operating in multiple time zones</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="5" data-list-defn-props="{" data-aria-posinset="5" data-aria-level="1"><span data-contrast="auto">Gain a fresh perspective on your codebase and testing practices</span><span data-ccp-props="{">&nbsp;</span></li></ul></div></div>
                     </div>
-                </div></div></section></div></div></div></body></html>
+                </div></div></section></div></div></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -1948,5 +1978,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=67&cb=1562580926" async></script></body>
+    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=67&cb=1562580926" async></script><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>

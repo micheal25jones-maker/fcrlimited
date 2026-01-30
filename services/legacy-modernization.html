@@ -746,7 +746,37 @@
                     <div><p><span data-contrast="auto">There are four key reasons to modernize a legacy system:</span><span data-ccp-props="{">&nbsp;</span></p></div>
 <div><ul class="default-ul"><li data-leveltext="&#9679;" data-font="Calibri" data-listid="1" data-list-defn-props="{" data-aria-posinset="1" data-aria-level="1"><b>Reducing IT costs</b><span data-contrast="auto">. Legacy systems are more expensive to keep running, support, and maintain, as they may require a rare skill set and more hours of work.</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="1" data-list-defn-props="{" data-aria-posinset="2" data-aria-level="1"><b>Enhancing agility and accelerating time-to-market</b><span data-contrast="auto">. Migrating from legacy monolithic systems to modular ones allows for introducing changes and launching new features can be done faster. This boosts business agility, resilience, scalability, and ability to innovate.</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="1" data-list-defn-props="{" data-aria-posinset="3" data-aria-level="1"><b>Improving operational efficiency</b><span data-contrast="auto">. Modernizing legacy systems means giving workers better, more effective tools to do their job. This enhances their productivity &ndash; and business efficiency.</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="Calibri" data-listid="1" data-list-defn-props="{" data-aria-posinset="4" data-aria-level="1"><b>Facilitating compliance</b><span data-contrast="auto">. Keeping up with regulatory requirements may be next to impossible with outdated technologies due to security risks and cumbersome feature development and deployment.</span><span data-ccp-props="{">&nbsp;</span></li></ul></div>
                     </div>
-                </div></div></section></div></div></div></body></html>
+                </div></div></section></div></div></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -1803,5 +1833,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=61&cb=816961916" async></script></body>
+    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=61&cb=816961916" async></script><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>
