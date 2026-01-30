@@ -1079,7 +1079,37 @@
 <div><ul class="default-ul"><li data-leveltext="&#9679;" data-font="" data-listid="2" data-list-defn-props="{" data-aria-posinset="11" data-aria-level="1"><b>Creating customer microsegments</b><span data-contrast="auto">. </span><span data-contrast="auto">AI </span><span data-contrast="auto">and </span><span data-contrast="auto">analytics </span><span data-contrast="auto">excel at finding patterns in </span><span data-contrast="auto">data</span><span data-contrast="auto">. This comes in handy when segmenting your customer database. These technologies can create detailed microsegments, all without human involvement</span><span data-ccp-props="{">&nbsp;</span></li><li data-leveltext="&#9679;" data-font="" data-listid="2" data-list-defn-props="{" data-aria-posinset="12" data-aria-level="1"><b>Predicting customer churn</b><span data-contrast="auto">. </span><span data-contrast="auto">AI </span><span data-contrast="auto">algorithms can assess customer behavior and the likelihood of policy cancellation. This information can inform micro targeted marketing offers meant to prevent churn</span><span data-contrast="auto"></span></li><li data-leveltext="&#9679;" data-font="" data-listid="2" data-list-defn-props="{" data-aria-posinset="13" data-aria-level="1"><b>Timely upselling and cross-selling</b><span data-contrast="auto">. Third-party </span><span data-contrast="auto">data </span><span data-contrast="auto">can help you understand what types of </span><span data-contrast="auto">insurance </span><span data-contrast="auto">products may be the most compelling for every customer at a given point</span><span data-contrast="auto"></span></li><li data-leveltext="&#9679;" data-font="" data-listid="2" data-list-defn-props="{" data-aria-posinset="14" data-aria-level="1"><b>Tailored underwriting</b><span data-contrast="auto">. More accurate risk assessment allows insurers to offer more competitive pricing to low-risk customers. Pricing can be informed by </span><span data-contrast="auto">data </span><span data-contrast="auto">from IoT sensors and connected devices and continuously updated</span></li></ul></div>
                     </div>
                 </div></div></section></div></div></div>
-<p></p></body></html>
+<p></p><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -2136,5 +2166,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    </body>
+    <script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>

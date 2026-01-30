@@ -1095,7 +1095,37 @@
             </section>
         </div>
     </div>
-</div></body></html>
+</div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -2152,5 +2182,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=29&cb=103658538" async></script></body>
+    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=29&cb=103658538" async></script><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>

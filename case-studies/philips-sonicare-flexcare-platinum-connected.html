@@ -58,7 +58,7 @@
         <meta name="twitter:description" content="Learn more about Fintego and Philips Sonicare partnership resulting in a significantly better brushing experience for 90% of surveyed users" />
         <meta name="twitter:title" content="Philips Sonicare Flexcare Platinum Connected " />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@luxoft" />
+    <meta name="twitter:site" content="@Fintego" />
         <script id="imageMarkUpData" type="application/ld+json"></script>
                             <link rel="canonical" href="/case-studies/philips-sonicare-flexcare-platinum-connected">
 <meta name="generator" content="Bolt">
@@ -578,7 +578,37 @@
             <div class="casestudy-no-overview__related-content">
                 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <?xml encoding="utf-8" ?><html><body><div class="container"><div class="related-content-snippet container"><div class="row title"><div class="col text-center"><h2 class="text-28 unscaled">Related content</h2></div></div><div class="row"><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Philips-sonicare-for-kids.jpg" alt="Philips Sonicare for Kids Case Study"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/philips-sonicare-for-kids-case-study"><div class="stretched-link"><b class="text-18 unscaled">Philips Sonicare for Kids Case Study</b></div></a></div></div></div><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-SuperSensors-The-Perfect-Picture-of-Health.jpg" alt="SuperSensors: The Perfect Picture of Health"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/supersensors-the-perfect-picture-of-health"><div class="stretched-link"><b class="text-18 unscaled">SuperSensors: The Perfect Picture of Health</b></div></a></div></div></div>
-<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Learn-to-quit.jpg" alt="Learn to Quit &ndash; A Patient-Tested, Quit-Smoking App for People with Serious Mental Illness"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/learn-to-quit-a-patient-tested-quit-smoking-app-for-people-with-serious-mental-illness"><div class="stretched-link"><b class="text-18 unscaled">Learn to Quit &ndash; A Patient-Tested, Quit-Smoking App for People with Serious Mental Illness</b></div></a></div></div></div></div></div></div></body></html>
+<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Learn-to-quit.jpg" alt="Learn to Quit &ndash; A Patient-Tested, Quit-Smoking App for People with Serious Mental Illness"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/learn-to-quit-a-patient-tested-quit-smoking-app-for-people-with-serious-mental-illness"><div class="stretched-link"><b class="text-18 unscaled">Learn to Quit &ndash; A Patient-Tested, Quit-Smoking App for People with Serious Mental Illness</b></div></a></div></div></div></div></div></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
             </div>
         </div>
         <div id="back-to-top-btn" class="back-to-top-btn">
@@ -613,7 +643,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/companies/luxoft" target="_blank" rel="noreferer, noopener">
+                        <a href="/companies/Fintego" target="_blank" rel="noreferer, noopener">
                             <img src="/theme/fintego/assets/images/logo-in.svg" alt="linkedin icon">
                         </a>
                     </li>
@@ -1000,10 +1030,10 @@
                                     <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
                                 </li>
                                 <li>
-                                    <a href="/industries/banking/luxoft-banking-transformation-advisory">Banking transformation advisory</a>
+                                    <a href="/industries/banking/Fintego-banking-transformation-advisory">Banking transformation advisory</a>
                                 </li>
                                 <li>
-                                    <a href="/industries/banking/luxoft-cams">CAMS card processing solution</a>
+                                    <a href="/industries/banking/Fintego-cams">CAMS card processing solution</a>
                                 </li>
                                 <li>
                                     <a href="/partners/temenos/health-check">Temenos health check</a>
@@ -1211,10 +1241,10 @@
                                                 <a href="/industries/banking/hogan/managed-services">Hogan managed services</a>
                                             </li>
                                             <li>
-                                                <a href="/industries/banking/luxoft-banking-transformation-advisory">Banking transformation advisory</a>
+                                                <a href="/industries/banking/Fintego-banking-transformation-advisory">Banking transformation advisory</a>
                                             </li>
                                             <li>
-                                                <a href="/industries/banking/luxoft-cams">CAMS card processing solution</a>
+                                                <a href="/industries/banking/Fintego-cams">CAMS card processing solution</a>
                                             </li>
                                             <li>
                                                 <a href="/partners/temenos/health-check">Temenos health check</a>
@@ -1678,7 +1708,7 @@
     <div class="container border-top">
         <div class="row footer__sub-footer pt-3 pb-3">
             <div class="col-12 col-lg-5 text-uppercase order-lg-first order-sm-last copy-right mt-sm-3 pt-sm-3 pt-lg-0 mt-lg-0">
-                <p>© 2025 LUXOFT, A DXC TECHNOLOGY COMPANY. ALL RIGHTS RESERVED.</p>
+                <p>© 2025 Fintego, Capital Limited COMPANY. ALL RIGHTS RESERVED.</p>
             </div>
             <div class="col-12 col-lg-7 order-lg-last order-sm-first">
                 <ul class="list-group list-group-horizontal-lg float-lg-end text-uppercase">
@@ -1709,5 +1739,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    </body>
+    <script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>

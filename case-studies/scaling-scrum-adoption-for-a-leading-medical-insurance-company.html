@@ -575,7 +575,37 @@
             <div class="casestudy-no-overview__related-content">
                 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <?xml encoding="utf-8" ?><html><body><div class="container"><div class="related-content-snippet container"><div class="row title"><div class="col text-center"><h2 class="text-28 unscaled">Related content</h2></div></div><div class="row"><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2023/scada-cs-main-banner.jpg" alt="Optimizing SCADA systems for High-Reliability Electricity Transmission and Distribution"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/optimizing-scada-systems-for-high-reliability-electricity-transmission-and-distribution"><div class="stretched-link"><b class="text-18 unscaled">Optimizing SCADA systems for High-Reliability Electricity Transmission and Distribution</b></div></a></div></div></div><div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Automating-the-Lab.jpg" alt="Automating the Lab through AI and Computer Vision"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/automating-the-lab-through-ai-and-computer-vision"><div class="stretched-link"><b class="text-18 unscaled">Automating the Lab through AI and Computer Vision</b></div></a></div></div></div>
-<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Enabling-Predictive-Maintenance-in-Oil-Fields.jpg" alt="Enabling Predictive Maintenance in Oil Fields"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/enabling-predictive-maintenance-in-oil-fields"><div class="stretched-link"><b class="text-18 unscaled">Enabling Predictive Maintenance in Oil Fields</b></div></a></div></div></div></div></div></div></body></html>
+<div class="col"><div class="related-content-snippet__item"><div class="related-content-snippet__item--image"><figure><img src="/files/case-studies/2022/12/CS-KV-Enabling-Predictive-Maintenance-in-Oil-Fields.jpg" alt="Enabling Predictive Maintenance in Oil Fields"></figure></div><div class="related-content-snippet__item--content"><a href="/case-studies/enabling-predictive-maintenance-in-oil-fields"><div class="stretched-link"><b class="text-18 unscaled">Enabling Predictive Maintenance in Oil Fields</b></div></a></div></div></div></div></div></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
             </div>
         </div>
         <div id="back-to-top-btn" class="back-to-top-btn">
@@ -1634,5 +1664,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    </body>
+    <script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>
