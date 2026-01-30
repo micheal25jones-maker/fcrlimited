@@ -468,7 +468,37 @@
     data-src="/files/services/main/MicrosoftTeams-image-9.png" class="lazy-loading"></figure><div class="solutions-tiles solutions-tiles__single--content"><h4 class="title"> Legacy modernization </h4><p> Unlock the future with fintego - we have 100% success rate for mainframe modernization projects </p><div class="btn-container"><a href="/services/legacy-modernization" class="btn btn-text btn-icon focus"><div class="text-container"><div class="text">Read more</div><div class="arr-offering"><i class="arr-small one"></i><i class="arr-small two"></i><i class="arr-small three"></i></div></div></a></div></div></div></div><div class="col-12 col-lg-6"><div class="solutions-tiles solutions-tiles__single"><figure>
         <img src="/files/services/main/MicrosoftTeams-image-5.png" alt="solutions tile image" data-src="/files/services/main/MicrosoftTeams-image-5.png" class="lazy-loading"></figure><div class="solutions-tiles solutions-tiles__single--content"><h4 class="title"> QA automation </h4><p> Faster time-to-production, shorter regression cycles, lower cost of maintaining quality, greater automation coverage and higher test capacity </p><div class="btn-container"><a href="/services/qa-automation" class="btn btn-text btn-icon focus"><div class="text-container"><div class="text">Read more</div><div class="arr-offering"><i class="arr-small one"></i><i class="arr-small two"></i><i class="arr-small three"></i></div></div></a></div></div></div></div>
 <div class="col-12 col-lg-6"></div>
-</div></section></div></body></html>
+</div></section></div><script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body></html>
         <div id="back-to-top-btn" class="back-to-top-btn">
             <button type="button">
                 <img src="/theme/fintego/assets/images/arrow-down.svg" alt="back to top icon">
@@ -1525,5 +1555,35 @@
         <script src="/theme/fintego/assets/bootstrap.bundle.min.js"></script>
         <script src="/theme/fintego/assets/tiny-slider.min.js"></script>
                 <script src="/theme/fintego/assets/app.min.0ae706d0b4e4289536f7.js"></script>
-    </body>
+    <script>
+    // Add this RIGHT AFTER the menu script
+console.log('=== DEBUGGING MENU ===');
+console.log('Menu Switcher Element:', document.querySelector('#menu-switcher'));
+console.log('Header Element:', document.querySelector('header'));
+console.log('Lux Menu Element:', document.querySelector('.lux-menu'));
+
+// Check if the script is running
+const menuSwitcher = document.querySelector('#menu-switcher');
+if (menuSwitcher) {
+  console.log('✓ Menu switcher found');
+  
+  menuSwitcher.addEventListener('click', function(e) {
+    console.log('🔥 MENU SWITCHER CLICKED!');
+    const header = document.querySelector('header');
+    console.log('Header classes BEFORE:', header.className);
+    
+    if (header.classList.contains('active')) {
+      console.log('Removing active class');
+      header.classList.remove('active');
+    } else {
+      console.log('Adding active class');
+      header.classList.add('active');
+    }
+    
+    console.log('Header classes AFTER:', header.className);
+  });
+} else {
+  console.error('❌ Menu switcher NOT found!');
+}
+   </script></body>
 </html>
